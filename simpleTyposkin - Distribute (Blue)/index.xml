@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>fading-line</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ 
+				by kuna. 원본 템플릿은 seevaa님의 simpleDairy 스킨입니다. 본문 720px에 최적화되어 있습니다. jQuery를 사용합니다.
+			]]>
+		</description>
+		<license>
+			<![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+		</license>
+	</information>
+	<author>
+		<name>seevaa</name>
+		<homepage>http://www.seevaa.net</homepage>
+		<email>seevaa@seevaa.net</email>
+	</author> 
+	<default>
+		<recentEntries>10</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>5</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>2</sortInCloud>
+		<expandComment>0</expandComment>
+		<expandTrackback>0</expandTrackback>
+		<lengthOfRecentNotice>30</lengthOfRecentNotice>
+		<lengthOfRecentEntry>30</lengthOfRecentEntry>
+		<lengthOfRecentComment>34</lengthOfRecentComment>
+		<lengthOfRecentTrackback>34</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<commentMessage>
+			<none>댓글이 없습니다.</none>
+			<single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt;가 달렸습니다.</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>받은 트랙백이 없고</none>
+			<single>트랙백은 &lt;span class="cnt"&gt;하나&lt;/span&gt;</single>
+		</trackbackMessage>
+		<tree>
+			<color>666</color>
+			<bgColor></bgColor>
+			<activeColor>666</activeColor>
+			<activeBgColor></activeBgColor>
+			<labelLength>30</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>720</contentWidth>
+	</default>
+</skin>

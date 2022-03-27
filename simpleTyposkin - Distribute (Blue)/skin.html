@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+<link rel="stylesheet" media="print" type="text/css" href="./images/print.css" />
+<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+<title>[##_title_##] :: [##_page_title_##]</title>
+
+<script src="./images/jquery-1.4.2.min.js" language="javascript"></script>
+
+<!-- lightbox Part -->
+<script type="text/javascript" src="./images/jquery.lightbox-0.5-tistory.js"></script>
+<link rel="stylesheet" type="text/css" href="./images/jquery.lightbox-0.5.css" media="screen" />
+<script type="text/javascript">
+$(function() {
+   $('#article div.imageblock img').each( function(e) { $(this).removeAttr("onclick"); });
+   $('#article div.imageblock img').lightBox();
+});
+</script>
+
+<!-- AJAX Part -->
+<script src="./images/jquery.scrollTo-min.js" language="javascript"></script>
+<script language="javascript">
+function _onResize() {
+	$('#sidebar').height($(window).height() - 40);
+	$('#sidebar .inner').height($(window).height() - 80);
+}
+$(function() { _onResize(); });
+$(window).resize( function() { _onResize(); });
+
+var _opened=false;
+function toggleSidebar() {
+	if (!_opened) {
+        $("#sidebar").show();
+		$("#sidebar").animate({right:0},400);
+		$("#sidebarHandle").animate({right:320},400);
+        $("#sidebarTitle").show();
+		$("#sidebarTitle").animate({left:0},400);
+	} else {
+		$("#sidebar").animate({right:-320},400,function(){$('#sidebar').hide();});
+		$("#sidebarHandle").animate({right:0},400);
+		$("#sidebarTitle").animate({left:-500},400,function(){$('#sidebarTitle').hide();});
+	}
+	_opened = !_opened;
+}
+</script>
+<script language="javascript">
+function hidePrevNext()
+{
+ $('#a_left').css("display", "none");
+ $('#a_right').css("display", "none");
+}
+
+function checkPrevNext()
+{
+var objLeft = $('#href_left');
+var objRight = $('#href_right');
+
+if (objLeft.length <= 0) {
+ $('#a_left').css("display", "none");
+} else {
+ $('#a_left').css("display", "block");
+ $('#a_left').attr("href", objLeft.attr("href"));
+}
+
+if (objRight.length <= 0) {
+ $('#a_right').css("display", "none");
+} else {
+ $('#a_right').css("display", "block");
+ $('#a_right').attr("href", objRight.attr("href"));
+}
+}
+
+function loadPage(url) {
+startLoading();
+$.scrollTo( {top:'0px', left:'0px'}, 800 );
+hidePrevNext();
+var dest_url = url.substring(0, url.indexOf("#"));
+if (dest_url == "") dest_url = url;
+$.get(dest_url, function(data) {
+	var obj = $(data);
+	var ihtml = obj.find("#content").html();
+	$("#content").html(ihtml);
+	$('#article div.imageblock img').each( function(e) { $(this).removeAttr("onclick"); });
+	$("#article div.imageblock img").lightBox();
+	checkPrevNext();
+	endLoading();
+
+	var dest_id = url.substring(url.indexOf("#"));
+	$.scrollTo( $(dest_id), 800, {queue:true} );
+});
+}
+
+function loadPage_paging(paging_url) {
+var url = paging_url.href;
+if (url == "#") return;
+loadPage(url);
+}
+</script>
+
+</head>
+
+<body>
+
+
+<!-- loading Part -->
+<script language="javascript">
+var _sv;
+function endLoading() {
+$("#content").animate({ opacity:1 }, 'slow');
+$("#loading_div").animate({ opacity:0 }, 'slow',function(){$('#loading_div').hide();});
+}
+function startLoading() {
+$("#content").animate({ opacity:0 }, 'slow');
+$('#loading_div').show();
+$("#loading_div").animate({ opacity:1 }, 'slow');
+}
+$(document).ready( function() { endLoading(); });
+</script>
+<div id="loading_div" onclick="endLoading();"> 
+</div> 
+
+
+<s_t3>
+	<div id="container">
+
+		<div id="content">
+			<s_list>
+				<div class="searchList">
+                	<div class="titleWrap"><span class="title">'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</span></div>
+					<ol>
+						<s_list_rep>
+							<li>
+								<a href="[##_list_rep_link_##]" onclick="loadPage('[##_list_rep_link_##]'); return false;">[##_list_rep_title_##]</a>
+								<span class="cnt">[##_list_rep_rp_cnt_##]</span>
+								<span class="date">[##_list_rep_regdate_##]</span>
+							</li>
+						</s_list_rep>
+					</ol>
+				</div>
+			</s_list>
+
+			<s_rplist>
+				<div class="searchRplist">
+                	<div class="titleWrap"><span class="title">'[##_rplist_conform_##]'에 해당되는 댓글 [##_rplist_count_##]건</span></div>
+					<ol>
+						<s_rplist_rep>
+							<li>
+								<a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##]</a>
+								<span class="cnt">[##_rplist_rep_rp_cnt_##]</span>
+								<span class="name">[##_rplist_rep_name_##]</span>
+								<span class="date">[##_rplist_rep_regdate_##]</span>
+							</li>
+						</s_rplist_rep>
+					</ol>
+				</div>
+			</s_rplist>
+ 
+
+			<s_local>
+				<div class="localog">
+					<div class="titleWrap"><span class="title">Localog</span></div>
+					<s_local_spot_rep>
+						<div class="spot" style="margin-left: [##_local_spot_depth_##]px">
+							[##_local_spot_##]
+						</div>
+					</s_local_spot_rep>
+					<s_local_info_rep>
+						<div class="info" style="margin-left: [##_local_info_depth_##]px">
+							<a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
+						</div> 
+					</s_local_info_rep>
+				</div>
+			</s_local>
+
+			<s_tag>
+				<div class="taglog">
+					<div class="titleWrap"><span class="title">TagLog</span></div>
+					<ul>													
+						<s_tag_rep>
+							<li>
+								<a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>
+							</li>
+						</s_tag_rep>
+					</ul>
+				</div>
+			</s_tag>
+
+			<s_media>
+				<div class="medialog">
+					[##_media_content_##]
+				</div>
+			</s_media>
+
+					<s_guest>
+						<div class="guestbook">
+							<div class="titleWrap"><span class="title">Guestbook</span></div>
+							<s_guest_input_form>
+								<div class="guestWrite">
+									<s_guest_member>
+										<p>
+											<input type="checkbox" id="[##_guest_input_is_secret_##]" name="[##_guest_input_is_secret_##]" class="checkbox" />
+											<label for="[##_guest_input_is_secret_##]"> : secret </label>
+										</p>
+										<s_guest_form>
+											<p>
+												<input type="text" id="name" name="[##_guest_input_name_##]" value="[##_guest_name_##]" />
+												<label for="name"> : name </label>
+											</p>
+											<p>
+												<input type="password" id="password" maxlength="8" name="[##_guest_input_password_##]" value="" />
+												<label for="password"> : password </label>
+											</p>
+											<p>
+												<input type="text" id="homepage" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" class="homepage" />
+												<label for="homepage"> : homepage </label> 
+											</p>
+										</s_guest_form>
+									</s_guest_member>
+									<p>
+										<textarea name="[##_guest_textarea_body_##]" cols="50" rows="6"> </textarea>
+									</p>
+									<p>
+										<input type="submit" value="submit" onclick="[##_guest_onclick_submit_##]" class="submit" />
+									</p>
+								</div>
+								<!-- guestWrite close -->
+							</s_guest_input_form>
+							<s_guest_container>
+								<div class="guestList">
+									<s_guest_rep>
+										<ol>	
+											<li id="[##_guest_rep_id_##]">
+												<div class="[##_guest_rep_class_##]">
+													<span class="name">[##_guest_rep_name_##]</span>
+													<span class="date"> [##_guest_rep_date_##]</span>
+													<span class="control"> 
+														<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>modify / delete</span></a> / <a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write"><span>reply</span></a>
+													</span>
+													<p>[##_guest_rep_desc_##]</p>
+												</div>
+												<s_guest_reply_container>
+													<ul>
+														<s_guest_reply_rep>
+															<li id="[##_guest_rep_id_##]">
+																<div class="[##_guest_rep_class_##]">
+																	<span class="name">[##_guest_rep_name_##]</span>
+																	<span class="date"> [##_guest_rep_date_##]</span>
+																	<span class="control"> 
+																		<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>modify / delete</span></a>
+																	</span>
+																	<p>[##_guest_rep_desc_##]</p>
+																</div>
+															</li>
+														</s_guest_reply_rep>
+													</ul>
+												</s_guest_reply_container>
+											</li>
+										</ol>
+									</s_guest_rep>
+								</div>
+								<!-- guestList close -->
+							</s_guest_container>
+						</div>
+						<!-- guestbook close -->
+					</s_guest>
+
+			<s_notice_rep>
+				<div class="entryNotice">
+					<div class="titleWrap">
+						<a href="[##_notice_rep_link_##]"><span class="title hv">[##_notice_rep_title_##]</span></a><br />
+						<span class="category">Notice </span><span  class="date">[##_notice_rep_date_##]</span>
+				  </div>	
+					<div class="article" id="article">
+						[##_notice_rep_desc_##]
+					</div>
+				</div>
+			</s_notice_rep>
+			
+			<s_article_protected>
+				<div class="entryProtected">
+					<div class="titleWrap">
+						<a href="[##_article_rep_link_##]"><span class="title hv">[##_article_rep_title_##]</span></a><br />
+						<span class="date">[##_article_rep_date_##]</span>
+					</div>
+					<p class="text">보호되어 있는 글입니다. <br />
+					내용을 보시려면 비밀번호를 입력하세요.<br /></p>
+					<p><label for="[##_article_password_##]">비밀번호 :: </label>
+					<input id="[##_article_password_##]" name="[##_article_password_##]" type="password" maxlength="16" onkeydown="if (event.keyCode == 13) [##_article_dissolve_##]" />
+					<input type="button" class="submit" value="submit" onclick="[##_article_dissolve_##]" />
+					</p>
+				</div>
+			</s_article_protected>
+
+			<s_article_rep>
+				<div class="entry" id="ajax_body">
+					<div class="titleWrap">
+						<a href="[##_article_rep_link_##]" id="title"><span class="title hv">[##_article_rep_title_##]</span></a><br />
+
+						<span class="date">from </span><span class="category"><a href="[##_article_rep_category_link_##]" onclick="loadPage('[##_article_rep_category_link_##]'); return false;" class="hv">[##_article_rep_category_##]</a> </span>
+						<span class="date"> … [##_article_rep_date_##]</span>
+						<s_ad_div>
+						<span class="admin">
+							<a href="#" onclick="[##_s_ad_m_onclick_##]">modify</a> /
+							<a href="#" onclick="[##_s_ad_t_onclick_##]">trackback</a> /
+							<a href="#" onclick="[##_s_ad_d_onclick_##]">delete</a>
+						</span>
+						</s_ad_div>
+					</div>
+					<!-- titleWrap close -->
+					
+					<div class="article" id="article">
+						[##_article_rep_desc_##]
+					</div>
+					
+					<s_tag_label>
+						<div class="tagTrail">
+							<span class="tagText">Tag // </span>[##_tag_label_rep_##]
+						</div>
+					</s_tag_label>
+
+					<div class="actionTrail">
+						<a  href="#tb" onclick="[##_article_rep_tb_link_##]"><s_tb_count> 트랙백 <span class="cnt">[##_article_rep_tb_cnt_##]</span>개</s_tb_count></a>, 
+						<a  href="#rp" onclick="[##_article_rep_rp_link_##]"><s_rp_count> 댓글 <span class="cnt">[##_article_rep_rp_cnt_##]</span>개가 달렸습니다.</s_rp_count></a>
+					</div>
+
+					<s_tb>
+						<div class="trackback">
+							<h3>Trackback Address :: [##_tb_address_##]</h3>
+							<s_tb_container>
+								<ol>
+									<s_tb_rep>
+										<li id="[##_tb_rep_id_##]">
+											<h4>Subject: <a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></h4>
+											<span class="from">Tracked from <span class="name">[##_tb_rep_site_##]</span></span>
+											<span class="date">[##_tb_rep_date_##]</span>
+											<a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" class="delete">&nbsp;<span>delete</span></a>
+											<p>[##_tb_rep_desc_##]</p>
+										</li>
+									</s_tb_rep>
+								</ol>
+							</s_tb_container>
+						</div><!-- trackback close -->
+					</s_tb>
+
+					<s_rp>
+						<div class="comment">
+							<h3>댓글을 달아 주세요 </h3>
+							<div class="commentList">
+								<s_rp_container>
+									<ol>
+										<s_rp_rep>
+											<li id="[##_rp_rep_id_##]">
+												<div class="[##_rp_rep_class_##]">
+													<span class="name">[##_rp_rep_name_##]</span>
+													<span class="date"> [##_rp_rep_date_##]</span>
+													<span class="control">
+														<a href="[##_rp_rep_link_##]" class="address">&nbsp;<span>address</span></a>
+														<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>modify / delete</span></a>
+														<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">&nbsp;<span>reply</span></a>
+													</span>
+													<p>[##_rp_rep_desc_##]</p>
+												</div>
+												<s_rp2_container>
+													<ul>
+														<s_rp2_rep>
+															<li id="[##_rp_rep_id_##]">
+																<div class="[##_rp_rep_class_##]">
+																	<span class="name">[##_rp_rep_name_##]</span>
+																	<span class="date"> [##_rp_rep_date_##]</span>
+																	<span class="control">
+																		<a href="[##_rp_rep_link_##]" class="address">&nbsp;<span>address</span></a>
+																		<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>modify / delete</span></a>
+																	</span>
+																	<p>[##_rp_rep_desc_##]</p>
+																</div>
+															</li>
+														</s_rp2_rep>
+													</ul>
+												</s_rp2_container>
+											</li>
+										</s_rp_rep>
+									</ol>
+								</s_rp_container>
+							</div>
+							<!-- commentList close -->
+
+							<s_rp_input_form>
+								<div class="commentWrite">
+									<s_rp_member>
+											<p>
+												<input type="checkbox" class="checkbox" id="[##_rp_input_is_secret_##]_[##_article_rep_id_##]" name="[##_rp_input_is_secret_##]" value="1" />
+												<label for="[##_rp_input_is_secret_##]_[##_article_rep_id_##]"> : secret </label>
+											</p>
+										<s_rp_guest>
+											<p>
+												<input type="text" class="text" id="[##_rp_input_name_##]_[##_article_rep_id_##]" name="[##_rp_input_name_##]" value="[##_guest_name_##]" />
+												<label for="[##_rp_input_name_##]_[##_article_rep_id_##]"> : name </label>
+											</p>
+											<p>
+												<input type="password" class="password" id="[##_rp_input_password_##]_[##_article_rep_id_##]" name="[##_rp_input_password_##]" value="" />
+												<label for="[##_rp_input_password_##]_[##_article_rep_id_##]"> : password </label>
+											</p>
+											<p>
+												<input type="text" class="homepage" id="[##_rp_input_homepage_##]_[##_article_rep_id_##]" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]"/>
+												<label for="[##_rp_input_homepage_##]_[##_article_rep_id_##]"> : homepage </label>
+											</p>
+										</s_rp_guest>						
+									</s_rp_member>
+									<p>
+										<textarea name="[##_rp_input_comment_##]" rows="6" cols="50"></textarea>
+									</p>
+									<p>
+										<input type="submit" class="submit" value="submit" onclick="[##_rp_onclick_submit_##]" />
+									</p>
+								</div>
+								<!-- commentWrite close -->
+							</s_rp_input_form>
+						</div>
+						<!-- comment close -->
+					</s_rp>
+				</div>
+				<!-- entry close -->
+			</s_article_rep>
+
+			<s_paging>
+				<div class="paging">
+					<a [##_prev_page_##] onclick="loadPage_paging(this); return false;" class="[##_no_more_prev_##]" id="href_left">&lt;&lt; previous </a>
+					<span class="numbox">
+						<s_paging_rep>
+						<a [##_paging_rep_link_##] onclick='loadPage_paging(this); return false;' class="num"> [##_paging_rep_link_num_##]</a>
+						</s_paging_rep>
+					</span>
+					<a [##_next_page_##] onclick="loadPage_paging(this); return false;" class="[##_no_more_next_##]" id="href_right">next &gt;&gt;</a>
+				</div>
+			</s_paging>
+								
+			<div id="footer"><!-- footer -->
+				<div class="copyright">
+					<a href="[##_blog_link_##]"> [##_blogger_##]</a>'s Blog is powered by 
+					<a href="http://tistory.com" onclick="window.open(this.href); return false">[##_tattertools_name_##]</a> / Designed by <a href="http://kuna.wo.tc" onclick="window.open(this.href); return false">kuna</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- content close -->
+		
+
+		
+	</div>
+	<!-- container close -->
+    
+    
+   
+<div id="sidebarTitle" style="display:none;">
+	<div id="blogTitle"><a href="[##_blog_link_##]">[##_title_##]</a></div>
+    <div id="blogMenu">
+<a id="a_left" class="hv" style="float:left; display:none;" href="#" onclick="loadPage_paging(this); return false;">◀</a>
+
+            <a href="[##_blog_link_##]category" onclick="loadPage('[##_blog_link_##]category'); return false;">entry</a> 
+            / <a href="[##_guestbook_link_##]" onclick="loadPage('[##_guestbook_link_##]'); return false;">guestbook</a> 
+            / <a href="[##_owner_url_##]/entry/post/">write</a> 
+            / <a href="[##_owner_url_##]">admin</a>
+
+<a id="a_right" class="hv" style="float:right; display:none;" href="#" onclick="loadPage_paging(this); return false;">▶</a>
+    </div>
+</div>   
+
+<div id="sidebarHandle" onclick="toggleSidebar();"><span class="text"></span></div>
+<div id="sidebar">
+<div class="inner">
+        <s_sidebar>
+            <!-- 기본 사이드바 -->
+
+            <s_sidebar_element>
+            <!-- 검색 모듈 -->
+                <div class="search">
+                    <s_search>
+                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { loadPage('/search/' + document.getElementsByName('search')[0].value.replaceAll('%', '%25')); }"/>
+                        <!--<input value="search" type="button" onclick="loadPage('/search/' + document.getElementsByName('search')[0].value.replaceAll('%', '%25'));" class="submit"/>-->
+                    </s_search>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- 카테고리 모듈 -->
+                <div class="category">
+                    <h3>Category</h3>
+                    <div class="box"> [##_category_##] </div>
+                </div>
+            </s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- 공지사항 위젯 -->
+<s_rct_notice> 
+		<div class="recentPost">
+                    <h3>Notice</h3>
+		<ul>
+		<s_rct_notice_rep>
+		<li><a href="[##_notice_rep_link_##]" onclick="loadPage(this.href); return false;">[##_notice_rep_title_##]</a> </li>
+		</s_rct_notice_rep>
+		</ul>
+		</div>
+</s_rct_notice> 
+	</s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- 최근 포스트 모듈 -->
+                <div class="recentPost">
+                    <h3>Recent Post</h3>
+                    <ul>
+                        <s_rctps_rep>
+                            <li>
+                                <a href="[##_rctps_rep_link_##]" onclick="loadPage('[##_rctps_rep_link_##]'); return false;"> [##_rctps_rep_title_##]</a>
+                                <span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
+                            </li>
+                        </s_rctps_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- 최근 댓글 모듈 -->
+                <div class="recentComment">
+                    <h3>Recent Comment</h3>
+                    <ul id="recentComments">
+                        <s_rctrp_rep>
+                            <li>
+                                <a href="[##_rctrp_rep_link_##]" onclick="loadPage(this.href); return false;">[##_rctrp_rep_desc_##].</a>
+                            </li>
+                            <li>
+                                <span class="name">[##_rctrp_rep_name_##]</span> <span class="date">[##_rctrp_rep_time_##]</span>
+                            </li>
+                        </s_rctrp_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- 최근 트랙백 모듈 -->
+                <div class="recentTrackback">
+                    <h3>Recent Trackback</h3>
+                    <ul id="recentTrackbacks">
+                        <s_rcttb_rep>
+                            <li>
+                                <a href="[##_rcttb_rep_link_##]");  onclick="loadPage(this.href); return false;">[##_rcttb_rep_desc_##].</a>
+                            </li>
+                            <li>
+                                <span class="name">[##_rcttb_rep_name_##]</span> <span class="date">[##_rcttb_rep_time_##]</span>
+                            </li>
+                        </s_rcttb_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- Calendar -->
+                <div class="calendar">
+                    <h3>Calendar</h3>
+                    [##_calendar_##]
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- 최근 보관함 모듈 -->
+                <div class="archive">
+                    <h3>Archive</h3>
+                    <ul>
+                        <s_archive_rep>
+                            <li>
+                                <a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
+                                <span class="cnt">([##_archive_rep_count_##])</span>
+                            </li>
+                        </s_archive_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+            <!-- 링크 모듈 -->
+                <div class="link">
+                    <h3>Link</h3>
+                    <ul>
+                        <s_link_rep>
+                            <li>
+                                <a href="[##_link_url_##]" onclick="window.open(this.href); return false"> [##_link_site_##]</a>
+                            </li>
+                        </s_link_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>	
+                <div class="botton">
+            <!-- 배너 모듈 - 태터툴즈 -->
+                <a href="http://www.tattertools.com" onclick="window.open(this.href); return false">
+                <img src="./images/tattertools.gif" alt="Tattertools" /></a>
+            <!-- 배너 모듈 - 이올린 -->					
+                <a href="http://www.eolin.com" onclick="window.open(this.href); return false">
+                <img src="./images/eolin.gif" alt="Eolin" /></a>
+            <!-- RSS 링크 -->						
+                <a href="[##_blog_link_##]rss" onclick="window.open(this.href); return false">
+                <img src="./images/rss.gif" alt="RSS"/></a>
+                </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+                <!-- 카운터 모듈 -->
+                <div class="counter">
+                    <ul>
+                        <li class="today">T[##_count_today_##]</li>
+                        <li class="yesterday">Y[##_count_yesterday_##]</li>							
+                        <li class="total">T[##_count_total_##]</li>
+                    </ul>						
+                </div>
+                <div class="rss">
+                    <a href="[##_blog_link_##]rss" onclick="window.open(this.href); return false">Subscribe to RSS</a>
+                </div>
+            </s_sidebar_element>
+
+        </s_sidebar>
+    </div>
+    </div>
+    <!-- sidebar close -->
+
+</s_t3>
+
+
+<!-- pager -->
+<script language="javascript">
+$(document).ready(function() {
+hidePrevNext();
+checkPrevNext();
+});
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+
+/* ------------------------------------------------------------------- */
+/* 반드시 들어가야 하는 스타일 시작 */
+/* ------------------------------------------------------------------- */
+
+/* 본문 공통 */
+
+body			{ margin:0; padding:0; font-family:"Segoe Print", Georgia, "휴먼편지체", "Pyunji R",  sans-serif, Constantia; font-size:15px; letter-spacing:-1px; color:#666;  }
+a:link		{ color:#666; text-decoration:none; -webkit-transition: color; -webkit-transition-duration: 500ms; }
+a:visited	{ color:#666; text-decoration:none; -webkit-transition: color; -webkit-transition-duration: 500ms; }
+a:hover		{ color:#09F; font-weight:bold; -webkit-transition: color; -webkit-transition-duration: 500ms; }
+a:active		{ color:#09F; text-decoration:none; -webkit-transition: color; -webkit-transition-duration: 500ms; }
+.hv:hover { font-weight:normal !important; color:#E60 !important; }
+
+/* 페이징 - 현재 페이지 */
+.selected				{ font-weight:bold; color:#09F;}
+/* 카테고리 - 이미지 버튼 */
+.ib							{ cursor:pointer;}
+/* 카테고리 - 트리 셀 */
+.branch3				{ cursor:pointer; font:12px verdana;}
+/* 카테고리 - 카테고리 옆 개수 스타일 */
+.c_cnt					{ font:9px verdana;  color:#09F;}
+/* 종류별 코멘트 [##_rp_rep_class_##] */
+.rp_general			{ }
+.rp_admin				{ }
+.rp_secret				{ color:#09F;}
+/* 종류별 코멘트 [##_guest_rep_class_##] */
+.guest_general		{ }
+.guest_admin			{ }
+/* 비밀 댓글 (로그아웃시 비밀글 표현) */
+.hiddenComment 	{ background:url(images/iconSecret.gif) no-repeat; padding-left:20px; font-weight:normal;}
+/* 이미지 아래 캡션 스타일 */
+.cap1						{ color:#999; text-align:center;}
+/* 그림 */
+.imageblock			{ border:0px; padding:0px; margin:0px;}
+/* 왼쪽 */
+.left						{ }
+/* 가운데 */
+.center					{ }
+/* 오른쪽 */
+.right						{ }
+/* 그림 2개 배치 */
+.dual						{ background-color:#fff; margin-bottom:5px;}
+/* 그림 3개 배치 */
+.triple					{ background-color:#fff; margin-bottom:5px;}
+/* 본문 - more / less */
+.moreless_fold		{ background:url(images/iconMore.gif) top left no-repeat; padding-left:25px; color:#666; font-weight:bold; }
+.moreless_top		{ background:url(images/iconLess.gif) top left no-repeat; padding-left:25px; color:#666; font-weight:bold; }
+.moreless_body		{ }
+.moreless_bottom	{ background:url(images/iconLess.gif) top right no-repeat; padding-right:25px; color:#666; text-align:right; font-weight:bold; }
+/* 키워드 */ 
+.key1					{ cursor:pointer; border-bottom: 1px dotted #09F; }
+
+
+/* ------------------------------------------------------------------- */
+/* 반드시 들어가야하는 스타일 끝 - 이 아래는 자유롭게 추가, 삭제 가능  */
+/* ------------------------------------------------------------------- */
+
+hr						{ display:none;}
+img					{ border:0;}
+h1,h2,h3,h4		{ margin:0; padding:0;}
+h1						{ font-size:24px;}
+h2						{ font-size:20px;}
+h3						{ font-size:14px;}
+h4						{ font-size:12px;}
+input					{ border:1px solid #999;}
+textarea			{ border:1px solid #999;}
+
+
+/* ------------------------------------------------------------------- */
+/* 블로그 레이아웃 */
+/* ------------------------------------------------------------------- */
+
+#container 		{ width:100%; min-width:1100px; margin:0; padding:30px 0; background:url(./images/bg1.jpg) no-repeat top right; min-height:640px; overflow:hidden; }
+#header 			{ width:900px; padding-bottom:25px; margin-bottom:25px; background:url(./images/top-border.gif) left bottom no-repeat;}
+#sidebar 			{ z-index:99999; font-family:Gulim, Arial; font-size:12px; line-height:1.8em; display:none; }
+#content 			{ float:left; width:720px; overflow:hidden; margin-left:80px; }
+#footer 				{ }
+
+
+/* ------------------------------------------------------------------- */
+/* ***** Header ***** */
+/* ------------------------------------------------------------------- */
+
+#header .title h2 a					{ font:20px dotum, verdana; font-weight:bold; text-transform:uppercase;}
+#header .title h2 a:hover		{ }
+
+
+
+/* ------------------------------------------------------------------- */
+/* ***** sidebar ***** */
+/* ------------------------------------------------------------------- */
+
+#sidebarTitle { position:fixed !important; position:absolute;/*IE6*/ top:40px; left:-500px; border-radius:0 10px 10px 0; -moz-border-radius:0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; width:480px; height:100px;  background-color:rgba(80,220,255,0.8) !important; background-color:#AEF; z-index:9999; border-left:20px solid #0ff; }
+#blogTitle { text-align:center; }
+#blogTitle a { font-size:24px; color:#fff; margin:10px 10px; display:block; font-family:"Times New Roman", "돋움", Constantia, Georgia, "휴먼편지체", "Pyunji R",  sans-serif, "Segoe Print"; }
+#blogTitle a:hover { font-weight:normal; color:#0FF; }
+#blogMenu { font:10px verdana; text-align:center; padding:10px 20px; }
+
+#sidebar { position:fixed !important; position:absolute;/*IE6*/ top:20px; right:-320px; border-radius:10px 0 0 10px; -moz-border-radius:10px 0 0 10px; -webkit-border-radius:10px 0 0 10px; width:320px; height:700px;  background-color:rgba(80,220,255,0.8) !important; background-color:#AEF; z-index:9999; }
+#sidebarHandle { position:fixed !important; position:absolute;/*IE6*/ top:40px; right:0px; width:24px; height:100px; border-radius:8px 0 0 8px; -moz-border-radius:10px 0 0 10px; -webkit-border-radius:10px 0 0 10px; background-color:rgba(80,220,255,0.8) !important;  background-color:#AEF; cursor:default; z-index:9999;  }
+#sidebarHandle:hover { background-color:rgba(0,200,255,0.8); }
+#sidebarHandle .text { position:relative; display:block; color:#fff; font-size:12px; top:45px; left:5px; width:10px; height:10px; background:url(./images/arrow.png) no-repeat 0 0; }
+#sidebar .inner { position:relative; top:20px; left:20px; width:280px; overflow-x:hidden; overflow-y:scroll; }
+
+#sidebar ul		{ padding:0; margin:0; list-style:none;}
+#sidebar li			{ padding-bottom:2px;}
+#sidebar h3		{ padding:20px 0 3px 0; margin-bottom:6px; font:12px verdana; color:#09F; font-weight:bold; }
+#sidebar .cnt		{ font:9px verdana; color:#09F;}
+#sidebar .date	{ font:9px verdana; color:#999;}
+#sidebar .name	{ font:12px verdana; color:#999;}
+
+#sidebar .search				{ }
+#sidebar .search input		{
+	width:240px;
+	height:16px;
+	font:12px verdana;
+	color:#666;
+        opacity:0.7;
+	filter: alpha(opacity=70);
+}
+#sidebar .search .submit		{ width:50px; height:20px; background-color:#999; font:9px verdana; color:#fff;}
+
+#sidebar .archive		{ font:9px Verdana;}
+
+#sidebar .calendar		{ font:9px Verdana;}
+
+#sidebar .link ul			{ padding-bottom:30px;}
+#sidebar .link li			{ font:9px Verdana, dotum;}
+
+#sidebar .botton			{ }
+
+#sidebar .counter		{ font:9px verdana; display:inline;}
+#sidebar .counter li	{ display:inline;}
+
+#sidebar .rss		{ font:9px verdana;}
+
+
+
+/* ------------------------------------------------------------------- */
+/* ***** content ***** */
+/* ------------------------------------------------------------------- */
+
+#content .localog, 
+#content .taglog, 
+#content .entryNotice, 
+#content .entryProtected, 
+#content .entry,
+#content .guestbook, 
+#content .searchList, 
+#content .searchRplist		{ margin-bottom:40px;}
+
+#content .localog h3, 
+#content .taglog h3, 
+#content .guestbook h3,
+#content .searchList h3, 
+#content .searchRplist h3	{ padding-bottom:20px; color:#666; font:16px dotum, verdana; font-weight:bold;}
+
+.searchList ol, 
+.searchRplist ol					{ list-style:none; padding:0; margin:0;}
+.searchList li, 
+.searchRplist li					{ }
+.searchList .date, 
+.searchRplist .date				{ font:9px Verdana; }
+.searchList .cnt					{ font:9px Verdana; color:#09F;} 
+.searchRplist .name			{ font:12px Verdana; color:#999; }
+
+.localog .spot,
+.localog .info				{ padding-left:20px; margin-top:3px;}
+.localog a					{ color:#996; font-weight:bold;}
+
+.taglog ul					{ padding:0; margin:0; text-align:justify;}
+.taglog li					{ display:inline;}
+.taglog li a:hover		{ color:#09F;}
+.taglog li .cloud1			{ color:#666; font-weight:bold; font-size:12px;}
+.taglog li .cloud2			{ color:#666; font-weight:bold; font-size:12px;}
+.taglog li .cloud3			{ color:#666; font-weight:bold; font-size:12px;}
+.taglog li .cloud4			{ color:#666; font-size:12px;}
+.taglog li .cloud5			{ font-size:12px; color:#999; }
+
+.guestbook p					{ padding:2px 0; margin:0;}
+
+.guestWrite					{ font:9px verdana;}
+.guestWrite input			{ width:150px; font:12px verdana; color:#666;}
+.guestWrite textarea		{ width:98%; padding:3px; font:12px verdana; color:#666;}
+.guestWrite .homepage   { width:300px; }
+.guestWrite .submit			{ width:150px; background-color:#999; height:20px; font:9px verdana; color:#fff;}
+.guestWrite input.checkbox	{ width:15px; background-color:#fff;  border:none; padding:0; margin:0;}
+
+.guestList							{ width:100%; padding:20px 0 0 0;}
+.guestList ol						{ padding:30px 0 0 0; margin:0; list-style:none;}
+.guestList ol ul					{ margin:0; padding:0; list-style:none;}
+.guestList ol li						{ margin:0; padding:0; overflow:hidden; list-style:none;}
+.guestList ol li p					{ padding-top:5px; background:url(images/2.gif)  repeat-x; }
+.guestList ol li ul li				{ padding:10px 0 0 60px; border:none; overflow:hidden;}
+.guestList ol li .name			{ font:12px verdana; font-weight:bold;}
+.guestList ol li .date				{ font:9px verdana; color:#999; }
+.guestList .control				{ font:9px verdana; color:#999;}
+.guestList .control a			{ color:#999;}
+.guestList .control a:hover	{ font:9px verdana; color:#09F;}
+
+
+
+/* ------------------------------------------------------------------- */
+/* entry */
+/* ------------------------------------------------------------------- */
+
+.entryNotice h2, 
+.entryProtected h2, 
+.entry h2								{ font:16px dotum, verdana; font-weight:bold; padding-bottom:3px;}
+.titleWrap { margin-bottom:20px; border-bottom:1px solid #ccc; }
+.titleWrap .title								{ font-family:"Times New Roman", "돋움", Constantia, Georgia, "휴먼편지체", "Pyunji R",  sans-serif, "Segoe Print"; font-size:48px; letter-spacing:-4px; color:#28E; padding-bottom:20px;}
+.titleWrap .category a,
+.titleWrap .date { font-family:"Times New Roman", "돋움", Constantia, Georgia, "휴먼편지체", "Pyunji R",  sans-serif, "Segoe Print"; font-size:24px; letter-spacing:-3px; color:#666; font-style:italic; }
+
+.titleWrap .admin 					{ font:9px Verdana; color:#999; padding-left:5px;}
+.titleWrap .admin a					{ color:#999;}
+.titleWrap .admin a:hover		{ color:#09F; font-weight:bold;}
+
+.entryProtected p.text				{ padding-left:48px; background:url(images/imgProtected.gif) no-repeat ;}
+.entryProtected input				{ width:200px; color:#666; }
+.entryProtected .submit			{ font:9px Verdana; width:50px; padding-top:2px; height:20px; color:#fff; background-color:#999;}
+
+.article						{ overflow:hidden; padding-bottom:20px;  line-height:1.8em; }
+.article dt					{ text-decoration:underline;}
+.article dd					{ margin-left:20px; padding-bottom:10px;}
+.article blockquote		{ padding-left:28px; margin:10px 20px; background:url(images/iconBlockquote.gif) top left no-repeat;}
+.article a { font-weight:bold; }
+
+.article h1,
+.article h2,
+.article h3,
+.article h4 { border-left:20px solid #fc9; clear:both; padding-left:10px; margin-bottom:10px;  font-family:"Times New Roman", "돋움", Constantia, Georgia, "휴먼편지체", "Pyunji R",  sans-serif, "Segoe Print"; color:#c96; background-color:rgba(255,200,150,0.2); }
+.article h1:hover,
+.article h2:hover,
+.article h3:hover,
+.article h4:hover { color:#fc9; }
+.article h1 { font-size:1.8em; letter-spacing:-4px; }
+.article h2 { font-size:1.6em; letter-spacing:-3px; }
+.article h3 { font-size:1.4em; letter-spacing:-2px; }
+.article h4 { font-size:1.2em; letter-spacing:-1px; }
+
+
+.tagTrail               		{ padding:0;}
+.tagText						{ }
+
+.actionTrail					{ clear:both;}
+.actionTrail .cnt			{ color:#09F;}
+
+.trackback						{ padding-top:2px; margin-bottom:4px; width:100%; overflow:hidden;}
+.trackback a					{ color:#666;}
+.trackback h3					{ font:12px Verdana; color:#09F;  margin:5px 0 5px 0;}
+.trackback h4					{ font:12px Verdana; font-weight:normal; margin:0; font-weight:bold;}
+.trackback ol					{ margin:0;  padding:0; list-style:none;}
+.trackback li					{ padding:5px 0 5px 0;}
+.trackback .date				{ font:9px Verdana; color:#999;}
+.trackback p					{ font:12px Verdana; color:#999; margin:3px 0 0 0; padding:0; letter-spacing: 0px;}
+.trackback a.delete span	{font:9px Verdana; color:#999;}
+
+.comment			{ background:url(images/small-border.gif) left top no-repeat; padding-top:30px; margin-bottom:4px; width:100%; overflow:hidden;} 
+.comment p		{ margin:3px 0 0 0; padding:0;}
+.comment h3		{ display:none;}
+.comment ol,
+.comment ul		{ margin:0;  padding:0; list-style:none;}
+.comment .date	{ font:9px Verdana; color:#999;}
+.comment .name{ font:12px verdana; font-weight:bold;}
+.comment ol li	{ padding:10px 0;}
+.comment li ul li	{ padding:5px 0 10px 40px; }
+
+.comment .control				{ font:9px Verdana; color:#999;}
+.comment .control a			{ color:#999;}
+.comment .control a:hover	{ color:#09F;}
+
+.commentWrite						{ margin-top:20px; font:9px verdana;}
+.commentWrite input				{ font:12px verdana; width:150px; color:#666; }
+.commentWrite textarea			{ font:12px verdana; width:98%; color:#666; padding:5px; top:5px; }
+.commentWrite .homepage		{ font:12px verdana; width:300px; }
+.commentWrite .submit			{ height:20px; width:150px; font:9px verdana; color:#fff; background-color:#999;}
+.commentWrite .checkbox		{ width:15px; border:none; padding:0; margin:0; }
+
+.paging					{ padding:10px 0;   text-align:left;  font:9px verdana;}
+.paging .numbox	{ border-left:1px solid #ccc; padding-left:6px; margin-left:6px;  font:9px verdana;}
+.paging .num			{ border-right:1px solid #ccc; padding-right:8px; margin-right:5px; font:9px verdana;}
+.paging a:visited		{ color:#999; text-decoration:none;}
+.paging a:hover		{ font-weight:bold; color:#09F;}
+
+
+
+/* ------------------------------------------------------------------- */
+/* ***** footer ***** */
+/* ------------------------------------------------------------------- */
+
+#footer          { text-align:left; font:9px Verdana; padding:10px 0 40px 0;}
+
+
+/* ------------------------------------------------------------------- */
+/* ***** etc ***** */
+/* ------------------------------------------------------------------- */
+
+#loading_div { position:fixed !important; position:absolute; bottom:0px; left:0; height:60px; width:60px; z-index:999; background:url(./images/loading.gif) no-repeat top right; opacity:0.8; filter:alpha(opacity=80); }
+
+.imageblock *			{ border:none !important;}
+.submit:hover { font-weight:bold; }
