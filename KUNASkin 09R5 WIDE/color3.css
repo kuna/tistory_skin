@@ -1,0 +1,24 @@
+/* color1 */
+
+::selection {
+	color:#fff;
+    background: #69b; /* Safari */
+}
+
+::-moz-selection {
+	color:#fff;
+    background: #69b; /* Firefox */
+}
+
+a:link		{ color:#69b; text-decoration:none; cursor:default;}
+a:visited	{ color:#69b; text-decoration:none; cursor:default;}
+a:hover		{ color:#69b; text-decoration:none; cursor:default;}
+a:active	{ color:#69b; text-decoration:none; cursor:default;}
+.rp_admin			{ color:#69b;}
+.rp_secret			{ color:#69b;}
+.guest_admin			{ color:#69b;}
+.guest_secret			{ color:#69b;}
+/*.t_left, .t_right { background:url(./images/cell_bg.jpg) repeat #cdf; }*/
+body { background:url(./images/bg_pattern.jpg) #c2e7df repeat-x ; }
+#container { background:url(./images/bg_miku.jpg) transparent top left no-repeat; }
+/*#content .inner { background:url(./images/bg2_entry.jpg) #cdf fixed no-repeat top center; }*/

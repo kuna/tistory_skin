@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin> 
+<information> 
+<name>KUNASkin 09R5</name> 
+<version>09R5</version>
+<description>
+<![CDATA[ 웹표준을 준수한 XHTML 기반의 Textcube 스킨입니다. 텍스트큐브 기본 스킨(dannaeyang님 作)을 참고로 제작하였습니다. ]]>
+</description>
+<license>
+<![CDATA[ 자신의 취향에 맞게 자유롭게 수정하여 사용하셔도 되나, 재배포는 삼가주시기 바랍니다. ]]>
+</license>
+</information> 
+<author> 
+<name>KUNA</name>
+<homepage>http://kuna.wo.tc</homepage>
+</author> 
+</skin>

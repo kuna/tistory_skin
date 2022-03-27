@@ -1,0 +1,798 @@
+<html>
+
+<!--
+
+    KUNASKIN 09R4 By kuna
+    Based on Briller-Kate, Xenoisum, Jasu, Firejune(Irregular 100c) skin
+    images/swfs/designed by KUNA. no copy or using or redistribute without Creator's Permission.
+
+    http://kuna.wo.tc
+    ver 0.01 [Alpha]
+
+-->
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=euc-kr">
+ <title>[##_title_##] :: [##_page_title_##]</title>
+ <link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<!-- prototype & Etc Library -->
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("prototype", "1.6");
+google.load("scriptaculous", "1.8.1");
+</script>
+
+<script src="http://nurey.com/js/corners.js"></script>
+
+<!-- BBCoder Js -->
+<script src="http://fs.textcube.com/blog/0/1892/skin/temp/images/bbcodeplus22.jpeg" type="text/javascript"></script>
+<!-- BBCoder Js -->
+
+<!-- LiteHighlighter -->
+<script src="http://cfs.tistory.com/custom/blog/26/260356/skin/images/liteHighlighter.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://cfs.tistory.com/custom/blog/26/260356/skin/images/liteHighlighter.css"/>
+<!-- LiteHighlighter -->
+
+<!-- jukebox ver 1.02 by kuna -->
+<script src="http://cfs.tistory.com/custom/blog/26/260356/skin/images/jukebox_102.js" type="text/javascript"></script>
+<!-- jukebox -->
+
+<!-- Google AJAX Feed API -->
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAoJOenCRBG89JlD4aoT7ofBS5EgrLDirRSGpa8Y6WmkjvlV8IlBShQDhLI13hLQ1S15Yu6S0zGbEDEQ"></script>
+
+<div id="top">
+<a href="[##_blog_link_##]owner" title="관리자">Owner</a>/<a href="[##_blog_link_##]owner/entry/post/" title="글쓰기">Write</a>/<a href="http://www.textcube.com/login" title="로그인">Login</a>/<a href="http://www.textcube.com/logout" title="로그아웃">Logout</a> | 
+	<a href="http://www.textcube.com/" title="텍스트큐브 홈" target=_blank><img src="./images/icon_textcube.gif"></a>
+</div>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="t_container">
+<tr>
+<td class="t_left" valign="top">
+<!-- Part of Sidebar -->
+<div class="sidebarCover">
+
+<!-- 메뉴 -->
+<div class="menu"><a class="m_entry" href="[##_blog_link_##]">Main</a> | <a class="m_entry" href="[##_blog_link_##]category">Entry</a> | <a class="m_profile" href="[##_blog_link_##]profile">Profile</a> | <a class="m_guestbook" href="[##_blog_link_##]guestbook">Guestbook</a> | <a class="m_tag" href="[##_blog_link_##]tag">Tag</a></div>
+
+      <!-- footer sidebar -->
+      <div id="s1" class="sidebar">
+        <s_sidebar>
+          
+          <s_sidebar_element>
+            <!-- 블로그 로고 상자 -->
+            <div class="profile widget">
+              <div class="blogImage"><img src="[##_image_##]" alt="블로그 이미지" /></div>
+              <div class="userID"><em>Author</em> : [##_blogger_##]</div>
+              <p class="blogDesc">[##_desc_##]</p></div>
+            </s_sidebar_element>
+          
+          <s_sidebar_element>
+            <!-- 글보관함 위젯 -->
+            <div class="archive widget">
+              <h5>Post box*</h5>
+              <div class="box">
+                <ul>
+                  <s_archive_rep>
+                    <li class="recentArchive">
+                      <a href="[##_archive_rep_link_##]" class="aHovr">[##_archive_rep_date_##]</a>
+                      <span class="cnt">([##_archive_rep_count_##])</span>
+                      </li>
+                    </s_archive_rep>
+                  </ul>
+                </div>
+              </div>
+            </s_sidebar_element>
+          
+          <s_sidebar_element>
+            <!-- 관심블로그 등록 -->
+            <div class="blogroll widget">
+              <h5>Blogroll*</h5>
+              <center><a href="http://kuna.wo.tc/owner/handler/neighbor/?target=1892" class="outerOwner aHovr aBold" onClick="addBlogrollPopup('1892'); return false;">관심블로그로 등록!</a></center>
+              </div>
+            </s_sidebar_element>
+          
+          <s_sidebar_element>
+            <!-- 검색 위젯 -->
+            <div class="search widget">
+              <h5>Search*</h5>
+              <s_search>
+                <input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]"><input class="input_img" type=image src="http://fs.textcube.com/blog/0/7589/skin/1/images/icon_search.gif" onClick='use();return false;' border=0 width=10px height=10px>
+                </s_search>
+              </div>
+            </s_sidebar_element>
+          
+          <s_sidebar_element>
+            <!-- 카운터 위젯 -->
+            <div class="counter widget">
+              <h5>Counter*</h5> 
+              <div class="box"> 
+                <dl class="total"> 
+                  <dt>Total</dt> 
+                  <dd>[##_count_total_##]</dd> 
+                  </dl> 
+                <dl class="today"> 
+                  <dt>Today</dt> 
+                  <dd>[##_count_today_##]</dd> 
+                  </dl> 
+                <dl class="yesterday"> 
+                  <dt>Yesterday</dt> 
+                  <dd>[##_count_yesterday_##]</dd> 
+                  </dl> 
+                </div> 
+              </div>
+            </s_sidebar_element>
+          
+          
+          </s_sidebar>
+        </div>
+      <!-- sidebar 1 -->
+      
+      
+      <div id="s2" class="sidebar">
+        <s_sidebar>
+          <s_sidebar_element>
+            <!-- 공지사항 위젯 -->
+            <div class="notice widget">
+              <h5>Notice*</h5>
+              <div class="box">
+                <ul>
+                  <s_rct_notice_rep>
+                    <li class="recentNotices"><a href="[##_notice_rep_link_##]" class="aHovr">[##_notice_rep_title_##]</a> </li>
+                    </s_rct_notice_rep>
+                  </ul>
+                </div>
+              </div>
+            </s_sidebar_element>
+          
+          <s_sidebar_element>
+            <!-- 카테고리 위젯 -->
+            <div class="category widget">
+              <h5>Category*</h5>
+              <div class="box">[##_category_##]</div>
+              </div>
+            </s_sidebar_element>
+          
+          </s_sidebar>
+        </div>
+      <!-- sidebar 2 -->
+      
+      <div id="s3" class="sidebar">
+        <s_sidebar>
+          
+          <s_sidebar_element>
+            <!-- 최근 글 위젯 -->
+            <div class="recentPost widget">
+              <h5>Recent Posts</h5>
+              <div class="box">
+                <ul id="recentEntries">
+                  <s_rctps_rep>
+                    <li class="recentEntries">
+                  	<a href="[##_rctps_rep_link_##]">
+                    <div class="hoverBlock">
+                      <div class="rCnt f_right"><span class="[##_rctps_rep_rp_cnt_##]">([##_rctps_rep_rp_cnt_##])</span></div>
+                      <span class="aHovr"> [##_rctps_rep_title_##]</span>
+                      </div>
+                      </a>
+                      </li>
+                    </s_rctps_rep>
+                  </ul>
+                </div>
+              </div>
+            </s_sidebar_element>
+          
+          <s_sidebar_element>
+            <!-- 최근 의견 위젯 -->
+            <div class="recentCommunication widget">
+              <h5>Recent Comment</h5>
+              <div class="box">
+                <ul>
+                  <s_rctrp_rep>
+                    <li class="recentComment">
+                  	<a href="[##_rctrp_rep_link_##]">
+                    <div class="hoverBlock">
+                      <div class="f_right"><span class="name">[##_rctrp_rep_name_##]</span></div>
+                      <span class="aHovr">[##_rctrp_rep_desc_##]</span>
+                    </div>
+                    </a>
+                    </li>
+                    </s_rctrp_rep>
+                  <s_rcttb_rep>
+                    <li class="recentTrackback">
+                 	 <a href="[##_rctrp_rep_link_##]">
+                     <div class="hoverBlock">
+                      <div class="f_right"><span class="name">[##_rcttb_rep_name_##]</span></div>
+                      <span class="aHovr">[##_rcttb_rep_desc_##]</span>
+                      </div>
+                      </a>
+                      </li>
+                    </s_rcttb_rep>
+                  
+                  </ul>
+                </div>
+              </div> 
+            </s_sidebar_element>
+          <s_sidebar_element>
+            <!-- 링크 위젯 -->
+            <div class="link widget">
+              <h5>Link*</h5>
+              <div class="box" style="">
+                <ul id="linkbox" class="linkbox">
+                  <s_link_rep>
+                    <li>
+                    <a class="neighbor" href="[##_link_url_##]" onClick="window.open(this.href); return false"><div class="hoverBlock">
+                    <!--<a href="javascript:refreshRSS2('[##_link_url_##]', '[##_link_site_##]');"><img src="./images/sRSS.gif"></a>&nbsp;-->
+                    [##_link_site_##]
+                    </div></a>
+                    </li>
+                    </s_link_rep>
+                  </ul> 
+                </div>
+              </div>
+            </s_sidebar_element>
+          
+          
+          <s_sidebar_element>
+            <!-- 달력 위젯 -->
+            <div class="calendar widget">
+              <h5>Calendar*</h5>
+              <div class="box">[##_calendar_##] </div>
+              <br>
+              </div>
+            </s_sidebar_element>
+          
+          
+          </s_sidebar>
+        </div>
+      <!-- sidebar 4 -->
+</div>
+</td>
+<td class="t_right" valign="top">
+<!-- Part of Content -->
+<div id="container">
+    <div id="content">
+      <s_list>
+        <div class="searchResult group"><div class="bodyMid"><span class="blackout">Search Results for '[##_list_conform_##]'</span>
+          <h2>[##_list_count_##] POSTS</h2>
+          <ol>
+            <s_list_rep>
+              <li>
+                <span class="date">[##_list_rep_regdate_##]</span>
+                <a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+                <span class="cnt cnt[##_list_rep_rp_cnt_##]">([##_list_rep_rp_cnt_##])</span>
+                </li>
+              </s_list_rep>
+            </ol>
+          </div>
+        </div>
+      </s_list>
+      
+      <s_article_rep>
+        <div class="entryPost entry group">
+          <div class="bodyMid">
+            <div class="titleWrap">
+              <span class="blackout"><a href="[##_article_rep_link_##]"><b>[##_article_rep_title_##]</b></a></span>
+            </div>
+            <div class="titleFollow">
+              …<span class="date"> Posted on [##_article_rep_date_##]</span><span class="name"></span> | <span class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></span>
+            </div>
+            
+            <div class="article">
+              [##_article_rep_desc_##]
+  <!-- MIXSH_START -->
+  <script type='text/javascript'>
+function tc_escape(str)
+{
+    return (str.substring(31, 35) + str.substring(36, 38) + str.substring(39, 41));
+}
+
+document.write("<scr"+"ipt type='text/javascript' src='http://www.mixsh.com/widget/mixup/loader.js?muid=47164&guid=http://"+document.domain+"/[##_article_rep_id_##]&rdate="+tc_escape('[##_article_rep_date_##]')+"&rawhtml=&skin=1&showhitcnt=1&platform=2'></scr"+"ipt>");
+</script>
+  <!-- MIXSH_END -->
+              <div class="clear"></div>
+            </div>
+            
+  <div class="CCL">
+  <span>&nbsp;</span>
+  </div>
+            
+            <s_tag_label>
+              <div class="tagTrail"><span>Tags </span> [##_tag_label_rep_##]</div>
+            </s_tag_label>
+            
+            <s_location_label>
+              <div class="localTrail"><span>Location Tags </span> [##_location_label_rep_##]</div>
+            </s_location_label>
+            
+            <div class="trackbackAdd">
+              [##_tb_address_##]
+            </div>
+            
+            <s_author_profile>
+              <div class="authorProfile">
+                <div class="image">[##_author_profile_image_##]</div>
+                <div class="box"></div>
+                <div class="infoWrap">
+                  <a href="[##_author_profile_bloglink_##]"><span class="title">[##_author_profile_blogtitle_##]</span></a>
+                  <span class="name">[##_author_profile_name_##]</span>
+                  <p>[##_author_profile_desc_##]</p>
+                </div>
+                <div class="gotolist"><a href="[##_author_profile_more_##]"><strong>[##_author_profile_name_##]</strong>님의 글 보기</a></div>
+              </div>
+              <div class="clear"></div>
+            </s_author_profile>
+            
+            <!-- Reply Part Start -->
+            <div class="communicationTrail">
+              <a href="[##_article_rep_rp_link_##]" onClick="[##_article_rep_rp_link_onclick_##]">
+                <s_rp_count>
+                  <span class="cnt">[##_article_rep_rp_cnt_##]&nbsp;&nbsp;Comments & Trackbacks</span>
+              </s_rp_count>
+              </a>
+            </div>
+            
+            <div class="replyContainer">
+            <s_rp>
+              <div class="communication">
+                <div class="communicationSend">
+                  <div class="commentWrite">
+                    <div class="tt-input-div">
+                      <s_rp_input_form />
+                    </div>
+                  </div>
+                </div>
+                <div class="communicationList">
+                  <s_rp_container>
+                    <ol>
+                      <s_rp_rep>
+                        <li id="[##_rp_rep_id_##]" class="commentList">
+                          <div class="[##_rp_rep_class_##]">
+                            <div class="image">[##_rp_rep_image_##]	</div>
+                            <div class="box">
+                              <span class="name">[##_rp_rep_name_##]</span>
+                              <span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+                              <span class="control">
+                                [##_rp_rep_action_##]
+                              </span>
+                              <p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                          <s_rp2_container>
+                            <ul>
+                              <s_rp2_rep>
+                                <li id="[##_rp2_rep_id_##]">
+                                  <div class="[##_rp2_rep_class_##]">
+                                    <div class="image">[##_rp2_rep_image_##]	</div>
+                                    <div class="box">
+                                      <span class="name">[##_rp2_rep_name_##]</span>
+                                      <span class="date"><a href="[##_rp2_rep_link_##]" class="address"> [##_rp2_rep_date_##]</a></span>
+                                      <span class="control">
+                                        [##_rp2_rep_action_##]
+                                      </span>
+                                      <p><span class="bbcode">[##_rp2_rep_desc_##]</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                </li>
+                              </s_rp2_rep>
+                            </ul>
+                          </s_rp2_container>
+                        </li>
+                      </s_rp_rep>
+                      <s_tbp_rep>
+                        <li id="[##_tbp_rep_id_##]" class="trackbackList">
+                          <div class="image">[##_tbp_rep_image_##]	</div>
+                          <div class="box">
+                            <h4><a href="[##_tbp_rep_url_##]" onClick="window.open(this.href); return false">[##_tbp_rep_title_##]</a></h4>
+                            <span class="from">Tracked from <span class="name">[##_tbp_rep_site_##]</span></span>
+                            <span class="date"><a href="[##_tbp_rep_link_##]" class="address">[##_tbp_rep_date_##]</a></span>
+                            <span class="control">
+                              [##_tbp_rep_action_##]
+                            </span>
+                            <p>[##_tbp_rep_desc_##]</p>
+                          </div>
+                          <div class="clear"></div>
+                        </li>
+                      </s_tbp_rep>
+                    </ol>
+                  </s_rp_container>
+                </div><!-- /communicationList -->
+                
+                <!-- /communication -->
+              </div><!-- /entry -->
+            </s_rp>
+            
+            </div>
+            <!-- reply Part End -->
+          </div>
+        </div>
+        
+        <!-- Google Adsense -->
+        <div class="adsense">
+  <script type="text/javascript"><!--
+google_ad_client = "pub-6281181548113583";
+/* 468x60, 작성됨 08. 12. 13 */
+google_ad_slot = "6821727189";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+  <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+        </div>
+        <!-- Google Adsense -->
+      </s_article_rep>
+      
+      <s_notice_rep>
+        <div class="entryNotice entry group">
+          <div class="bodyMid">
+            <div class="titleWrap">
+              <span class="blackout"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></span><br>
+              
+              <span class="category"><a href="[##_blog_link_##]notice">Notice</a></span>
+              <span class="date">Posted on [##_notice_rep_date_##]</span>
+            </div>
+            
+            <div class="article">
+              [##_notice_rep_desc_##]
+            </div>
+          </div>
+        </div>
+      </s_notice_rep>
+      
+      <s_profile>
+        <div class="profilePage noEntry group">
+          <div class="bodyMid">
+            <span class="blackout">Profile</span>
+            <div class="blogInformation">
+              <h4> 블로그 정보 <s_owner><a href="[##_profile_edit_link_##]" class="gotoModify btn"> <span>개인정보수정</span> </a></s_owner></h4>
+              <div class="box">
+                <div class="image"><img src="[##_profile_image_##]" alt="프로필 이미지" /></div>
+                <div class="info">
+                  <div class="name">[##_blogger_##]</div>
+                  <div class="sec01">
+                    <dl>
+                      <dt>개설일</dt>
+                      <dd> : [##_profile_created_##]</dd>
+                    </dl>
+                    <dl>
+                      <dt>총 글 수</dt>
+                      <dd> : [##_profile_posts_##]개</dd>
+                    </dl>
+                    <dl>
+                      <dt>총 의견 수</dt>
+                      <dd> : [##_profile_replys_##]개</dd>
+                    </dl>
+                    <dl>
+                      <dt>총 방명록 수</dt>
+                      <dd> : [##_profile_guests_##]개</dd>
+                    </dl>
+                    <div class="clear"></div>
+                  </div>
+                  
+                  <s_profile_blog>
+                    <div class="sec02">
+                      <s_profile_blog_own>
+                        <dl>
+                          <dt>운영중인 다른 블로그</dt>
+                          <dd>[##_profile_own_blog_##]</dd>
+                        </dl>
+                      </s_profile_blog_own>
+                      <s_profile_blog_team>
+                        <dl>
+                          <dt>참여중인 다른 블로그</dt>
+                          <dd>[##_profile_team_blog_##]</dd>
+                        </dl>
+                      </s_profile_blog_team>
+                    </div>
+                  </s_profile_blog>
+                  
+                  <s_profile_team>
+                    <dl class="sec03">
+                      <dt>팀원 목록</dt>
+                      <dd>[##_profile_team_member_##]</dd>
+                    </dl>
+                  </s_profile_team>
+                </div>
+              </div>
+            </div>
+            
+            <s_profile_matching>
+              <div class="matchingBoard">
+                <h4>매칭 전광판</h4>
+                <div class="matchInfo">[##_blogger_##]님([##_title_##])과 [##_user_##]님([##_user_title_##])의 매칭 정보입니다.</div>
+                <ul>
+                  <s_profile_matching_rep>
+                    <li>[##_profile_matching_item_##]</li>
+                  </s_profile_matching_rep>
+                </ul>
+              </div>
+            </s_profile_matching>
+            
+            
+            <div class="bestPost">
+              <h4>베스트 포스트</h4>
+              <ul>
+                <s_profile_bests>
+                  <li>
+                    <span class="date">[##_profile_best_date_##]</span>
+                    <a href="[##_profile_best_url_##]">[##_profile_best_title_##]</a>
+                  </li>
+                </s_profile_bests>
+              </ul>
+            </div>
+            
+            <div class="favBlog">
+              <h4>[##_blogger_##]님의 관심블로그 <s_owner><a href="[##_blogroll_edit_link_##]" class="gotoManager btn"><span>관리하기</span></a></s_owner></h4>
+              <s_profile_neighbor>
+                <div class="list">
+                  <div class="image"><a href="[##_profile_neighbor_url_##]/profile" onClick="window.open(this.href); return false;"><img src="[##_profile_neighbor_image_##]" alt="프로필 이미지" style="width:32px;height:32px" /></a></div>
+                  <div class="name"><a href="[##_profile_neighbor_url_##]" onClick="window.open(this.href); return false;">[##_profile_neighbor_name_##]</a></div>
+                  <div class="title"><a href="[##_profile_neighbor_url_##]" onClick="window.open(this.href); return false;">[##_profile_neighbor_title_##]</a></div>
+                </div>
+              </s_profile_neighbor>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </s_profile>
+      
+      
+      
+      <s_guest>
+        <div class="guestbook noEntry group">
+          <div class="bodyMid">
+            <a href="[##_guestbook_link_##]"><span class="blackout">Guest Book</span></a>
+            <div class="guestbookWrite">
+              <div class="tt-input-div">
+                <s_guest_input_form />
+                
+                
+              </div>
+            </div>
+            
+            <s_guest_container>
+              <div class="communicationList">
+                <ol>
+                  <s_guest_rep>
+                    <li id="[##_guest_rep_id_##]">
+                      <div class="[##_guest_rep_class_##]">
+                        <div class="image">[##_guest_rep_image_##]	</div>
+                        <div class="box">
+                          <span class="name">[##_guest_rep_name_##]</span>
+                          <span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+                          <span class="control">
+                            [##_guest_rep_action_##]
+                          </span>
+                          <p><span class="bbcode">[##_guest_rep_desc_##]</span></p>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                      <s_guest2_container>
+                        <ul>
+                          <s_guest2_rep>
+                            <li id="[##_guest2_rep_id_##]">
+                              <div class="[##_guest2_rep_class_##]">
+                                <div class="image">[##_guest2_rep_image_##]	</div>
+                                <div class="box">
+                                  <span class="name">[##_guest2_rep_name_##]</span>
+                                  <span class="date"> <a href="[##_guest2_rep_link_##]" class="address">[##_guest2_rep_date_##]</a></span>
+                                  <span class="control">
+                                    [##_guest2_rep_action_##]
+                                  </span>
+                                  <p><span class="bbcode">[##_guest2_rep_desc_##]</span></p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </li>
+                          </s_guest2_rep>
+                        </ul>
+                      </s_guest2_container>
+                    </li>
+                  </s_guest_rep>
+                </ol>
+              </div><!-- guestList close -->
+            </s_guest_container>
+            
+          </div><!-- guestbook close -->
+        </div>
+      </s_guest>
+      
+      <s_tag>
+        <div class="taglog noEntry group">
+          <div class="bodyMid">
+            <span class="blackout">Tag</span>
+            <ul>
+              <s_tag_rep>
+                <li>
+                  <a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a> · 
+                </li>
+              </s_tag_rep>
+            </ul>
+          </div>
+        </div>
+      </s_tag>
+      
+      <s_local>
+        <div class="localog noEntry group">
+          <div class="bodyMid">
+            <span class="blackout">Local Log</span>
+            <div>
+              <s_local_spot_rep>
+                <div class="spot" style="margin-left:0ex;">
+                  [##_local_spot_##]
+                </div>
+              </s_local_spot_rep>
+              <s_local_info_rep>
+                <div class="info" style="margin-left:0ex;">
+                  <a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
+                </div>
+              </s_local_info_rep>
+            </div>
+          </div>
+        </div>
+      </s_local>
+      
+      <s_paging>
+        <div class="paging">
+          <a [##_prev_page_##] class="[##_no_more_prev_##] prevPage">&#171;<span> Previous</span></a>
+          <span class="numbox divHovr divBold">
+            <s_paging_rep>
+              <a [##_paging_rep_link_##] class="num" style="margin:0 10px;"><span class="[##_paging_rep_current_##]">[##_paging_rep_link_num_##]</span></a>
+          </s_paging_rep>
+            <s_paging_interword>
+              <span class="interword">:</span>
+          </s_paging_interword>
+            <s_paging_interword2>
+              <span class="interword">:</span>
+          </s_paging_interword2>
+          </span>
+          <a [##_next_page_##] class="[##_no_more_next_##] nextPage"><span>Next</span></a>&#187;
+        </div>
+      </s_paging>
+      
+      <s_page_error>
+        <div class="pageError noEntry group">
+          <div id="page-error" class="bodyMid">
+            <span class="blackout">페이지를 찾을 수 없습니다.</span><br>
+            
+            검색 중인 페이지가 제거되었거나 이름이 변경되었거나 일시적으로 사용할 수 없습니다. <br>
+            
+            <h5>The page cannot be found.</h5>
+            The page you are looking for might have been removed,<br>
+            had its name changed, or is temporarily unavailable. 
+            
+            <div class="errorBack">
+              <a href="javascript:history.back(+1)">이전(Prev) 페이지로 이동하기</a>
+            </div>
+            <div class="errorHome">
+              <a href="[##_blog_link_##]">메인(Main) 페이지로 이동하기</a>
+            </div>
+            
+          </div>
+        </div>
+      </s_page_error>
+
+    <!-- /page_error -->
+    
+
+  <div class="clear"></div>
+  
+  
+  
+  
+  <!-- Warn :: foot is Inside in CONTAINER -->
+  <div id="footer">    
+  <div style="clear:both; padding:5px 50px;">
+    <div id="feedTitle" style="display:inline;"></div>
+    <a style="display:inline;" onClick="refreshRSS();">&nbsp;&nbsp;-&nbsp;&nbsp;[피드 새로고침]</a>
+  </div>
+    <div id="feed" style="margin:5px; padding:5px 10px; clear:both; background-color:#fff; border:1px solid #ccc">Loading...</div>
+    
+    <!-- footer sidebar -->
+    
+    <div class="clear"></div>
+    <div class="inner">
+      <div class="copyright">
+        <a href="[##_blog_link_##]" target="_blank">[##_blogger_##]</a> is powered by <a href="http://www.textcube.com" target="_blank">Textcube.com 2.0 Garnet.</a> Skin by <a href="http://kuna.wo.tc/">KUNA (for personal use)</a><a href="http://kate.textcube.com/107">.</a> no redistribute/using allowed without Author's permission. <b>Best on Firefox 3.0.5</b>
+        </div>
+      
+      </div></div>
+  <!-- /footer -->
+  <!-- footer END -->
+      </div>
+</div>
+</td>
+</tr>
+</table>
+
+
+
+<!-- feed API -->
+<script type="text/javascript">
+ 
+    google.load("feeds", "1");
+ 
+    function initialize( rssLink ) {
+      var feed = new google.feeds.Feed( rssLink );
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+	  var html = "";
+		  
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+			
+			var attributes = ["title", "link", /*"publishedDate", */"contentSnippet"];
+			
+			// title, link, publishedDate, contentSnippet를 이용하여 최근 포스팅 정보 뽑아오기
+			html += '<a href="' + entry['link'] + '" title="' + entry['publishedDate'] + '">' + entry['title'] + '</a>';
+			html += '<br/>' + entry['contentSnippet'] + '<br/><br/>';
+			/*
+			for (var j = 0; j < attributes.length; j++) {
+			var div = document.createElement("div");
+			alert(entry[attributes[j]]);
+			div.appendChild(document.createTextNode(entry[attributes[j]]));
+			container.appendChild(div);
+			}*/
+
+          }
+		  
+		  document.getElementById('feed').innerHTML = html;
+        } else {
+		  document.getElementById('feed').innerHTML = "RSS를 읽어오지 못했습니다";
+        }
+      });
+    }
+
+    var arr_rsslink = new Array();
+    var arr_blogtitle = new Array();
+
+    function refreshRSS()
+    {
+        // 주기적으로 RSS 리로드
+        var index = Math.floor(Math.random() * arr_rsslink.length);
+		document.getElementById('feedTitle').innerHTML = "<b>" + arr_blogtitle[index] + "</b>님의 블로그의 최근글 목록입니다.";
+        initialize(arr_rsslink[index]);
+    }
+	
+	function refreshRSS2( href, title )
+	{
+		document.getElementById('feedTitle').innerHTML = "<b>" + title + "</b>님의 블로그의 최근글 목록입니다.";
+        initialize(href + '/rss');
+	}
+
+    function initLinks()
+    {
+        var ulObj = document.getElementById('linkbox');
+        var aObjs = ulObj.getElementsByTagName('a');
+        for (i=0; i<aObjs.length; i++)
+        {
+            if (aObjs[i].className == "neighbor")
+            {
+                arr_rsslink.push(aObjs[i].href + "/rss");
+                arr_blogtitle.push(aObjs[i].innerHTML);
+            }
+        }
+
+        refreshRSS(); // 초기호출
+        setInterval("refreshRSS()", 20000);
+    }
+
+    google.setOnLoadCallback(initLinks);
+    </script>
+    
+    <script language="javascript">
+		// corner script
+		$$('div.bodyMid').each(function(el) {
+        new Effect.Corner(el, "10px");
+    	});
+	</script>
+
+</body>
+</html>

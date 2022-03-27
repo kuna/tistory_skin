@@ -1,0 +1,563 @@
+<html>
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=euc-kr">
+ <title>[##_title_##] :: [##_page_title_##]</title>
+ <link rel="stylesheet" href="./style.css">
+ 
+ 
+<!-- IE6 PNG Error -->
+<script language="javascript">
+function setPng24(obj) {
+obj.width=obj.height=1;
+obj.className=obj.className.replace(/\bpng24\b/i,''); 
+obj.style.filter =
+"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');"
+obj.src='about:blank;';
+return '';
+}
+</script>
+
+<!-- toggleSidebar -->
+<script language="javascript">
+function toggleSidebar(mode)
+{
+	var obj = $('sidebarCover');
+	if (mode != "")
+	{
+		if (mode == "none")
+		{
+			Effect.Fade(obj, { duration: 0.5 });
+		} else {
+			Effect.Appear(obj, { duration: 0.5 });
+		}
+		return;
+	}
+	
+	if (obj.style.display == "none") {
+		Effect.Appear(obj, { duration: 0.5 });
+	} else {
+		Effect.Fade(obj, { duration: 0.5 });
+	}
+}
+
+function notice()
+{
+	var obj = $('notice');
+	if (obj.style.display == "none") {
+		Effect.Appear(obj, { duration: 0.5 });
+	} else {
+		Effect.Fade(obj, { duration: 0.5 });
+	}
+}
+</script>
+
+<!-- prototype & Etc Library -->
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("prototype", "1.6");
+google.load("scriptaculous", "1.8.1");
+</script>
+<!-- BBCoder Js -->
+<script src="http://fs.textcube.com/blog/0/1892/skin/temp/images/bbcodeplus22.jpeg" type="text/javascript"></script>
+<!-- BBCoder Js -->
+
+<!-- LiteHighlighter -->
+<script src="http://cfs.tistory.com/custom/blog/26/260356/skin/images/liteHighlighter.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://cfs.tistory.com/custom/blog/26/260356/skin/images/liteHighlighter_tistory.css"/>
+<!-- LiteHighlighter -->
+
+<!-- jukebox ver 1.02 by kuna -->
+<script src="http://cfs.tistory.com/custom/blog/26/260356/skin/images/jukebox_102.js" type="text/javascript"></script>
+<!-- jukebox -->
+
+<!-- Google AJAX Feed API -->
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAoJOenCRBG89JlD4aoT7ofBS5EgrLDirRSGpa8Y6WmkjvlV8IlBShQDhLI13hLQ1S15Yu6S0zGbEDEQ"></script>
+ 
+</head>
+
+<body id="[##_body_id_##]">
+<s_t3>
+
+<div id="container"><div class="containerInner">
+  <div id="header"><div class="inner">
+<!-- 블로그 타이틀 -->
+    <!--<a href="[##_blog_link_##]"><h1>[##_title_##]</h1></a>-->
+    <center><a href="[##_blog_link_##]"><img src="./images/title.png" class="png24" border="0"></a>
+    </center>
+    
+    <div class="menuCover">
+        <div class="ownerMenu"><a href="http://kunadev.egloos.com">EGLOOS!</a> | <a href="http://kuna.wo.tc" title="본진">KUNA.WO.TC</a> | <a href="#" onMouseDown="toggleSidebar('');" onMouseOver="toggleSidebar('block');" title="사이드바">▼ SIDEBAR</a>
+        </div>
+        <div class="menu">
+        <a class="m_entry" href="[##_blog_link_##]category">ENTRY</a> | <a class="m_profile" href="[##_blog_link_##]profile">PROFILE</a> | <a class="m_guestbook" href="[##_blog_link_##]guestbook">GUESTBOOK</a> | <a class="m_tag" href="[##_blog_link_##]tag">TAG</a> | <a href="[##_owner_url_##]" title="관리자" class="admin">ADMIN</a> | <a href="[##_owner_url_##]/entry/post" title="글쓰기" class="write">WRITE</a>
+        </div>
+    </div>
+    
+  </div></div>
+<div class="clear"></div>
+<!-- /header -->
+
+<!-- sidebar -->
+<div class="sidebarCover" id="sidebarCover" style="display:none;">
+<div class="sidebar">
+    <s_sidebar>
+	<s_sidebar_element>
+	<!-- 검색 위젯 -->
+		<div class="search widget">
+		<s_search>
+<input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]"><input class="input_img" type=image src="http://fs.textcube.com/blog/0/7589/skin/1/images/icon_search.gif" onClick='use();return false;' border=0 width=10px height=10px><br><br>
+		</s_search>
+		</div>
+	</s_sidebar_element>
+</s_sidebar></div>
+<div class="sidebar"><s_sidebar>
+	<s_sidebar_element>
+	<!-- 공지사항 위젯 -->
+		<div class="notice widget">
+		<h5>Notice*</h5>
+		<ul class="box">
+		<s_rct_notice_rep>
+		<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+		</s_rct_notice_rep>
+		</ul>
+		</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- 카테고리 위젯 -->
+		<div class="category widget">
+		<h5>Category*</h5>
+		<div class="box">[##_category_##]</div>
+		</div>
+	</s_sidebar_element>
+</s_sidebar></div>
+<div class="sidebar"><s_sidebar>
+	<s_sidebar_element>
+	<!-- 최근 글 위젯 -->
+		<div class="recentPost widget">
+		<h5>Update*</h5>
+		<div class="box">
+		<ul id="recentEntries">
+		<s_rctps_rep>
+		<li>
+		<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]</a>
+		<span class="cnt cnt[##_rctps_rep_rp_cnt_##]">([##_rctps_rep_rp_cnt_##])</span>
+		</li>
+		</s_rctps_rep>
+		</ul>
+		</div>
+		</div>
+	</s_sidebar_element>
+</s_sidebar></div>
+<div class="sidebar"><s_sidebar>
+	<s_sidebar_element>
+	<!-- 최근 의견 위젯 -->
+		<div class="recentCommunication widget">
+		<h5>Comment*</h5>
+		<div class="box">
+		<ul>
+		<s_rctrp_rep>
+		<li class="recentComment">
+		<div class="info"><span class="date">[##_rctrp_rep_time_##]</span><span class="name"> [##_rctrp_rep_name_##]</span>		</div>
+		<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+</li>
+		</s_rctrp_rep>
+		<s_rcttb_rep>
+		<li class="recentTrackback">
+		<div class="info"><span class="date">[##_rcttb_rep_time_##]</span><span class="name"> _ [##_rcttb_rep_name_##]</span>		</div>
+		<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]</a>
+</li>
+		</s_rcttb_rep>
+		</ul>
+		</div>
+		</div> 
+	</s_sidebar_element>
+	<s_sidebar_element>
+	<!-- 글보관함 위젯 -->
+		<div class="archive widget">
+		<h5>Post box*</h5>
+		<div class="box">
+		<ul>
+		<s_archive_rep>
+		<li>
+		<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a>
+		<span class="cnt">([##_archive_rep_count_##])</span>
+		</li>
+		</s_archive_rep>
+		</ul>
+		</div>
+		</div>
+	</s_sidebar_element>
+</s_sidebar></div>
+</div>
+<div class="clear"></div>
+  <!-- /sidebar -->
+
+<div id="body" onMouseOver="toggleSidebar('none');"><div class="bodyInner">
+
+  <div id="content"><div class="inner">
+
+	<s_list>
+		<div class="searchResult group">
+		<h2>Search Results for '[##_list_conform_##]', [##_list_count_##] POSTS</h2>
+		<ol>
+	  <s_list_rep>
+		<li>
+		<span class="cnt cnt[##_list_rep_rp_cnt_##]">[##_list_rep_rp_cnt_##]</span>
+		<span class="date">[##_list_rep_regdate_##]</span>
+		<span class="title"><a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a></span>
+		</li>
+	  </s_list_rep>
+		</ol>
+		</div>
+	</s_list>
+
+	<s_article_rep>
+		<div class="entryPost entry group">
+		<div class="titleWrap">
+			<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+		</div>
+		<div class="titleFollow">
+			…<span class="date"> Posted on [##_article_rep_date_##]</span><span class="name"></span> | <span class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></span>
+		</div>
+	
+					<s_ad_div>
+						<div class="admin">					
+							<a href="[##_s_ad_m_link_##]">수정</a> : 
+							<a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a> | 	([##_s_ad_s1_label_##])→
+							<a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | 
+							<a href="#" onclick="[##_s_ad_t_onclick_##]">트랙백</a> | 
+							<a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> 
+						</div><!--//admin-->
+					</s_ad_div>
+		<div class="article">
+			[##_article_rep_desc_##]
+		<div class="clear"></div>
+
+<script type='text/javascript'>document.write("<scr"+"ipt type='text/javascript' src='http://www.mixsh.com/widget/mixup/loader.js?muid=47164&guid=http://"+document.domain+"/[##_article_rep_id_##]&rdate="+escape("[##_article_rep_date_##]")+"&rawhtml=&skin=1&showhitcnt=1&platform=1'></scr"+"ipt>");</script>
+
+		</div>
+
+<div class="CCL">
+<span>&nbsp;</span>
+</div>
+	
+	<s_tag_label>
+		<div class="tagTrail"><span>Tags</span> [##_tag_label_rep_##]</div>
+	</s_tag_label>
+	
+	<s_location_label>
+		<div class="localTrail"><span>Location Tags </span> [##_location_label_rep_##]</div>
+	</s_location_label>
+
+	<div class="trackbackAdd">
+    <!-- includes 덧글부분! -->
+	<a href="#rp" onClick="[##_article_rep_rp_link_##]">
+	<s_rp_count>
+	덧글 <span class="cnt">[##_article_rep_rp_cnt_##]</span>개!
+	</s_rp_count>
+    </a>
+    //
+    <a href="#tb" onClick="[##_article_rep_tb_link_##]">
+    <s_tb_count> 
+    관련글 <span class="cnt">[##_article_rep_tb_cnt_##]</span>개!
+    </s_tb_count>
+	</a>
+	</div>
+    
+    <!-- Google Adsense -->
+  	<div class="adsense">
+  <script type="text/javascript"><!--
+google_ad_client = "pub-6281181548113583";
+/* 468x60, 작성됨 08. 12. 13 */
+google_ad_slot = "6821727189";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+  <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+    <!-- Google Adsense -->
+    
+    				<s_tb>
+					<div class="trackback">
+						<h3> [##_tb_address_##]</h3>
+						<s_tb_container>
+							<ol>
+								<s_tb_rep>
+									<li id="[##_tb_rep_id_##]">
+										<a href="[##_tb_rep_url_##]" onClick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a>
+										<span class="from"> //
+											<span class="name">[##_tb_rep_site_##]</span>
+											[##_tb_rep_date_##]
+											<a href="#" onClick="[##_tb_rep_onclick_delete_##]; return false" title="삭제" class="del">[Delete]</a></span>
+										</span>
+									</li>
+								</s_tb_rep>
+							</ol>
+						</s_tb_container>
+					</div><!--//trackback-->
+				</s_tb>
+				
+				<s_rp>
+
+					<div class="communication">
+					
+						<div class="communicationList">
+							<s_rp_container>
+								<ol>
+									<s_rp_rep>
+										<li id="[##_rp_rep_id_##]" class="commentList">
+											<div class="[##_rp_rep_class_##]">
+												<div class="name">[##_rp_rep_name_##]</div>
+												<span class="date">
+													<a href="[##_rp_rep_link_##]">[##_rp_rep_date_##]</a>
+													<a href="#" onclick="[##_rp_rep_onclick_delete_##]">[Edit/Del]</a>
+													<a href="#" onclick="[##_rp_rep_onclick_reply_##]">[Reply]</a>
+												</span>
+												<div class="reply">[##_rp_rep_desc_##]</div>
+											</div>
+											<s_rp2_container>
+												<ul>
+													<s_rp2_rep>
+														<li id="[##_rp_rep_id_##]">
+															<div class="[##_rp_rep_class_##]">
+																<div class="name">[##_rp_rep_name_##]</div>
+																<span class="date">
+																	<a href="[##_rp_rep_link_##]">[##_rp_rep_date_##]</a>
+																	<a href="#" onclick="[##_rp_rep_onclick_delete_##]">[Edit/Del]</a>
+																</span>
+																<div class="reply">[##_rp_rep_desc_##]</div>
+															</div>
+														</li>
+													</s_rp2_rep>
+												</ul>
+											</s_rp2_container>
+										</li>
+									</s_rp_rep>
+								</ol>
+							</s_rp_container>
+						</div><!--//commentList-->
+									
+						<s_rp_input_form>
+							<div class="commentWrite">
+								<h3>댓글을 남겨주세요</h3>
+								<s_rp_member>
+									<s_rp_guest>
+										<p>
+											<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" class="input" onFocus="this.className='input_on'" onBlur="this.className='input'" title="이름" />
+											Name <span class="point">*</span>
+										</p>
+										<p>
+											<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="" class="input" onFocus="this.className='input_on'" onBlur="this.className='input'" title="비밀번호" />
+											Password <span class="point">*</span>
+										</p>
+										<p>
+											<input type="text" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]" class="input" onFocus="this.className='input_on'" onBlur="this.className='input'" title="링크" />
+											Link (Your Homepage or Blog)
+										</p>
+									</s_rp_guest>
+								</s_rp_member>
+								
+								<p>
+									<textarea name="[##_rp_input_comment_##]" rows="10" cols="50" class="textarea" onFocus="this.className='textarea_on'" onBlur="this.className='textarea'" title="댓글내용"></textarea>
+								</p>
+								<a onClick="[##_rp_onclick_submit_##]" class="submit">Comment</a>
+								
+								<p class="secretWrap"> 
+									<input type="checkbox" name="secret" class="checkbox" title="비밀글 체크" />
+									Secret
+								</p>
+								
+							</div><!--//commentWrite-->
+						</s_rp_input_form>
+				
+					</div><!--//comment-->
+				</s_rp>
+    
+    </div>
+	</s_article_rep>
+	
+	<s_notice_rep>
+	<div class="entryNotice entry group">
+		<div class="titleWrap">
+		<h2><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+		<span class="category"><a href="[##_blog_link_##]notice">Notice</a></span>
+		<span class="date">Posted on [##_notice_rep_date_##]</span>
+		</div>
+
+		<div class="article">
+		[##_notice_rep_desc_##]
+		</div>
+	</div>
+	</s_notice_rep>
+	
+		<s_guest>
+			<div class="comment">
+			<h3>GuestBook</h3>
+							
+				<s_guest_input_form>
+					<div class="commentWrite">
+						<s_guest_member>
+							<s_guest_form>
+								<p>
+									<input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" class="input" onfocus="this.className='input_on'" onblur="this.className='input'" title="이름" />
+									Name <span class="point">*</span>
+								</p>
+								<p>
+									<input type="password" maxlength="8" name="[##_guest_input_password_##]" value="" class="input" onfocus="this.className='input_on'" onblur="this.className='input'" title="비밀번호" />
+									Password <span class="point">*</span>
+								</p>
+								<p>
+									<input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" class="input" onfocus="this.className='input_on'" onblur="this.className='input'" title="링크" />
+									Link (Your Homepage or Blog)
+								</p>
+							</s_guest_form>
+						</s_guest_member>
+						
+						<p>
+							<textarea name="[##_guest_textarea_body_##]" rows="10" cols="50" class="textarea" onfocus="this.className='textarea_on'" onblur="this.className='textarea'" title="댓글내용"></textarea>
+						</p>
+						<a onclick="[##_guest_onclick_submit_##]" class="submit">Comment</a>
+						
+						<p class="secretWrap"> 
+							<input type="checkbox" name="secret" class="checkbox" title="비밀글 체크" />
+							<label for="secret">Secret </label>
+						</p>
+						
+					</div><!--//commentWrite-->
+				</s_guest_input_form>
+			
+				<div class="commentList">
+					<s_guest_container>
+						<ol>
+							<s_guest_rep>
+								<li id="[##_guest_rep_id_##]">
+									<div class="[##_guest_rep_class_##]">
+										<div class="name">[##_guest_rep_name_##]</div>
+										<span class="date">
+											[##_guest_rep_date_##]
+											<a href="#" onclick="[##_guest_rep_onclick_delete_##]">[Edit/Del]</a>
+											<a href="#" onclick="[##_guest_rep_onclick_reply_##]">[Reply]</a>
+										</span>
+										<div class="reply">[##_guest_rep_desc_##]</div>
+									</div>
+									<s_guest_reply_container>
+										<ul>
+											<s_guest_reply_rep>
+												<li id="[##_guest_rep_id_##]">
+													<div class="[##_guest_rep_class_##]">
+														<div class="name">[##_guest_rep_name_##]</div>
+														<span class="date">
+															[##_guest_rep_date_##]
+															<a href="#" onclick="[##_guest_rep_onclick_delete_##]">[Edit/Del]</a>
+														</span>
+														<div class="reply">[##_guest_rep_desc_##]</div>
+													</div>
+												</li>
+											</s_guest_reply_rep>
+										</ul>
+									</s_guest_reply_container>
+								</li>
+							</s_guest_rep>
+						</ol>
+					</s_guest_container>
+				</div><!--//commentList-->
+		
+			</div><!--//comment-->
+		</s_guest>
+	
+	<s_tag>
+	<div class="taglog noEntry group">
+	<h3>Tag</h3>
+	<ul>
+	<s_tag_rep>
+	<li>
+	<a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a> · 
+</li>
+	</s_tag_rep>
+	</ul>
+	</div>
+	</s_tag>
+	
+	<s_local>
+	<div class="localog noEntry group">
+	<h3>Local Log</h3>
+
+	<div>
+	<s_local_spot_rep>
+	<div class="spot" style="margin-left:0ex;">
+	[##_local_spot_##]
+	</div>
+	</s_local_spot_rep>
+	<s_local_info_rep>
+	<div class="info" style="margin-left:0ex;">
+	<a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
+	</div>
+	</s_local_info_rep>
+	</div>
+	</div>
+	</s_local>
+	
+	<s_paging>
+	<div class="paging">
+	<a [##_prev_page_##] class="[##_no_more_prev_##] prevPage">&#171;</a>
+	<span class="numbox">
+	<s_paging_rep>
+	<a [##_paging_rep_link_##] class="num"><span class="[##_paging_rep_current_##]">[##_paging_rep_link_num_##]</span></a>
+	</s_paging_rep>
+	<s_paging_interword>
+	<span class="interword">:</span>
+	</s_paging_interword>
+	<s_paging_interword2>
+	<span class="interword">:</span>
+	</s_paging_interword2>
+	</span>
+	<a [##_next_page_##] class="[##_no_more_next_##] nextPage">&#187;</a>
+	</div>
+	</s_paging>
+
+  </div></div>
+  <!-- /content --></div></div>
+  
+  </div> <!-- /containerInner -->
+  <div class="clear"></div>
+  
+  
+<div id="footer">
+<div class="inner" style="text-align:left;">
+
+<div class="link">
+<s_sidebar>
+	<s_sidebar_element>
+	<!-- 링크 위젯 -->
+		<div id="linkContainer">
+		<s_link_rep><a href="[##_link_url_##]">[##_link_site_##]</a> … </s_link_rep>
+		</div>
+	</s_sidebar_element>
+    
+    
+	<s_sidebar_element>
+	<!-- 카운터 위젯 -->
+    <div style="margin-top:10px; text-align:center;">
+    <span style="font-size:10px;">T<font color="#333">[##_count_total_##]</font> - T<font color="#333">[##_count_today_##]</font> - Y<font color="#333">[##_count_yesterday_##]</font></span>
+    </div>
+	</s_sidebar_element>
+</s_sidebar>
+</div>
+</div>
+
+<div class="inner">
+	<div class="copyright">
+	<a href="[##_blog_link_##]" target="_blank">[##_blogger_##]</a> is powered by <a href="http://www.textcube.com" target="_blank">Textcube.com 2.0 Garnet.</a></div>
+
+</div></div>
+<!-- /footer -->
+</div></div>
+</s_t3>
+</body>
+
+</html>

@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>[##_title_##] :: [##_page_title_##]</title>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+
+<!--
+KUNASkin 10R2 By kuna [Tistory Edition Converted]
+출처/저작권은 반드시 명시할 것.
+http://kuna.wo.tc
+-->
+</head>
+
+<body>
+<s_t3>
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="./images/style_ie.css" />
+<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if lt IE 7]>
+<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+  <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+  <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+    <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+    <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+      <div style='font-size: 13px; font-weight: bold; margin-top: 12px;'>구닥다리 웹브라우저를 사용하시는군요!</div>
+      <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>본 사이트를 원활하게 보실 수 있도록 웹브라우저를 업데이트 하세요.</div>
+    </div>
+    <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+    <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+    <div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
+    <div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+  </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="./images/style_ie6.css" />
+<![endif]-->
+
+<!-- skin init -->
+<script type="text/javascript">
+var postNum=0;
+function visualForce(num) {
+var obj = document.getElementById("pst"+num);
+if (obj == null) return;
+obj.className += " fs"; }
+</script>
+
+<!-- floating menu -->
+<div id="menu">
+<a class="m_sidebar" href="#base"></a>
+<a class="m_top" href="#"></a>
+<a class="m_entry" href="[##_blog_link_##]category"></a>
+<a class="m_profile" href="[##_blog_link_##]profile"></a>
+<a class="m_notice" href="[##_blog_link_##]notice"></a>
+<a class="m_guestbook" href="[##_blog_link_##]guestbook"></a>
+</div>
+
+<!-- container start -->
+<div id="wrapper">
+<table id="container" border="0" cellpadding="0" cellspacing="0"><tr>
+<td class="header">
+<div class="inner">
+<a href="[##_blog_link_##]"><span class="title">[##_title_##]</span></a>
+<p><span class="desc">[##_desc_##]</span></p>
+<br />
+<!--- end menu --->
+</div>
+<div class="transBtm"></div>
+</td></tr>
+
+
+<!--
+ARTICLE
+-->
+<s_article_rep>
+<script type="text/javascript">postNum++; document.write("<tr><td class='content' id='pst" + postNum + "'>");</script>
+
+<!-- alter 1 -->
+<table class="innerTb pb" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="left" valign="top">
+<div class="inner" style="margin-bottom:0px;">
+<div style="width:600px;"><!-- spacer --></div>
+<a href="[##_article_rep_link_##]"><h3>[##_article_rep_title_##]</h3></a>
+<div class="article">
+[##_article_rep_desc_##]
+</div>
+
+<a class="pMenu" id="ReplyLocation" href="#rp" onclick="[##_article_rep_rp_link_##]"><s_rp_count><b>[##_article_rep_rp_cnt_##]</b> Replies ... Make a Reply!</s_rp_count></a>
+<a class="pMenu" id="ReplyLocation" href="#tb" onclick="[##_article_rep_tb_link_##]"><s_tb_count><b>[##_article_rep_tb_cnt_##]</b> Trackbacks</s_tb_count></a>
+<script type="text/javascript">
+document.write('<a class="pMenu" href="#pst' + (postNum+1) + '">Go To Next Post</a>');
+</script>
+</div>
+</td><td class="right" valign="top">
+
+<!-- aside -->
+<script type="text/javascript">document.write("<div id='cnt" + postNum + "'></div>");</script>
+
+<h5>Author : [##_article_rep_author_##]</h5>
+<h5>Post Date : <a href="[##_article_rep_link_##]">[##_article_rep_date_##]</a></h5>
+<h5>Category : <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></h5>
+<h5>Tag : <s_tag_label>[##_tag_label_rep_##]</s_tag_label></h5>
+<br />
+<script type="text/javascript">document.write('<a href="#ReplyLocation"><h5>＊Go to Communication</h5></a><a href="#pst' + (postNum+1) + '"><h5>＊Go To Next Post</h5></a>');</script>
+<br />
+<h5><script type="text/javascript">document.write("<a class='vf' href='javascript:visualForce(" + postNum + ");'>포스트가 잘 보이지 않으시나요? 여기를 클릭하세요!<br>If this post is hard to see, click here.</a><br>");</script></h5>
+</td></tr>
+</table>
+<!-- alter 1 End -->
+<s_tb>
+<p class="tbAddress">Trackback Address :: [##_tb_address_##]</p>
+<div class="communication">
+<div class="communicationList">
+<ol>
+<s_tb_rep>
+<li id="[##_tb_rep_id_##]" class="trackbackList">
+<div class="box">
+<span class="date"><a href="[##_tb_rep_link_##]" class="address">[##_tb_rep_date_##]</a></span>
+<h4><a href="[##_tb_rep_url_##]" onClick="window.open(this.href); return false">[##_tb_rep_title_##]</a></h4>
+<span class="from">Tracked from <span class="name">[##_tb_rep_site_##]</span></span>
+<span class="control"><a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" class="delete">D</a></span>
+<p>[##_tb_rep_desc_##]</p>
+</div>
+<div class="clear"></div>
+</li>
+</s_tb_rep>
+</ol>
+</div><!-- /communicationList -->
+</div>
+</s_tb>
+<s_rp>
+<div class="cb">
+<div class="communication">
+<s_rp_input_form>
+<div class="communicationInput  tt-input-div">
+								<s_rp_member>
+									<s_rp_guest>
+										<p class="name head">
+											<label for="[##_rp_input_name_##]_[##_article_rep_id_##]">Name</label>
+											<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" id="[##_rp_input_name_##]_[##_article_rep_id_##]" class="text" />
+										</p>
+										<p class="password head">
+											<label for="[##_rp_input_password_##]_[##_article_rep_id_##]">Password</label>
+											<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="" id="[##_rp_input_password_##]_[##_article_rep_id_##]" class="text" />
+										</p>
+										<p class="homepage head">
+											<label for="[##_rp_input_homepage_##]_[##_article_rep_id_##]">Homepage</label>
+											<input type="text" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]" id="[##_rp_input_homepage_##]_[##_article_rep_id_##]" class="text" />
+										</p>
+									</s_rp_guest>
+								</s_rp_member>
+								<p class="writeWrap"><textarea name="[##_rp_input_comment_##]" rows="6" cols="50"></textarea></p>
+								<p class="secretWrap">
+									<input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]_[##_article_rep_id_##]" class="checkbox" />
+									<label for="[##_rp_input_is_secret_##]_[##_article_rep_id_##]">secret</label>
+								</p>
+								<p class="btn-write"><input type="image" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" class="submit" src="./images/btn_confirm.gif" /></p>
+</div>
+</s_rp_input_form>
+
+<div class="communicationList">
+<s_rp_container>
+<ol>
+<s_rp_rep>
+<li id="[##_rp_rep_id_##]" class="commentList">
+<div class="[##_rp_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_rp_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_rp_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+<a href="#" onclick="[##_rp_rep_onclick_reply_##]" title="이 댓글에 답글을 남깁니다.">R</a>
+</div>
+<span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+<span class="name">[##_rp_rep_name_##]</span>
+<p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<s_rp2_container>
+<ul>
+<s_rp2_rep>
+<li id="[##_rp_rep_id_##]">
+<div class="[##_rp_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_rp_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_rp_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+</div>
+<span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+<span class="name">[##_rp_rep_name_##]</span>
+<p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+</li>
+</s_rp2_rep>
+</ul>
+</s_rp2_container>
+</li>
+</s_rp_rep>
+</ol>
+</s_rp_container>
+</div><!-- /communicationList -->
+</div><!-- /communication -->
+</div>
+</s_rp>
+</td></tr>
+</s_article_rep>
+<!--
+ARTICLE
+-->
+
+
+<s_notice_rep>
+<tr><td class='content' id='pst1'>
+<!-- alter 1 -->
+<table class="innerTb" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="left" valign="top">
+<div class="inner" style="margin-bottom:0px;">
+<div style="width:600px;"><!-- spacer --></div>
+<a href="[##_notice_rep_link_##]"><h3>[##_notice_rep_title_##]</h3></a>
+<div class="article">
+[##_notice_rep_desc_##]
+</div>
+</div>
+
+</td><td class="right" valign="top">
+<!-- reply location 'n spacer +80px --><script type="text/javascript">document.write("<div id='cnt" + postNum + "'></div>");</script>
+<!-- rep Part -->
+<h5>Post Date : [##_notice_rep_date_##]</h5>
+<h5>Category : <a href="[##_blog_link_##]notice">공지</a></h5>
+<h5>[##_tb_address_##]</h5>
+<br />
+<script type="text/javascript">document.write('<a href="#ReplyLocation"><h5>Go to Communication</h5></a><a href="#pst' + (postNum+1) + '"><h5>Go To Next Post</h5></a>');</script>
+<br />
+<h5><script type="text/javascript">document.write("<a class='vf' href='javascript:visualForce(" + postNum + ");'>포스트가 잘 보이지 않으시나요? 여기를 클릭하세요!<br>If this post is hard to see, click here.</a><br>");</script></h5>
+<br />
+</td></tr>
+</table>
+</td></tr>
+</s_notice_rep>
+
+
+<!-- entry 'n search -->
+<s_list>
+<tr><td class='content' id='searchResult'>
+
+<table class="innerTb" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="left" valign="top">
+
+<div class="inner">
+<h3>[##_list_conform_##] - [##_list_count_##] Posts</h3>
+<ol class="searchResult">
+<s_list_rep>
+<li onclick="javascript:document.location.href='[##_list_rep_link_##]'"><span class="cnt">[##_list_rep_rp_cnt_##]</span><span class="date">[##_list_rep_regdate_##]</span><span class="title">[##_list_rep_title_##]</span></li>
+</s_list_rep>
+</ol>
+</div>
+
+</td><td class="right" valign="top">
+<!-- aside -->
+</td></tr></table>
+
+</td></tr>
+</s_list>
+
+
+<!-- guestbook -->
+<s_guest>
+<tr><td class="content" id="pst1">
+
+<table class="innerTb gb" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="left" valign="top">
+
+<div class="guestbook">
+
+				<s_guest_input_form>
+					<div class="guestbookWrite tt-input-div">
+						<s_guest_member>
+							<s_guest_form>
+								<p class="name head">
+									<label for="name">Name</label>
+									<input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" id="name" class="text" />
+								</p>
+								<p class="password head">
+									<label for="password">Password</label>
+									<input type="password" maxlength="8" name="[##_guest_input_password_##]" value="" id="password" class="text" />
+								</p>
+								<p class="homepage head">
+									<label for="homepage">Homepage</label>
+									<input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" class="text" />
+								</p>
+							</s_guest_form>
+						</s_guest_member>
+						<p class="writeWrap"><textarea name="[##_guest_textarea_body_##]" cols="50" rows="6"></textarea></p>
+							<p class="secretWrap">
+								<input type="checkbox" id="[##_guest_input_is_secret_##]" name="[##_guest_input_is_secret_##]" class="checkbox" value="1" />
+								<label for="[##_guest_input_is_secret_##]">secret</label>
+							</p>
+						<p class="btn-write"><input type="submit" value="안부 남기기" onclick="[##_guest_onclick_submit_##]" class="submit" /></p>
+					</div>
+						
+				</s_guest_input_form>
+
+<s_guest_container>
+<div class="communicationList">
+<ol>
+<s_guest_rep>
+<li id="[##_guest_rep_id_##]" class="commentList">
+<div class="[##_guest_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_guest_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_guest_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+<a href="#" onclick="[##_guest_rep_onclick_reply_##]" title="이 댓글에 답글을 남깁니다.">R</a>
+</div>
+<span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+<span class="name">[##_guest_rep_name_##]</span>
+<p><span class="bbcode">[##_guest_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<s_guest_reply_container>
+<ul>
+<s_guest_reply_rep>
+<li id="[##_guest_rep_id_##]">
+<div class="[##_guest_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_guest_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_guest_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+</div>
+<span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+<span class="name">[##_guest_rep_name_##]</span>
+<p><span class="bbcode">[##_guest_rep_desc_##]</span>
+</p>
+</div>
+<div class="clear"></div>
+</div>
+</li>
+</s_guest_reply_rep>
+</ul>
+</s_guest_reply_container>
+</li>
+</s_guest_rep>
+</ol>
+</div><!-- guestList close -->
+</s_guest_container>
+</div>
+
+</td><td class="right" valign="top">
+<!-- aside -->
+
+</td></tr></table>
+
+</td></tr>
+</s_guest>
+
+
+<tr><td class="bottom">
+<!-- paging -->
+<s_paging>
+<div class="paging">
+<a [##_prev_page_##] class="[##_no_more_prev_##] prevPage">&#171;</a>
+<span class="numbox">
+<s_paging_rep>
+<a [##_paging_rep_link_##] class="num"><span class="[##_paging_rep_current_##]">[##_paging_rep_link_num_##]</span></a>
+</s_paging_rep>
+<s_paging_interword>
+<span class="interword">:</span>
+</s_paging_interword>
+<s_paging_interword2>
+<span class="interword">:</span>
+</s_paging_interword2>
+</span>
+<a [##_next_page_##] class="[##_no_more_next_##] nextPage">&#187;</a>
+</div>
+</s_paging>
+
+<table class="innerTb" style="margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="left" valign="top">
+<div style="width:640px;"><!-- spacer --></div>
+<div id="base">
+<!-- 원래 사이드바 -->
+<div class="sidebar">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 공지사항 위젯 -->
+<div class="widget" id="w_notice">
+<h5>Notice*</h5>
+<ul class="box">
+<s_rct_notice_rep>
+<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+</s_rct_notice_rep>
+</ul>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 카테고리 위젯 -->
+<div class="widget" id="w_category">
+<h5>Category*</h5>
+<div class="box">[##_category_##]</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 글 위젯 -->
+<div class="widget" id="w_rp">
+<h5>Update*</h5>
+<div class="box">
+<ul>
+<s_rctps_rep>
+<li>
+<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]</a>
+<span class="cnt">([##_rctps_rep_rp_cnt_##])</span>
+</li>
+</s_rctps_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 의견 위젯 -->
+<div class="widget" id="w_rc">
+<h5>Recent Reply*</h5>
+<div class="box">
+<ul>
+<s_rctrp_rep>
+<li>
+<div class="info"><span class="date">[##_rctrp_rep_time_##]</span><span class="name"> [##_rctrp_rep_name_##]</span></div>
+<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+</li>
+</s_rctrp_rep>
+<s_rcttb_rep>
+<li>
+<div class="info"><span class="date">[##_rcttb_rep_time_##]</span><span class="name"> _ [##_rcttb_rep_name_##]</span>		</div>
+<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]</a>
+</li>
+</s_rcttb_rep>
+</ul>
+</div>
+</div> 
+</s_sidebar_element>
+</s_sidebar>
+</div>
+
+<!-- footer -->
+<span class="footer">KUNASkin 10R2 By <a href="http://kuna.wo.tc"><span class="ip">KUNA</span></a>. All Contents and Skins and other Creations are Freely Usable with Statementing Author. <span class="ip">No Editing and Redistribution Allowed without Author's Permission.</span><br />XHTML, JQuery And CSS1/2/3. Most Optimized in <a href="http://www.google.com/chrome"><span class="ip">Google Chrome</span></a> Browser. Also Recommends : <a href="http://www.mozilla.com/firefox"><span class="ip">Mozila Firefox</span></a> or <a href="http://www.opera.com/download/"><span class="ip">Opera</span></a> Browser.<br />This Blog is Optimized for resolution over <span class="ip">1368x768 or 800x600</span>. //</span>
+</div>
+</td><td class="right" valign="top">
+<div style="width:200px;"><!-- spacer --></div>
+
+<!-- 프로필/관심블로그 전용 사이드바 -->
+<div class="sidebar">
+<s_sidebar>
+
+<s_sidebar_element>
+<!-- 블로그 로고 상자 -->
+<div class="blogImage"><img src="[##_image_##]" alt="블로그 이미지" /></div>
+<div class="userID"><em>Author</em> : [##_blogger_##]</div>
+<p class="blogDesc">[##_desc_##]</p>
+</s_sidebar_element>
+
+<s_sidebar_element>
+<!-- 글보관함 위젯 -->
+<div class="widget" id="w_archive">
+<h5>Recent Posts*</h5>
+<div class="box">
+<ul>
+<s_archive_rep>
+<li>
+<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a>
+<span class="cnt">([##_archive_rep_count_##])</span>
+</li>
+</s_archive_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 링크 위젯 -->
+<div class="widget" id="w_link">
+<s_link_rep><a href="[##_link_url_##]">[##_link_site_##]</a> … </s_link_rep>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 스킨 전용 카운터 위젯 -->
+<div class="widget" id="w_counter">
+T<span class="value">[##_count_total_##]</span> - T<span class="value">[##_count_today_##]</span> - Y<span class="value">[##_count_yesterday_##]</span>
+</div>
+</s_sidebar_element>
+<s_sidebar_element><!-- 검색 위젯 (하단) -->
+<s_search>
+<div class="widget" id="w_search">
+<input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]">
+</div>
+</s_search>
+</s_sidebar_element>
+</s_sidebar>
+</div>
+</td></tr></table>
+</td></tr>
+
+
+<!-- end container -->
+</table>
+</div>
+
+
+</s_t3>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* CSS Document */
+body {
+	background-image: url(./images/1nb.jpg);
+	background-position: center top;
+}
+.cn { 
+	/*background-image: url(./images/11b.jpg);
+	background-position: center top;*/
+	background:transparent;
+}
+.themeClr {
+	color:#069;
+}
+
+
+a {
+	color: #333;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF9;
+}
+a:active {
+	text-decoration: none;
+}
+
+.titleWrap { padding:10px; border-left:10px solid #000; border-right:10px solid #000; margin:10px; }
+.titleWrap h2 { color:#000; }
+.titleWrap:hover h2 { color:#fff; text-decoration:none !important; }
+.titleWrap:hover a { text-decoration:underline; }
+
+/* google Adsense */
+.google_adsense { width:600px; height:250px; background:url(./images/ga_wait.jpg) no-repeat top center; margin:0 auto; }

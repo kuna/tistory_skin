@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+border: 2px solid #cccccc;
+padding: 5px;
+background-color: white;
+visibility: hidden;
+z-index: 100;
+filter:alpha(opacity=80); opacity:0.8;
+font-size:11px; line-height:1.3em;
+color:#333333;
+}
+
+#dhtmlpointer{
+position:absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}

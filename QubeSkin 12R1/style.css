@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+
+body		{ background: #fff; }
+.qube	{ width: 600px; height: 300px; display: block; margin: 100px auto; background: none; position: relative;}
+.qube div	{ position: absolute; }
+.qube .eye		{ width: 90px; height: 90px; top: 50px; 
+				border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; 
+				border: 2px solid #333; 
+				background: #bb2967}
+.qube .left		{ left: 85px; }				
+.qube .right		{ right: 85px; }
+.qube .pupil		{ width: 50px; height: 50px; left: 20px; top: 20px; 
+				border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;
+				background: #780026}				
+.qube .highlight	{ width: 25px; height: 25px; right: 15px; top: 15px; 
+				border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;
+				background: #fff}	
+
+.qube .mouth		{ width: 40px; height: 10px; bottom: 40px; margin: 0 173px;			
+				-moz-border-radius-bottomleft: 35px 20px;
+				-moz-border-radius-bottomright: 35px 20px;
+				-webkit-border-bottom-left-radius: 35px 20px;
+				-webkit-border-bottom-right-radius: 35px 20px;
+				border: 1px solid #333; border-bottom: 2px solid #333; border-top: none; }
+
+
+.menucover	{ display:block; position:absolute; }
+.menu		{ display:inline; background:#bb2967; font:bold 30px Arial, "Malgun Gothic"; letter-spacing:-2px; color:#fff; padding:5px 10px; cursor:default; }

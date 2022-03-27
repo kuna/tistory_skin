@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>iNove for Tistory</name>
+		<version>Ver 1.2</version>
+		<description>
+			<![CDATA[ 
+			워드프레스 인기 스킨인 iNove 스킨을 티스토리용으로 변환했습니다.
+			]]>
+		</description>
+		<license>
+			<![CDATA[수정은 자유롭게 가능하나 수정 후 재배포는 알려주신 후 배포해주세요.]]>
+		</license>
+	</information>
+	<author>
+		<name>헨리</name>
+		<homepage>http://flutemuse.net</homepage>
+		<email>flutemuse@gmail.com</email>
+	</author> 
+	<default>
+		<recentEntries>8</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>40</tagsInCloud>
+		<sortInCloud>5</sortInCloud>
+		<expandComment>1</expandComment>
+		<expandTrackback>0</expandTrackback>
+		<lengthOfRecentNotice>40</lengthOfRecentNotice>
+		<lengthOfRecentEntry>40</lengthOfRecentEntry>
+		<lengthOfRecentComment>40</lengthOfRecentComment>
+		<lengthOfRecentTrackback>34</lengthOfRecentTrackback>
+		<lengthOfLink>80</lengthOfLink>
+		<commentMessage>
+			<none>코멘트</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>트랙백</none>
+			<single>1</single>
+		</trackbackMessage>
+		<tree>
+			<color>000000</color>
+			<bgColor>ffffff</bgColor>
+			<activeColor>000000</activeColor>
+			<activeBgColor>ffffff</activeBgColor>
+			<labelLength>30</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>605</contentWidth>
+	</default>
+</skin>

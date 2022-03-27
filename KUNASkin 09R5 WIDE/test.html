@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>무제 문서</title>
+
+<!-- prototype & Etc Library -->
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("prototype", "1.6");
+google.load("scriptaculous", "1.8.1");
+</script>
+
+
+<script type="text/javascript" src="./titletooltip.js"></script>
+
+<style type="text/css">
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+border: 2px solid #cccccc;
+padding: 5px;
+background-color: white;
+visibility: hidden;
+z-index: 100;
+filter:alpha(opacity=80); opacity:0.8;
+font-size:11px; line-height:1.3em;
+color:#333333;
+}
+
+#dhtmlpointer{
+position:absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}
+</style>
+
+</head>
+
+<body>
+<p><a title="타이틀입니다">테스트</a></p>
+<p>                       <a title="매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우매우 긴 타이틀입니다">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;테스트</a>
+  
+<script type="text/javascript">
+TObj.Initalize();
+TObj.hangEvent(document);
+</script>
+</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <information>
+    <name>Simple Gradation Skin</name>
+    <version>1.0</version>
+    <description>
+      <![CDATA[ 웹표준을 준수한 XHTML 기반의  텍스트큐브 스킨입니다.
+            시맨틱한 웹을 유지하기 위해 디자인 부분을 style.css 파일에 독립시켜 적용하였으며
+            자유롭게 디자인을 수정하실 수 있습니다.
+            블로그 사이드바 사이즈 220px, 컨텐츠의 가로 사이즈 750px에 최적화되어 있습니다.
+      ]]>
+    </description>
+    <license>
+      <![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+    </license>
+  </information>
+  <author>
+    <name>Yaluka</name>
+    <homepage>http://yaluka.textcube.com</homepage>
+    <email>skdml6954@gmail.com</email>
+  </author>
+  <default>
+    <recentEntries>10</recentEntries>
+    <recentComments>10</recentComments>
+    <recentNotices>3</recentNotices>
+    <lengthOfRecentNotice>28</lengthOfRecentNotice>
+    <lengthOfRecentEntry>26</lengthOfRecentEntry>
+    <lengthOfRecentComment>28</lengthOfRecentComment>
+    <lengthOfLink>28</lengthOfLink>
+    <tagsInCloud>30</tagsInCloud>
+    <sortInCloud>3</sortInCloud>
+    <itemsOnEntry>5</itemsOnEntry>
+    <itemsOnList>5</itemsOnList>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <expandComment>0</expandComment>
+    <showListOnCategory>2</showListOnCategory>
+    <showListOnArchive>2</showListOnArchive>
+    <showListOnTag>2</showListOnTag>
+    <showListOnSearch>2</showListOnSearch>
+    <showListOnAuthor>2</showListOnAuthor>
+    <tree>
+      <color>666666</color>
+      <bgColor>FFFFFF</bgColor>
+      <activeColor>333333</activeColor>
+      <activeBgColor>FFFFFF</activeBgColor>
+      <labelLength>20</labelLength>
+      <showValue>1</showValue>
+    </tree>
+    <contentWidth>750</contentWidth>
+    <defaultImageWidth>750</defaultImageWidth>
+  </default>
+</skin>

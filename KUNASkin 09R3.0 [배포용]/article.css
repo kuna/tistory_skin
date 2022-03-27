@@ -1,0 +1,208 @@
+﻿/* part of Article & comments */
+
+
+/* entry */
+.titleWrap 		{
+	color:#000;
+	border-bottom:0px dashed #ddd;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	padding-top:10px;
+	padding-left:17px;
+	background-position:0px 0px;
+}
+.titleWrap h2 		{ color:#000;}
+.titleWrap h2 a		{ color:#000;}
+.titleWrap .category a	{ color:#999;}
+.titleWrap .date 	{ color:#999;}
+.titleWrap .name 	{ color:#999;}
+
+.titleFollow {	font-family: Gulim, Verdana, Tahoma, Dotum, sans-serif;
+		font-size: 0.9em;
+		margin:0px 0px 0px 6px;
+		padding:0px 0px 10px 0px;
+	    }
+
+.tagTrail {
+	border: 1px solid #F7F7F7;
+	margin:10px 0px 10px 0px;
+	padding:5px 0px 5px 10px;
+	font-family: Gulim, Verdana, Tahoma, Dotum, sans-serif;
+	font-size: 0.9em;
+	}
+.tagTrail a 	{ color:#999;}
+
+.localTrail {
+	border: 1px solid #F7F7F7;
+	margin:10px 0px 10px 0px;
+	padding:5px 0px 5px 10px;
+	font-family: Gulim, Verdana, Tahoma, Dotum, sans-serif;
+	font-size:0.9em;
+	}
+.localTrail a 	{ color:#999;}
+
+.trackbackAdd {
+	border: 1px solid #F7F7F7;
+	margin:10px 0px 10px 0px;
+	padding:5px 0px 5px 10px;
+	font-family: Verdana, Tahoma, Gulim, Dotum, sans-serif;
+	font-size: 0.9em;
+	}
+
+.authorProfile 		{
+	clear:both;
+	overflow:hidden;
+	padding:15px;
+	margin-bottom:10px;
+	border:1px solid #eee;
+}
+.authorProfile .image 	{ float:left;  margin-right:10px; border:0; width:48px; height:48px; background:url(images/noImage.gif) no-repeat; }
+.authorProfile .image img 	{ border:0px solid #666;}
+.authorProfile .box		{ margin-left:60px;}
+.authorProfile p 		{ color:#999; line-height:1.2em;}
+.authorProfile .title 		{ font-weight:bold; }
+.authorProfile .name 		{ color:#999; }
+.authorProfile .gotolist 	{ font-size:0.9em; margin-top:5px; text-align:right; letter-spacing:-0.1em;}
+.authorProfile .gotolist a	{ color:#999; text-decoration:underline;}
+
+.communicationTrail		{
+	font-size:1em;
+	clear:both;
+	border-top:1px dashed #cccccc;
+	padding-top:5px;
+	text-align:right;
+	background-position:445px 4px;
+}
+.communicationTrail	 .cnt	{ font-weight:bold; }	
+
+.communication 				{ padding:10px 0;}
+.communicationList			{ padding-top:20px;}
+.communicationList ol 			{ list-style:none;}
+.communicationList li 			{ list-style:none; padding:10px; border-bottom:1px solid #ddd; }
+.communicationList li ul li 		{ padding:10px;  border:none;}
+/* hover style */
+.communicationList li:hover 			{ padding:9px 9px 10px 9px; border:1px solid #666; background:#f0f0f0; }
+.communicationList li ul li:hover 		{ padding:9px; border:1px solid #666; background:#e0e0e0; }
+
+.communicationList li .control,
+.communicationList li ul li .control { display:none; }
+.communicationList li:hover .control,
+.communicationList li ul li:hover .control { display:inline; }
+
+.communicationList .box  		{ float:left; width:530px; }
+.communicationList li ul li .box	{ background:url(images/icon_re.gif) 0 4px no-repeat; padding-left:30px; width:504px;}
+.communicationList .image 		{ float:left; margin-right:10px; border:1px solid #CECECE; padding:1px;}
+
+.communicationList .name a		{ color:#666; font-weight:bold; margin-right:5px; }
+.communicationList .date a		{ color:#999;}
+.communicationList .control a 		{ padding:0 5px;}
+.communicationList .reply,
+.communicationList .modify,
+.communicationList .delete,
+.communicationList .confirm 		{ background-color:transparent; font:0.9em Gumlim; color:#999; border-left:1px solid #ddd;}
+.communicationList .commentList p	{ line-height:1.4em; color:#666; padding-top:5px;}
+.communicationList .trackbackList p	{ line-height:1.2em; color:#999; padding-top:5px;}
+.communicationList .trackbackList h4 	{ font-size:1em;}
+.communicationList .trackbackList .from { font-family:verdana;}
+
+.communicationSend			{
+	border:1px solid #ffffff;
+	padding:20px 20px 5px 0px;
+	margin-top:5px;
+}
+
+/*  Է  *******************************/
+.tt-input-div 			{
+}
+.tt-input-div dl		{ padding-left:20px; padding-bottom:6px;}
+.tt-input-div dt		{ float:left; width:70px; padding-top:2px;}
+.tt-input-div .tt-inputText 	{ width:300px;}
+.tt-input-div textarea		{ width:450px; height:80px; overflow:visible;}
+.tt-input-div .btnComment	{ width:100px; color:#888; padding:5px 3px; border:1px solid #666; background-color:#fff;  font-family:Gulim;}
+.tt-input-div .option dt,
+.tt-input-div .btn dt 		{ visibility:hidden;}
+
+/* blogDefault <s_rp_input_form> overwrite */
+.commentWrite .tt-input-div .tt-input-btn-comment { width: 150px; height: 20px; margin-left: 0px; color: #666;  padding: 5px 3px;  border: 0px solid #666; background:url(images/btn_submit.gif) no-repeat top left;  background-color: #fff; }
+.commentWrite .tt-input-div .tt-input-btn-comment span { display:none; }
+
+.tt-input-forbid 		{ padding:0 10px 10px 10px; text-align:center; }
+.tt-input-forbid span 		{ background:url(images/icon_not.gif) 0 0 no-repeat; padding-left:18px;}
+
+/* Article Basic Style */
+.article     		{
+	font-size:12px;
+	font-family:Gulim, "굴림";
+	line-height:2em;
+	color:#666;
+	padding-bottom:20px;
+	margin-left:10px;
+	margin-right:10px;
+	letter-spacing: -1px;
+}
+
+.article a:link		{ color:#555; border-bottom: #555 1px dotted; text-decoration:none;}
+.article a:visited 	{ color:#555; border-bottom: #555 1px dotted; text-decoration:none;}
+.article A:hover 	{ color:#555; border-bottom: #555 1px dotted; text-decoration:none; background: #EEE;}
+.article a:active 	{ color:#555; text-decoration:none;}
+
+
+.article blockquote     { background:url(images/blockquote.gif) top left no-repeat;  padding-left:25px;  margin:10px 20px;}
+.article li             { margin-left:25px;}
+/*
+.article h1             { font-size : 1.5em;}
+.article h2             { font-size : 1.4em;}
+.article h3             { font-size : 1.3em; margin-top:30px; border:none !important;}
+.article h4             { font-size : 1.2em;}
+.article h5             { font-size : 1.1em; }
+.article h6             { font-size : 1em;}
+*/
+
+.article h1, .article h2, .article h3, .article h4, .article h5, .article h6 { letter-spacing:-3px; color:#666; }
+.article h1 { font-size: 36px; border-bottom: 3px solid #eee; }
+.article h2 { font-size: 30px; border-bottom: 2px solid #eee; }
+.article h3 { font-size: 22px; border-bottom: 1px solid #ddd; }
+.article h4 { font-size: 18px; }
+.article h5 { font-size: 15px; letter-spacing:-1px; }
+.article h6 { font-size: 13px; letter-spacing:-1px; }
+
+.article dl	        { padding:10px;}
+.article dt             { }
+.article dd             { margin-left:20px;  padding-bottom:10px;}
+.article table 	 	{ border-collapse:separate!important;}
+.article hr  	 	{ border:1px solid; margin:10px 0;}
+
+
+
+/* ####### 본문 이미지 블럭 ####### */
+.article .imageblock img {
+	cursor:url(http://home.megapass.net/~doapax/highslide/graphics/zoomin.cur), pointer !important;
+	padding: 2px;
+	background-color: #f6f6f6;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin: 5px 0;
+}
+.article .imageblock img:hover {
+	background-color: #212121;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.article .imageblock a,
+.article .imageblock a:hover {
+	background: none;
+	border: none;
+}
+.article .cap1 { text-align:center; }
+
+/* ####### 여러개 그림 테이블 ####### */
+.article .imageblock td {
+	border: none;
+	padding: 0;
+}
+.article .dual,
+.article .triple { margin-bottom: 5px; }
+
+
+.CCL { background:url(images/ccl.gif) top right no-repeat;
+	padding:10px 0 0 10px;}

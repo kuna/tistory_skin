@@ -1,0 +1,158 @@
+﻿/* part of TC, Tag/Guestbook/me2day/profilePage, etc */
+
+
+
+
+/*
+Part 1 :: Custom TC
+*/
+
+/*.tt-default-sidebar-profile-blogroll    { display: none; } 		/* 프로필에서 블로그롤 제거 */
+
+/* (사이드바) 블로그롤과 프로필 제거 (custom) */
+#tt-default-sidebar-profile,
+#tt-default-sidebar-following { display:none; }
+
+.tt-input-login-required   		{ padding:10px; text-align:center;}
+.tt-input-login-required p 		{ padding-bottom:5px;}
+.tt-input-login-required a 		{ background:url(images/btn_login.gif) 0 0 no-repeat; width:81px; height:21px; overflow:hidden; display:block; margin:0 auto;}
+.tt-input-login-required a span { display:none;}
+
+/* Ų GNB Ÿ */
+#tt-GNB a 		{ color:#000;}
+#tt-GNB .name		{ color:#000;}
+#tt-GNB li 		{ border-right-color:#666;}
+#tt-GNB .user img 		{ border-color:#ffffff;}
+#tt-GNB .user .btnLogout  	{  }
+
+/*αι ߱*/
+
+#tt-GNB { display:none; }
+
+/* Ʈ  ޴ */
+.tt-ad-div       		{ padding:8px 0; color:#999; text-align:right;}
+.tt-ad-div a			{ color:#999 !important;}
+.tt-ad-div form,
+.tt-ad-div form div	{ display:inline;}
+.tt-ad-div input 		{ vertical-align:middle; margin-right:3px;}
+.tt-ad-div button 		{ vertical-align:middle; color:#999; background-color:transparent; font-size:1em;}
+
+
+/* Ʈ ּ */
+.tt-trackback-div 		{ border-bottom:0px solid #ddd;}
+.tt-trackback-div .tt-trackback-address { font-family: verdana;}
+
+.tt-trackback-forbid 		{  border-bottom:0px solid #ddd; text-align:center; }
+.tt-trackback-forbid span	{ background:url(images/icon_not.gif) 0 0 no-repeat; padding-left:18px;}
+
+
+
+
+/* ***** me2day Part **************************************** */
+.me2day_daily_digest ul { margin-left:0; list-style:none; font-size:1em;}
+.me2day_daily_digest li { list-style:none; border-bottom:1px dashed #ddd; padding:5px 0 5px 40px; margin:5px 0; no-repeat; line-height:1.4em;}
+.me2day_daily_digest .me2_tags { font-size:0.8em; color:#999;}
+.me2day_daily_digest .datetime a{ font-size:0.8em; color:#999; display:block;}
+.show_content_layer { font-size:0.8em; background-color:#f2f2f2; padding:10px;}
+
+/* Related Post */
+.relatedPost {margin-top:30px; clear:both;}
+.relatedPost h3 { font-size:1em; color:#999; margin:0!important; padding:0 0 0 15px!important;}
+.relatedPost ol { list-style:none;}
+.relatedPost li { padding:0 5px 0 13px; margin:0 !important; }
+.relatedPost a  { color:#999 !important;}
+.relatedPost a:hover { color:#666 !important; border-bottom:1px dashed #ddd; text-decoration:none !important;}
+
+
+/* noEntry - profile */
+.profilePage h4 { font-size:1.1em; margin:5px 0; background:url(images/icon_info.gif) 6px 3px no-repeat; padding-left:20px;}
+.profilePage ul { list-style:none;}
+.profilePage li { background:url(images/icon_dot_2.gif) 5px 5px no-repeat;  border-bottom:1px dashed #eee; padding:3px 0 0 15px;}
+.profilePage  a.btn 	{ width:0; height:0; overflow:hidden; margin-left:0px; vertical-align:middle;}
+.profilePage .blogInformation a.gotoModify	{ background:url(images/btn_edit.gif) 0 1px no-repeat; padding:18px 0 0 70px;  position:absolute; margin-top:0; }
+.profilePage .favBlog a.gotoManager 		{ background:url(images/btn_edit.gif) 0 1px no-repeat; padding:18px 0 0 51px; position:absolute; margin-top:-1px; }
+.profilePage .image { float:left; margin-right:10px; border:3px solid #ddd; padding:1px; background-color:#fff;}
+
+.profilePage .blogInformation { padding-bottom:10px; }
+.profilePage .blogInformation dd { padding-left:10px; color:#666;}
+.profilePage .blogInformation .box { background-color:#FFF; border:0px solid #ddd; padding:10px;  overflow:hidden; }
+.profilePage .blogInformation .info { margin-left:55px; }
+.profilePage .blogInformation .name { color:#333; font-weight:bold; background:url(images/icon_dot_5.gif) 10px 0px no-repeat; padding:0 5px 0 20px;}
+.profilePage .blogInformation .sec01 {
+	margin-top:5px;
+	margin-left:10px;
+	width: 495px;
+}
+.profilePage .blogInformation .sec01 dl {
+	float:left;
+	background-color:#fff;
+	border:0px solid #eee;
+	padding:0px 5px 0px 10px;
+	margin:0 3px 0px 0;
+	width: 30%;
+}
+.profilePage .blogInformation .sec01 dt { float:left; margin-right:5px;}
+.profilePage .blogInformation .sec02 dl { padding:5px 0 5px 3px;}
+.profilePage .blogInformation .sec02 dt { background:url(images/icon_dot_2.gif) 4px 3px no-repeat; padding-left:15px;}
+.profilePage .blogInformation .sec03 dt { background:url(images/icon_dot_2.gif) 4px 3px no-repeat; padding-left:15px;}
+
+.profilePage .matchingBoard { padding-bottom:20px; clear:both;}
+
+.profilePage .bestPost {  padding-bottom:20px;}
+.profilePage .bestPost .date { padding-right:10px;}
+
+.profilePage .favBlog .list  { float:left; width:277px; overflow:hidden; margin:5px 5px 0 5px; background-color:#ffffff; border:1px solid #ddd;  padding:5px;}
+.profilePage .favBlog .name a { color:#333; }
+.profilePage .favBlog .title a { color:#999;}
+.profilePage .favBlog .name { margin:10px 0 0; white-space:nowrap; overflow:hidden; width:200px;}
+.profilePage .favBlog .title { margin:3px 0 0; white-space:nowrap; overflow:hidden; width:200px;}
+
+
+/* noEntry - guestbook */
+.guestbookWrite { background-color:#f8f8f8; border:0px solid #ddd; padding:10px; margin:5px 0 10px 0;}
+.guestbookWrite .tt-input-btn-comment { width: 150px; height: 20px; margin-left: 308px; color: #666;  padding: 5px 3px;  border: 0px solid #666; background:url(images/btn_submit.gif) no-repeat top left;  background-color: #fff; }
+.guestbookWrite .tt-input-btn-comment span { display:none; }
+
+/* noEntry - errorpage */
+#page-error {
+	font:0.9em Verdana, Tahoma, Gumlim;
+	color:#777;
+	text-align:left;
+	background:url(images/icon_f.jpg) 0px 5px no-repeat;
+	margin-left:25px;
+	padding:10px 50px 15px 20px!important;
+	line-height:1.6em;
+}
+.errorBack { font:0.9em Verdana, Tahoma, Gumlim; color:#777; background:url(images/icon_turn.gif) 0px 0px no-repeat; margin:10px 0px 5px 45px; padding-left:15px; }
+.errorHome { font:0.9em Verdana, Tahoma, Gumlim; color:#777; background:url(images/icon_home.gif) 0px 0px no-repeat; margin-left:45px; padding-left:15px;}
+
+/* noEntry - Localog */
+.localog .spot 		{ background:url(images/icon_dot_2.gif) 9px 4px no-repeat; padding:3px 0 3px 17px; color:#999;}
+.localog .info 		{ background:url(images/icon_dot_5.gif) 9px 1px no-repeat; padding-left:19px; padding-up:5px; padding-bottom:5px; border-bottom:1px solid #eee;}
+
+/* noEntry - Taglog */
+.taglog			{ line-height:2em;}
+.taglog ul		{ text-align:justify; }
+.taglog li 		{ display:inline; }
+.taglog li .cloud1	{ color:#000000; font-size:1em;}
+.taglog li .cloud2	{ color:#353535; font-size:1em;}
+.taglog li .cloud3	{ color:#656565; font-size:1em;}
+.taglog li .cloud4	{ color:#898989; font-size:1em;}
+.taglog li .cloud5	{ color:#AAAAAA; font-size:1em;}
+
+
+/* paging */
+.paging 			{
+	text-align:center;
+	clear:both;
+	font:12px Verdana, Tahoma, Gulim, Dotum, sans-serif;
+	letter-spacing:-1px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+.paging .numbox 		{ border-right:1px solid #ddd; margin-right:5px; font-family:Tahoma;}
+.paging .selected 		{ font-weight:bold; color:#ffffff}
+.paging .prevPage		{ left 2px no-repeat; padding-left:10px; margin-right:5px;}
+.paging .nextPage		{ right 2px no-repeat; padding-right:10px; margin-left:5px; }
+
+.tt-paging-current { color:#fff; }

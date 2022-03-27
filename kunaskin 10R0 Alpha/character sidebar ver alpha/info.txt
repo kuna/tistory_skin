@@ -1,0 +1,47 @@
+by kuna-http://kuna.wo.tc
+티스토리,텍스트큐브 등 어느 블로그에나 적용 가능합니다 - 단, 적용 방법을 알고 있어야만 함.
+
+1. 필수 태그
+
+<!-- jsSidebar Area -->
+<div id="jsSidebar">
+<!-- menu part ... EDIT PART -->
+<div id="jsMenuCover">
+<a class="jsMenu m_entry" id="m_entry" href="[##_blog_link_##]category"></a>
+<a class="jsMenu m_guest" id="m_guest"  href="[##_blog_link_##]guestbook"></a>
+<!--<a class="jsMenu m_menu" href="javascript:jm.showPostmenu();"></a>-->
+<a class="jsMenu m_category" id="m_category"></a>
+<a class="jsMenu m_rp" id="m_rp"></a>
+<a class="jsMenu m_rc" id="m_rc"></a>
+<a class="jsMenu m_links" id="m_links"></a>
+<a class="jsMenu m_profile" id="m_profile"></a>
+<!--<a class="jsMenu m_neighbor" id="m_neighbor"></a>-->
+<a class="jsMenu m_creation" id="m_creation" href="http://kuna.wo.tc/category/%EC%B0%BD%EC%9E%91%20%ED%99%9C%EB%8F%99"></a>
+
+<s_sidebar><s_sidebar_element><!-- 검색 위젯 (하단) -->
+<s_search><div id="w_search">
+<input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]">
+</div></s_search>
+</s_sidebar_element></s_sidebar>
+</div>
+<!-- menu part end -->
+
+<!-- char Part -->
+<div id="js_charCover" style="display:none;">
+<a href="javascript:jm.hideChar();"><img id="js_Char" class="png24" /></a>
+</div>
+<!-- char Part end -->
+
+<!-- message Part -->
+<div id="js_msgCover">
+<div id="js_msgTop"><a href="javascript:jm.showPostmenu();" class="jm_menu"></a><a href="javascript:jm.hideChar();" class="jm_close"></a></div>
+<div id="js_msgBody"><code id="js_Message">로딩중입니다. 잠시만 기다려 주세요...</code></div>
+<div id="js_msgBtm"></div></div>
+<!-- message Part end -->
+</div>
+<!-- jsSidebar Area End -->
+
+
+
+2. 나머지는?
+ > jsSidebar.gif (혹은 .js) 파일의 Init 함수에 보면 Bind 작업을 합니다. 참고하시면 되겠어요 :p

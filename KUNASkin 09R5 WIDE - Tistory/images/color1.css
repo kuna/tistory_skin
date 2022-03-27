@@ -1,0 +1,11 @@
+/* color1 */
+a:link		{ color:#696; text-decoration:none; cursor:default;}
+a:visited	{ color:#696; text-decoration:none; cursor:default;}
+a:hover		{ color:#666; text-decoration:none; cursor:default;}
+a:active	{ color:#696; text-decoration:none; cursor:default;}
+.rp_admin			{ color:#696;}
+.rp_secret			{ color:#696;}
+.guest_admin			{ color:#696;}
+.guest_secret			{ color:#696;}
+.t_left, .t_right { background-color:#ded; }
+.t_center { background:url(./images/bg1.jpg) no-repeat top center; }

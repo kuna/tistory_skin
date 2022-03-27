@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(./images/4n.jpg);
+	background-position: top right;
+	background-attachment: fixed;	
+	background-repeat: no-repeat;
+	background-color: #fdfffd;
+}
+.cn { 
+	background-image: url(./images/4b.jpg);
+	background-position: 0 0;
+	background-attachment: fixed;	
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+.themeClr {
+	color:#069;
+}
+
+
+a {
+	color: #333;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF9;
+}
+a:active {
+	text-decoration: none;
+}
+
+.titleWrap { padding:10px; border-left:10px solid #000; border-right:10px solid #000; margin:10px; }
+.titleWrap h2 { color:#000; }
+.titleWrap:hover h2 { color:#fff; text-decoration:none !important; }
+.titleWrap:hover a { text-decoration:underline; }

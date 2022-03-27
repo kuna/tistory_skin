@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin> 
+<information> 
+<name>KUNA's BLOGSKIN - ver 09R2</name> 
+<version>1.0</version>
+<description>
+<![CDATA[ KUNA's BLOGSKIN - ver 09R2 ]]>
+</description>
+<license>
+<![CDATA[ Briller Kate 스킨, Firejune님 스킨, jasu님 스킨, xenoisum님 스킨, whiteBoard v20 스킨 등을 모토로 참고하여 제작하였습니다. 개인용 스킨이며 최대한 확장성을 고려하였지만 그렇지 않은 부분도 많이 있으니, 다음 마이그레이션 스킨이 나오기 전까지는 배포될 예정은 없습니다. 도용/사용/(재)배포를 금지합니다. ]]>
+</license>
+</information> 
+<author> 
+<name>KUNA</name>
+<homepage>http://kuna.wo.tc</homepage>
+</author> 
+</skin>

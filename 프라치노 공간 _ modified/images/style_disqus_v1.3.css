@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.act-disqus {
+	display: block !important
+}
+
+#disqus,
+#disqus_thread {
+	overflow: hidden;
+}
+
+#disqus {
+	visibility: hidden;
+	height: 0
+}
+
+#wrap.open-disqus #disqus {
+	visibility: visible !important;
+	height: auto !important;
+	margin-top: 6px;
+}
+
+#disqus_thread {
+	position: relative;
+	min-height: 102px !important;
+	padding: 14px;
+	background-color: #efefef;
+	border-radius: 6px
+}
+
+html.dark #disqus_thread {
+	background-color: #444
+}
+
+@media all and (min-width: 760px) and (max-width: 800px) {
+	
+	/* 활동하기 */
+	
+	#act a span {
+		display: none
+	}
+	
+}
+
+@media all and (max-width: 759px) {
+	
+	/* DISQUS */
+	
+	#guestbook-entry {
+		padding-bottom: 2px !important
+	}
+	
+	#wrap.open-disqus #disqus {
+		margin: 2px 2px 0
+	}
+	
+	#disqus_thread {
+		padding: 12px 16px
+	}
+
+}
+
+@media all and (max-width: 479px) {
+	
+	/* 활동하기 */
+	
+	#act a span {
+		display: none
+	}
+	
+}
+
+@media all and (max-width: 359px) {
+	#disqus_thread {
+		padding: 12px
+	}
+}

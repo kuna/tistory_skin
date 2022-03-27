@@ -1,0 +1,1 @@
+var protectStyle=document.createElement("link");protectStyle.rel="stylesheet";protectStyle.type="text/css";protectStyle.href=rootURI+"style_protect_v1.1.css";head.appendChild(protectStyle);var changeProtectTitle=protectTitle+" [보호 모드] - "+blogTitle;document.title=changeProtectTitle;

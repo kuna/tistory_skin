@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>KUNA's Blogskin 10R1</title>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="http://fs.textcube.com/blog/0/1892/skin/1/style_ie6.css" />
+<![endif]-->
+
+<!-- skin init -->
+<script type="text/javascript">
+var postNum=1;
+function visualForce(num) {
+var obj = document.getElementById("pst"+num);
+if (obj == null) return;
+obj.className += " fs"; }
+</script>
+
+<!-- JSSidebar part -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://fs.textcube.com/blog/0/1892/skin/1/images/spc_jsSidebar.gif"></script>
+<script type="text/javascript" src="http://www.protofunc.com/scripts/jquery/backgroundPosition/jquery.backgroundPosition.js"></script>
+<!-- JSSidebar part end -->
+
+<!-- jsSidebar Area -->
+<div id="jsSidebar">
+<!-- menu part ... EDIT PART -->
+<div id="jsMenuCover">
+<div id="jsMenuItem">
+<a href="[##_blog_link_##]category">ENTRY</a>
+<a href="[##_blog_link_##]guestbook">GUEST</a>
+<a href="http://kuna.wo.tc/category/%EC%B0%BD%EC%9E%91%20%ED%99%9C%EB%8F%99">CREATION</a>
+<div class="line"></div>
+<a href="javascript:jm.showPostmenu();">POSTMENU</a>
+<a href="#ReplyLocation" onclick="moveRight();">REPLY</a>
+<a href="#sidebar" onclick="moveLeft();">SIDEBAR</a>
+<a href="#" onclick="moveLeft();">TOP</a>
+</div>
+<s_sidebar><s_sidebar_element><!-- 검색 위젯 (하단) -->
+<s_search><div id="w_search">
+<input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]">
+</div></s_search>
+</s_sidebar_element></s_sidebar>
+</div>
+<!-- menu part end -->
+<!-- message Part -->
+<div id="js_msgCover">
+<div id="js_msgTop"><a href="javascript:jm.showPostmenu();" class="jm_menu"></a><a href="javascript:jm.hideChar();" class="jm_close"></a></div>
+<div id="js_msgBody"><code id="js_Message">로딩중입니다. 잠시만 기다려 주세요...</code></div>
+<div id="js_msgBtm"></div></div>
+<!-- message Part end -->
+</div>
+<!-- char Part -->
+<div id="js_charCover" style="display:none;">
+<a href="javascript:jm.hideChar();"><img id="js_Char" class="png24" src="./images/bg_t_right.png" /></a>
+</div>
+<!-- char Part end -->
+<!-- jsSidebar Area End -->
+
+<!-- container start -->
+<table id="container" border="0" cellpadding="0" cellspacing="0"><tr>
+<td class="header">
+<div class="inner">
+<!-- <span class="title">[#_title_#]</span> -->
+<a href="[##_blog_link_##]"><span class="title">[##_title_##]</span></a>
+<p><span class="desc">[##_desc_##]</span></p>
+<br />
+</div>
+<div class="transBtm"></div>
+</td></tr>
+
+
+<!--
+ARTICLE
+-->
+<s_article_rep>
+<script type="text/javascript">postNum++; document.write("<tr><td id='pst" + postNum + "' class='content'>");</script>
+<!-- alter 1 -->
+<table class="innerTb">
+<tr><td class="left" valign="top">
+<div style="width:640px;"><!-- spacer --></div>
+<a href="[##_article_rep_link_##]"><h3>[##_article_rep_title_##]</h3></a>
+<div class="article">
+[##_article_rep_desc_##]
+</div>
+
+<a class="pMenu" id="ReplyLocation" href="[##_article_rep_rp_link_##]" onClick="[##_article_rep_rp_link_onclick_##]"><h5><s_rp_count><b>[##_article_rep_rp_cnt_##]</b> Replies ... Make a Reply!</s_rp_count></h5></a>
+
+<s_rp>
+<div class="communication">
+<div class="communicationInput">
+    <s_rp_input_form />
+</div>
+<div class="communicationList">
+<s_rp_container>
+<ol>
+<s_rp_rep>
+<li id="[##_rp_rep_id_##]" class="commentList">
+<div class="[##_rp_rep_class_##]">
+<div class="image">[##_rp_rep_image_##]	</div>
+<div class="box">
+<span class="control">
+[##_rp_rep_action_##]
+</span>
+<span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+<span class="name">[##_rp_rep_name_##]</span>
+<p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<s_rp2_container>
+<ul>
+<s_rp2_rep>
+<li id="[##_rp2_rep_id_##]">
+<div class="[##_rp2_rep_class_##]">
+<div class="image">[##_rp2_rep_image_##]	</div>
+<div class="box">
+<span class="control">
+[##_rp2_rep_action_##]
+</span>
+<span class="date"><a href="[##_rp2_rep_link_##]" class="address"> [##_rp2_rep_date_##]</a></span>
+<span class="name">[##_rp2_rep_name_##]</span>
+<p><span class="bbcode">[##_rp2_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+</li>
+</s_rp2_rep>
+</ul>
+</s_rp2_container>
+</li>
+</s_rp_rep>
+<s_tbp_rep>
+<li id="[##_tbp_rep_id_##]" class="trackbackList">
+<div class="image">[##_tbp_rep_image_##]	</div>
+<div class="box">
+<span class="date"><a href="[##_tbp_rep_link_##]" class="address">[##_tbp_rep_date_##]</a></span>
+<h4><a href="[##_tbp_rep_url_##]" onClick="window.open(this.href); return false">[##_tbp_rep_title_##]</a></h4>
+<span class="from">Tracked from <span class="name">[##_tbp_rep_site_##]</span></span>
+<span class="control">
+[##_tbp_rep_action_##]
+</span>
+<p>[##_tbp_rep_desc_##]</p>
+</div>
+<div class="clear"></div>
+</li>
+</s_tbp_rep>
+</ol>
+</s_rp_container>
+</div><!-- /communicationList -->
+</div><!-- /communication -->
+</s_rp>
+
+<script type="text/javascript">
+document.write('<a class="pMenu" href="#pst' + (postNum+1) + '"><h5>Go To Next Post</h5></a>');
+</script>
+</td><td class="right" valign="top">
+<!-- reply location 'n spacer +80px --><script type="text/javascript">document.write("<div style='width:300px;' id='cnt" + postNum + "'></div>");</script>
+<!-- rep Part -->
+<h5><script type="text/javascript">document.write("<a class='vf' href='javascript:visualForce(" + postNum + ");'>포스트가 잘 보이지 않으시나요? 여기를 클릭하세요!<br>If this post is hard to see, click here.</a><br><br>");</script></h5>
+<h5>Post Date : <a href="[##_article_rep_link_##]">[##_article_rep_date_##]</a></h5>
+<h5>Category : <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></h5>
+<h5>Author : [##_article_rep_author_##]</h5>
+<h5>[##_tb_address_##]</h5>
+<br />
+<script type="text/javascript">document.write('<a href="#ReplyLocation"><h5>Go to Communication</h5></a><a href="#pst' + (postNum+1) + '"><h5>Go To Next Post</h5></a>');</script>
+</td></tr>
+</table>
+<!-- alter 1 End -->
+<div class="transBtm"></div>
+</td></tr>
+</s_article_rep>
+<!--
+ARTICLE
+-->
+
+
+<s_notice_rep>
+<script type="text/javascript">postNum++; document.write("<tr><td id='pst" + postNum + "' class='content'>");</script>
+<!-- alter 1 -->
+<table class="innerTb">
+<tr><td class="left" valign="top">
+<div style="width:640px;"><!-- spacer --></div>
+<a href="[##_notice_rep_link_##]"><h3>[##_notice_rep_title_##]</h3></a>
+<div class="article">
+[##_notice_rep_desc_##]
+</div>
+
+</td><td class="right" valign="top">
+<!-- reply location 'n spacer +80px --><script type="text/javascript">document.write("<div style='width:300px;' id='cnt" + postNum + "'></div>");</script>
+<!-- rep Part -->
+<h5><script type="text/javascript">document.write("<a class='vf' href='javascript:visualForce(" + postNum + ");'>포스트가 잘 보이지 않으시나요? 여기를 클릭하세요!<br>If this post is hard to see, click here.</a><br><br>");</script></h5>
+<h5>Post Date : [##_notice_rep_date_##]</h5>
+<h5>Category : <a href="[##_blog_link_##]notice">공지</a></h5>
+<h5>Author : [##_article_rep_author_##]</h5>
+<h5>[##_tb_address_##]</h5>
+<br />
+<script type="text/javascript">document.write('<a href="#ReplyLocation"><h5>Go to Communication</h5></a><a href="#pst' + (postNum+1) + '"><h5>Go To Next Post</h5></a>');</script>
+</td></tr>
+</table>
+</td></tr>
+</s_notice_rep>
+
+
+<!-- entry 'n search -->
+<s_list>
+<tr><td class="content">
+<div class="transTop"></div>
+<div class="inner">
+<h3>[##_list_conform_##] - [##_list_count_##] Posts</h3>
+<ol class="searchResult">
+<s_list_rep>
+<li>
+<span class="cnt cnt[##_list_rep_rp_cnt_##]">[##_list_rep_rp_cnt_##]</span>
+<span class="date">[##_list_rep_regdate_##]</span>
+<span class="title"><a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a></span>
+</li>
+</s_list_rep>
+</ol>
+</div>
+<div class="transBtm"></div>
+</td></tr>
+</s_list>
+
+
+<!-- guestbook -->
+<s_guest>
+<tr><td class="content">
+<div class="transTop"></div>
+<div class="inner">
+<div class="guestbook">
+<h3>This is Guestbooooooook!</h3>
+<h4>Leave your mento freely :D</h4>
+<div class="guestbookWrite">
+<s_guest_input_form />
+</div>
+
+<s_guest_container>
+<div class="communicationList">
+<ol>
+<s_guest_rep>
+<li id="[##_guest_rep_id_##]" class="commentList">
+<div class="[##_guest_rep_class_##]">
+<div class="image">[##_guest_rep_image_##]	</div>
+<div class="box">
+<span class="control">
+[##_guest_rep_action_##]
+</span>
+<span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+<span class="name">[##_guest_rep_name_##]</span>
+<p><span class="bbcode">[##_guest_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<s_guest2_container>
+<ul>
+<s_guest2_rep>
+<li id="[##_guest2_rep_id_##]">
+<div class="[##_guest2_rep_class_##]">
+<div class="image">[##_guest2_rep_image_##]	</div>
+<div class="box">
+<span class="control">
+[##_guest2_rep_action_##]
+</span>
+<span class="date"> <a href="[##_guest2_rep_link_##]" class="address">[##_guest2_rep_date_##]</a></span>
+<span class="name">[##_guest2_rep_name_##]</span>
+<p><span class="bbcode">[##_guest2_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+</li>
+</s_guest2_rep>
+</ul>
+</s_guest2_container>
+</li>
+</s_guest_rep>
+</ol>
+</div><!-- guestList close -->
+</s_guest_container>
+</div>
+</div><!-- inner close -->
+<div class="transBtm"></div>
+</td></tr>
+</s_guest>
+
+
+<!-- page not found -->
+<s_page_error>
+<tr><td class="content">
+<div class="transTop"></div>
+<div class="inner">
+<h4>페이지를 찾을 수 없습니다.</h4>
+검색 중인 페이지가 제거되었거나 이름이 변경되었거나 일시적으로 사용할 수 없습니다. <br />
+<br>
+
+<h4>The page cannot be found.</h4>
+The page you are looking for might have been removed,<br>
+had its name changed, or is temporarily unavailable. <br>
+<br />
+<a href="javascript:history.back(+1)">이전(Prev) 페이지로 이동하기</a><br />
+<a href="[##_blog_link_##]">메인(Main) 페이지로 이동하기</a>
+</div>
+<div class="transBtm"></div>
+</td></tr>
+</s_page_error>
+
+
+<tr><td class="bottom">
+<div class="transTop"></div>
+
+<!-- paging -->
+<s_paging>
+<div class="paging">
+<a [##_prev_page_##] class="[##_no_more_prev_##] prevPage">&#171;</a>
+<span class="numbox">
+<s_paging_rep>
+<a [##_paging_rep_link_##] class="num"><span class="[##_paging_rep_current_##]">[##_paging_rep_link_num_##]</span></a>
+</s_paging_rep>
+<s_paging_interword>
+<span class="interword">:</span>
+</s_paging_interword>
+<s_paging_interword2>
+<span class="interword">:</span>
+</s_paging_interword2>
+</span>
+<a [##_next_page_##] class="[##_no_more_next_##] nextPage">&#187;</a>
+</div>
+</s_paging>
+
+<table class="innerTb">
+<tr><td class="left" valign="top">
+<!-- 원래 사이드바 -->
+<div class="sidebar">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 공지사항 위젯 -->
+<div class="widget" id="w_notice">
+<h5>Notice*</h5>
+<ul class="box">
+<s_rct_notice_rep>
+<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+</s_rct_notice_rep>
+</ul>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 카테고리 위젯 -->
+<div class="widget" id="w_category">
+<h5>Category*</h5>
+<div class="box">[##_category_##]</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 글 위젯 -->
+<div class="widget" id="w_rp">
+<h5>Update*</h5>
+<div class="box">
+<ul>
+<s_rctps_rep>
+<li>
+<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]</a>
+<span class="cnt cnt[##_rctps_rep_rp_cnt_##]">([##_rctps_rep_rp_cnt_##])</span>
+</li>
+</s_rctps_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 의견 위젯 -->
+<div class="widget" id="w_rc">
+<h5>Recent Reply*</h5>
+<div class="box">
+<ul>
+<s_rctrp_rep>
+<li>
+<div class="info"><span class="date">[##_rctrp_rep_time_##]</span><span class="name"> [##_rctrp_rep_name_##]</span></div>
+<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+</li>
+</s_rctrp_rep>
+<s_rcttb_rep>
+<li>
+<div class="info"><span class="date">[##_rcttb_rep_time_##]</span><span class="name"> _ [##_rcttb_rep_name_##]</span>		</div>
+<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]</a>
+</li>
+</s_rcttb_rep>
+</ul>
+</div>
+</div> 
+</s_sidebar_element>
+</s_sidebar>
+</div>
+
+<!-- footer -->
+<span class="footer">KUNASkin 10R1 By <a href="http://kuna.wo.tc"><span class="ip">KUNA</span></a>. All Contents and Skins and other Creations are Freely Usable with Statementing Author. <span class="ip">No Editing and Redistribution Allowed without Author's Permission.</span><br />XHTML, JQuery And CSS1/2/3. Most Optimized in <a href="http://www.google.com/chrome"><span class="ip">Google Chrome</span></a> Browser. Also Recommends : <a href="http://www.mozilla.com/firefox"><span class="ip">Mozila Firefox</span></a> or <a href="http://www.opera.com/download/"><span class="ip">Opera</span></a> Browser.<br />This Blog is Optimized for resolution over <span class="ip">1368x768 or 800x600</span>. //</span>
+</td><td class="right" valign="top">
+<div style="width:300px;"><!-- spacer --></div>
+
+<!-- 프로필/관심블로그 전용 사이드바 -->
+<div class="sidebar">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 글보관함 위젯 -->
+<div class="widget" id="w_archive">
+<h5>Recent Posts*</h5>
+<div class="box">
+<ul>
+<s_archive_rep>
+<li>
+<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a>
+<span class="cnt">([##_archive_rep_count_##])</span>
+</li>
+</s_archive_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 링크 위젯 -->
+<div class="widget" id="w_link">
+<s_link_rep><a href="[##_link_url_##]">[##_link_site_##]</a> … </s_link_rep>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 스킨 전용 카운터 위젯 -->
+<div class="widget" id="w_counter">
+T<span class="value">[##_count_total_##]</span> - T<span class="value">[##_count_today_##]</span> - Y<span class="value">[##_count_yesterday_##]</span>
+</div>
+</s_sidebar_element>
+</s_sidebar>
+</div>
+</td></tr></table>
+</td></tr>
+
+
+<!-- end container -->
+</table>
+</body>
+</html>

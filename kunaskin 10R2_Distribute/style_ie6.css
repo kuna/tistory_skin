@@ -1,0 +1,8 @@
+/* IE6 CSS Patch */
+.content .inner,
+.content .innerTb { background-color:#fff !important; } /* IE6에서는 Fallback 설정값을 지원하지 않는다 */
+#container { background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg_t_right.png', sizingMethod='crop'); } /* transparent Image PNG in IE6 */
+
+/* repeat to X axis */
+.header .transBtm { background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='c0TWop.png', sizingMethod='scale'); }
+.bottom .transTop { background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='c1TWop.png', sizingMethod='scale'); }

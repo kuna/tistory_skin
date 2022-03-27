@@ -1,0 +1,559 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+<title>[##_title_##] :: [##_page_title_##]</title>
+<script language="javascript" src="./images/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+<script language="javascript">
+/* blogInfo Plugin */
+jQuery.noConflict();
+var timer = 0;
+
+function getRSSUrl(blogUrl)
+{
+	var newUrl = blogUrl;
+	if (newUrl.indexOf("blog.naver.com") >= 0) {
+		var Nick = newUrl.substring(22, newUrl.length);
+		newUrl = "http://blog.rss.naver.com/" + Nick + ".xml";
+	} else if (newUrl.indexOf("egloos.com") >= 0) {
+		var Nick = newUrl.substring(7, newUrl.indexOf(".egloos.com"));
+		newUrl = "http://rss.egloos.com/blog/" + Nick;
+	} else {
+		newUrl = newUrl + "/rss";
+	}
+
+	return newUrl;
+}
+function showPostmenuOnReply(_obj)
+{
+	var obj = _obj.getElementsByTagName('a')[0];
+	if (obj == null) return;
+	var href = obj.href;
+	
+	var nobj = document.getElementById("bInfo");
+	var ofs = jQuery(obj).offset();
+	nobj.style.left = (ofs.left) + "px";
+	nobj.style.top = (ofs.top - 200 + 20) + "px";
+	nobj.innerHTML = '<embed src="./images/bloggerInfoShow.swf?page_url=' + getRSSUrl(href) + '" width=300 height=180 wmode="transparent">';
+	nobj.style.display = "block";
+
+	if (timer != 0)
+	{
+		clearTimeout(timer);
+		timer = 0;
+	}
+}
+function showPostmenu(href, obj)
+{
+	if (href == null) href = this.href;
+	if (obj == null) obj = this;
+	
+	var nobj = document.getElementById("bInfo");
+	var ofs = jQuery(obj).offset();
+	nobj.style.left = (ofs.left - 20) + "px";
+	nobj.style.top = (ofs.top - 200 + 30) + "px";
+	nobj.innerHTML = '<embed src="./images/bloggerInfoShow.swf?page_url=' + getRSSUrl(href) + '" width=300 height=180 wmode="transparent" allowScriptAccess="always">';
+	nobj.style.display = "block";
+
+	if (timer != 0)
+	{
+		clearTimeout(timer);
+		timer = 0;
+	}
+}
+function hidePostmenuDelay()
+{
+	if (timer != 0)
+	{
+		clearTimeout(timer);
+		timer = 0;
+	}
+	timer = setTimeout(hidePostmenu, 5000);
+}
+function hidePostmenu()
+{
+	var nobj = document.getElementById("bInfo");
+	nobj.innerHTML = "";
+	nobj.style.display = "none";
+}
+
+function showMoreReply()
+{
+	var obj=document.getElementById("w_rc_body");
+	if(obj==null) return;
+	obj.style.overflow="visible";
+	obj.style.height="auto";
+}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+  function toggle(el) {
+   el = document.getElementById(el);
+   el.style.display = (el.style.display=='none' || el.style.display=='' ? 'block' : 'none')
+  }
+//]]>
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+#menu, #menu_s { position:absolute; }
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="bInfo" style="width:300px; height:180px; position:absolute; z-index:9999;" onmouseout="hidePostmenuDelay();" onclick="hidePostmenu();"></div>
+<s_t3>
+<div id="cover"></div>
+
+<!-- floating menu -->
+<div id="menu_s">
+<a class="m_write" href="[##_blog_link_##]admin/entry/post"></a>
+<a class="m_admin" href="[##_blog_link_##]admin"></a>
+</div>
+
+<div id="menu">
+<a class="m_sidebar" href="#sidebar"></a>
+<a class="m_top" href="#"></a>
+<a class="m_entry" href="[##_blog_link_##]category"></a>
+<a class="m_profile" href="[##_blog_link_##]notice/1120"></a>
+<a class="m_notice" href="[##_blog_link_##]notice"></a>
+<a class="m_guestbook" href="[##_blog_link_##]guestbook"></a>
+<img src="http://115.136.118.88/webshare/berryz_on.png" onclick="window.open('http://115.136.118.88/webshare/index.htm');" onerror="this.src='./images/berryz_off.png'; this.onclick='';">
+</div>
+
+<div id="container">
+<div class="top"></div><div class="containerInner">
+  <div id="body">
+
+<div id="header">
+<div class="bgFlash"><embed src="./images/2.swf" width=720 height=240 wmode=transparent allowScriptAccess=always></embed></div>
+<!-- <a class="logo" href="[##_blog_link_##]"><img src="./images/logo.png"></a> -->
+<span class="info">게임 공략은 <a href="http://game.kuna.wo.tc">부진</a>에 업로드 되어 있습니다.</span>
+</div>
+  
+<div class="bodyInner">
+    <div id="content"><div class="inner">
+      <s_list>
+        <div class="searchResult group">
+          <h3><strong>'[##_list_conform_##]'</strong>에 해당되는 글 <span class="cnt">[##_list_count_##]</span>건</h3>
+          <ol>
+            <s_list_rep>
+              <li>
+                <span class="date">[##_list_rep_regdate_##]</span>
+                <span class="name">[##_list_rep_author_##]</span>
+                <a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+                <span class="cnt">[##_list_rep_rp_cnt_##]</span>
+              </li>
+            </s_list_rep>
+          </ol>
+        </div>
+      </s_list>
+
+      <s_article_rep>
+        <div class="entryPost entry group">
+          <div class="titleWrap">
+            <h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+            <span class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> </span> |
+            <span class="date">[##_article_rep_date_##]</span> |
+            <span class="name">[##_article_rep_author_##]</span>
+            
+            <s_ad_div>
+                <div class="admin">
+                    <a href="[##_s_ad_m_link_##]">수정</a> : 
+                    <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | 
+                    ([##_s_ad_s1_label_##])→<a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | 
+                    <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | 
+                    <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                </div>
+            </s_ad_div>
+          </div><!-- /titleWrap -->
+
+
+
+          <div class="article">
+            [##_article_rep_desc_##]
+            <div class="clear"></div>
+          </div>
+
+          <s_tag_label>
+            <div class="tagTrail"><span>태그 : </span> [##_tag_label_rep_##]</div>
+          </s_tag_label>
+
+            <div class="communicationTrail">
+            <a onclick="[##_article_rep_tb_link_##]"><s_tb_count>트랙백 <span class="cnt">([##_article_rep_tb_cnt_##])</span></s_tb_count></a> | 
+            <a onclick="[##_article_rep_rp_link_##]"><s_rp_count>의견 <span class="cnt">([##_article_rep_rp_cnt_##])</span></s_rp_count></a>
+          </div>
+
+<s_tb>
+<p class="tbAddress">Trackback Address :: [##_tb_address_##]</p>
+<div class="communication">
+<div class="communicationList">
+<ol>
+<s_tb_rep>
+<li id="[##_tb_rep_id_##]" class="trackbackList">
+<div class="box">
+<span class="date"><a href="[##_tb_rep_link_##]" class="address">[##_tb_rep_date_##]</a></span>
+<h4><a href="[##_tb_rep_url_##]" onClick="window.open(this.href); return false">[##_tb_rep_title_##]</a></h4>
+<span class="from">Tracked from <span class="name">[##_tb_rep_site_##]</span></span>
+<span class="control"><a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" class="delete">D</a></span>
+<p>[##_tb_rep_desc_##]</p>
+</div>
+<div class="clear"></div>
+</li>
+</s_tb_rep>
+</ol>
+</div><!-- /communicationList -->
+</div>
+</s_tb>
+
+<s_rp>
+<div class="communication">
+<div class="commentWrite tt-input-div">
+<s_rp_input_form>
+<s_rp_member>
+<s_rp_guest>
+<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" id="[##_rp_input_name_##]_[##_article_rep_id_##]" class="text name" />
+<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="" id="[##_rp_input_password_##]_[##_article_rep_id_##]" class="text password" />
+<input type="text" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]" id="[##_rp_input_homepage_##]_[##_article_rep_id_##]" class="text homepage" />
+</s_rp_guest>
+</s_rp_member>
+<div class="clear"></div>
+<textarea name="[##_rp_input_comment_##]" rows="6" cols="50"></textarea>
+<div class="clear"></div>
+<button type="image" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" class="submit" /><span>덧글 혹은 개드립 달기</span></button>
+<input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]_[##_article_rep_id_##]" class="checkbox" />
+<label for="[##_rp_input_is_secret_##]_[##_article_rep_id_##]"><img src="./images/txt_secret.gif" /></label>
+
+</s_rp_input_form>
+</div>
+
+<div class="communicationList">
+<s_rp_container>
+<ol>
+<s_rp_rep>
+<li id="[##_rp_rep_id_##]" class="commentList">
+<div class="[##_rp_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_rp_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_rp_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+<a href="#" onclick="[##_rp_rep_onclick_reply_##]" title="이 댓글에 답글을 남깁니다.">R</a>
+</div>
+<span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+<span class="name" onmouseover="showPostmenuOnReply(this);">[##_rp_rep_name_##]</span>
+<p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<s_rp2_container>
+<ul>
+<s_rp2_rep>
+<li id="[##_rp_rep_id_##]">
+<div class="[##_rp_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_rp_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_rp_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+</div>
+<span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+<span class="name" onmouseover="showPostmenuOnReply(this);">[##_rp_rep_name_##]</span>
+<p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+</li>
+</s_rp2_rep>
+</ul>
+</s_rp2_container>
+</li>
+</s_rp_rep>
+</ol>
+</s_rp_container>
+</div><!-- /communicationList -->
+
+</div><!-- /communication -->
+</s_rp>
+</div><!-- /entry -->
+</s_article_rep>
+
+      <s_notice_rep>
+        <div class="entryNotice entry group">
+          <div class="titleWrap">
+            <h2><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+            <span class="category"><a href="[##_blog_link_##]notice">공지사항</a></span> |
+            <span  class="date">[##_notice_rep_date_##]</span>
+          </div>
+
+
+
+          <div class="article">
+            [##_notice_rep_desc_##]
+          </div>
+        </div>
+      </s_notice_rep>
+
+      <s_guest>
+        <div class="guestbook noEntry group">
+          <h3>방명록</h3>
+          <div class="guestbookWrite">
+<s_guest_input_form>
+<div class="tt-input-div">
+<s_guest_member>
+<s_guest_form>
+<input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" id="name" class="text name" />
+<input type="password" maxlength="8" name="[##_guest_input_password_##]" value="" id="password" class="text password" />
+<input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" class="text homepage" />
+</s_guest_form>
+</s_guest_member>
+
+<div class="clear"></div>
+<textarea name="[##_guest_textarea_body_##]" cols="50" rows="6"></textarea>
+<div class="clear"></div>
+<button type="submit" value="안부 남기기" onclick="[##_guest_onclick_submit_##]" class="submit" /><span>누구든지 환영합니다 :)</span></button>
+<input type="checkbox" id="[##_guest_input_is_secret_##]" name="[##_guest_input_is_secret_##]" class="checkbox" value="1" />
+<label for="[##_guest_input_is_secret_##]"><img src="./images/txt_secret.gif" /></label>
+</div>
+    
+</s_guest_input_form>
+</div>
+
+          <s_guest_container>
+            <div class="communicationList">
+              <ol>
+<s_guest_rep>
+<li id="[##_guest_rep_id_##]" class="commentList">
+<div class="[##_guest_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_guest_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_guest_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+<a href="#" onclick="[##_guest_rep_onclick_reply_##]" title="이 댓글에 답글을 남깁니다.">R</a>
+</div>
+<span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+<span class="name" onmouseover="showPostmenuOnReply(this);">[##_guest_rep_name_##]</span>
+<p><span class="bbcode">[##_guest_rep_desc_##]</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<s_guest_reply_container>
+<ul>
+<s_guest_reply_rep>
+<li id="[##_guest_rep_id_##]">
+<div class="[##_guest_rep_class_##]">
+<div class="box">
+<div class="control">
+<a href="[##_guest_rep_link_##]" title="PermaLink(고유주소)">L</a>
+<a href="#" onclick="[##_guest_rep_onclick_delete_##]" title="이 댓글을 수정 / 삭제합니다.">M</a>
+</div>
+<span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+<span class="name" onmouseover="showPostmenuOnReply(this);">[##_guest_rep_name_##]</span>
+<p><span class="bbcode">[##_guest_rep_desc_##]</span>
+</p>
+</div>
+<div class="clear"></div>
+</div>
+</li>
+</s_guest_reply_rep>
+</ul>
+</s_guest_reply_container>
+</li>
+</s_guest_rep>
+              </ol>
+            </div><!-- guestList close -->
+          </s_guest_container>
+
+        </div><!-- guestbook close -->
+      </s_guest>
+
+      <s_tag>
+        <div class="taglog noEntry group">
+          <h3>태그</h3>
+          <ul>
+            <s_tag_rep>
+              <li>
+                <a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a> . .
+              </li>
+            </s_tag_rep>
+          </ul>
+        </div>
+      </s_tag>
+
+      <s_paging>
+        <div class="paging">
+          <a [##_prev_page_##] class="[##_no_more_prev_##] prevPage"><span>Prev</span></a>
+          <span class="numbox">
+            <s_paging_rep>
+              <a [##_paging_rep_link_##] class="num"><span class="[##_paging_rep_current_##]">[##_paging_rep_link_num_##]</span></a>
+            </s_paging_rep>
+            <s_paging_interword>
+              <span class="interword">...</span>
+            </s_paging_interword>
+            <s_paging_interword2>
+              <span class="interword">...</span>
+            </s_paging_interword2>
+          </span>
+          <a [##_next_page_##] class="[##_no_more_next_##] nextPage"><span>Next</span></a>
+        </div>
+      </s_paging>
+
+    </div></div>
+    <!-- /content -->
+
+<div class="sidebar_top"></div>
+<!-- <div class="clear" style="height:60px; border-bottom:1px solid #669; margin-bottom:60px;"></div>-->
+
+<!-- 원래 사이드바 -->
+<div class="sidebar s_l">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 블로그 로고 상자 -->
+<div class="widget" id="w_profile">
+<div class="blogImage"><img width="270" src="[##_image_##]" alt="블로그 이미지" /></div>
+<div class="userID"><em>Author</em> : [##_blogger_##]</div>
+<p class="blogDesc">[##_desc_##]</p>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 공지사항 위젯 -->
+<div class="widget" id="w_notice">
+<h5>Notice*</h5>
+<ul class="box">
+<s_rct_notice_rep>
+<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+</s_rct_notice_rep>
+</ul>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 카테고리 위젯 -->
+<div class="widget" id="w_category">
+<h5>Category*</h5>
+<div class="box">[##_category_##]</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 글 위젯 -->
+<div class="widget" id="w_rp">
+<a href="[##_blog_link_##]category" style="float:right;">... more</a><h5>Update*</h5>
+<div class="box">
+<ul>
+<s_rctps_rep>
+<li>
+<span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
+<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]</a>
+</li>
+</s_rctps_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 의견 위젯 -->
+<div class="widget" id="w_rc">
+<a href="javascript:showMoreReply();" style="float:right;">... more</a><h5>Recent Reply*</h5>
+<div class="box" id="w_rc_body">
+<ul>
+<s_rctrp_rep>
+<li>
+<div class="info"><span class="date">[##_rctrp_rep_time_##]</span><span class="name"> [##_rctrp_rep_name_##]</span></div>
+<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+</li>
+</s_rctrp_rep>
+</ul>
+</div>
+</div> 
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 트랙백 위젯 -->
+<div class="widget" id="w_rc">
+<h5>Recent Trackbacks*</h5>
+<div class="box">
+<ul>
+<s_rcttb_rep>
+<li>
+<div class="info"><span class="date">[##_rcttb_rep_time_##]</span><span class="name"> _ [##_rcttb_rep_name_##]</span>		</div>
+<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]</a>
+</li>
+</s_rcttb_rep>
+</ul>
+</div>
+</div> 
+</s_sidebar_element>
+</s_sidebar>
+</div>
+
+<!-- 프로필/관심블로그 전용 사이드바 -->
+<div class="sidebar s_r">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 글보관함 위젯 -->
+<div class="widget" id="w_archive">
+<h5>Recent Posts*</h5>
+<div class="box">
+<ul>
+<s_archive_rep>
+<li>
+<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a>
+<span class="cnt">[##_archive_rep_count_##]</span>
+</li>
+</s_archive_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 스킨 전용 카운터 위젯 -->
+<div class="widget" id="w_counter">
+T<span class="value">[##_count_total_##]</span> - T<span class="value">[##_count_today_##]</span> - Y<span class="value">[##_count_yesterday_##]</span>
+</div>
+</s_sidebar_element>
+<s_sidebar_element><!-- 검색 위젯 (하단) -->
+<s_search>
+<div class="widget" id="w_search">
+<input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]">
+</div>
+</s_search>
+</s_sidebar_element>
+</s_sidebar>
+</div>
+
+<hr />
+<div class="bSidebar" style="clear:both; width:100%;">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 링크 위젯 -->
+<div class="widget" id="w_link">
+<s_link_rep><a href="[##_link_url_##]" onmouseover="showPostmenu(this.href, this);" onclick="window.open(this.href); return false;"><img src="[##_link_url_##]index.gif" onError="this.src='./images/img_err.jpg'" >[##_link_site_##]</a></s_link_rep>
+</div>
+</s_sidebar_element>
+</s_sidebar>
+</div>
+
+<hr />
+<span style="clear:both;">＊이웃순회/RSS순회는 링크위젯으로만 이루어집니다. 링크는 언제든지 추가 환영! 누락된 링크는 방명록에 알려주세요. 부탁드립니다 ㅠㅠ.</span>
+
+
+  <div id="footer"><div class="inner">
+    <div class="copyright">
+      <a href="[##_blog_link_##]"> [##_blogger_##]</a>’s Blog is powered by
+      <a href="[##_service_home_##]" onclick="window.open(this.href); return false">[##_textcube_name_##] [##_textcube_version_##]</a> /
+      Designed by <a href="http://yaluka.textcube.com" onclick="window.open(this.href); return false">Yaluka</a> / Edit By KUNA
+    </div>
+  </div></div>
+  <!-- /footer -->
+
+</div>
+  </div></div>
+  <!-- /body -->
+<div class="bottom"></div></div>
+<!-- /container -->
+
+</s_t3>
+</body>
+</html>

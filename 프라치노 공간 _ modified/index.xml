@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+	<information>
+		<name>프라치노 공간</name> 
+		<version>1.0 Beta 6.1</version>
+		<description>
+		<![CDATA[공간. 오르지 콘텐츠를 위해 제작되었으며 모든 내용이 또렷하고 선명하게 보일 것입니다.]]>
+		</description>
+		<license>
+		<![CDATA[© and Designed by Fraccino Kaniwari. Redistribution prohibited.]]>
+		</license>
+	</information> 
+	<author>
+		<name>프라치노</name>
+		<homepage>http://kaniwarispace.tistory.com</homepage>
+		<email>kaniwarispace@icloud.com</email>
+	</author> 
+	<default>
+		<recentEntries>4</recentEntries> 
+		<recentComments>2</recentComments>
+		<recentTrackbacks>2</recentTrackbacks>
+		<itemsOnGuestbook>5</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>3</sortInCloud> 
+		<expandComment>1</expandComment>
+		<expandTrackback>1</expandTrackback> 
+		<lengthOfRecentNotice>40</lengthOfRecentNotice>
+		<lengthOfRecentEntry>40</lengthOfRecentEntry>
+		<lengthOfRecentComment>40</lengthOfRecentComment> 
+		<lengthOfRecentTrackback>40</lengthOfRecentTrackback> 
+		<lengthOfLink>40</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive> 
+		<commentMessage>
+			<none>작성</none> 
+			<single>1건</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>없음</none>
+			<single>1건</single>
+		</trackbackMessage> 
+		<tree>
+		<color>000000</color> 
+		<bgColor>ffffff</bgColor>
+		<activeColor>3399ff</activeColor> 
+		<activeBgColor>efefef</activeBgColor>
+		<labelLength>27</labelLength> 
+		<showValue>1</showValue>
+		</tree>
+		<contentWidth>728</contentWidth>
+	</default>
+</skin>

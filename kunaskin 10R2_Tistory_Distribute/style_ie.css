@@ -1,0 +1,42 @@
+/* rgba Fix */
+.content .inner { 
+	background: transparent; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#AAFFFFFF,endColorstr=#AAFFFFFF); 
+}
+#base { 
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#AA000000,endColorstr=#AA000000); 
+}
+
+.content .entry-content fieldset {
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#AAEEEEEE,endColorstr=#AAEEEEEE); 
+}
+
+input,
+.content .pMenu,
+.moreless_fold,
+#profile .inner,
+#searchResult .inner {
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000); 
+}
+.moreless_content {
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66FFFFFF,endColorstr=#66FFFFFF); 
+}
+
+.communicationInput,
+.guestbookWrite,
+.communicationList li,
+.tt-input-div input { 
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000); 
+}
+.communicationList li ul li {
+	filter: none; 
+}
+.communicationList .image {
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66FFFFFF,endColorstr=#66FFFFFF); 
+}

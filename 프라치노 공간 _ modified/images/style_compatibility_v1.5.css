@@ -1,0 +1,1395 @@
+@charset "utf-8";
+
+/* 터치 */
+
+html.touch {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent
+}
+
+a,
+button {
+	-webkit-touch-callout: none;
+	-moz-touch-callout: none
+}
+
+/* 아이콘 하위 호환성 */
+
+html.cdn-icon.svg .bg,
+html.cdn-icon.svg .entry-ccl img,
+html.cdn-icon.svg :before,
+html.cdn-icon.svg :after {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_w_desktop.svg)
+}
+
+html.no-cdn-icon.svg .bg,
+html.no-cdn-icon.svg .entry-ccl img,
+html.no-cdn-icon.svg :before,
+html.no-cdn-icon.svg :after {
+	background-image: url(bg_w_desktop.svg)
+}
+
+html.dark.cdn-icon.svg .bg,
+html.dark.cdn-icon.svg .entry-ccl img,
+html.dark.cdn-icon.svg :before,
+html.dark.cdn-icon.svg :after {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_d_desktop.svg)
+}
+
+html.dark.no-cdn-icon.svg .bg,
+html.dark.no-cdn-icon.svg .entry-ccl img,
+html.dark.no-cdn-icon.svg :before,
+html.dark.no-cdn-icon.svg :after {
+	background-image: url(bg_d_desktop.svg)
+}
+
+html.cdn-icon.no-svg.backgroundsize .bg,
+html.cdn-icon.no-svg.backgroundsize .entry-ccl img,
+html.cdn-icon.no-svg.backgroundsize :before,
+html.cdn-icon.no-svg.backgroundsize :after,
+html.cdn-icon.svg.backgroundsize.linux.safari .bg,
+html.cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+html.cdn-icon.svg.backgroundsize.linux.safari :before,
+html.cdn-icon.svg.backgroundsize.linux.safari :after,
+html.cdn-icon.svg.backgroundsize.win .bg,
+html.cdn-icon.svg.backgroundsize.win .entry-ccl img,
+html.cdn-icon.svg.backgroundsize.win :before,
+html.cdn-icon.svg.backgroundsize.win :after {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_w_desktop_2x.png)
+}
+
+html.no-cdn-icon.no-svg.backgroundsize .bg,
+html.no-cdn-icon.no-svg.backgroundsize .entry-ccl img,
+html.no-cdn-icon.no-svg.backgroundsize :before,
+html.no-cdn-icon.no-svg.backgroundsize :after,
+html.no-cdn-icon.svg.backgroundsize.linux.safari .bg,
+html.no-cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+html.no-cdn-icon.svg.backgroundsize.linux.safari :before,
+html.no-cdn-icon.svg.backgroundsize.linux.safari :after,
+html.no-cdn-icon.svg.backgroundsize.win .bg,
+html.no-cdn-icon.svg.backgroundsize.win .entry-ccl img,
+html.no-cdn-icon.svg.backgroundsize.win :before,
+html.no-cdn-icon.svg.backgroundsize.win :after {
+	background-image: url(bg_w_desktop_2x.png)
+}
+
+html.dark.cdn-icon.no-svg.backgroundsize .bg,
+html.dark.cdn-icon.no-svg.backgroundsize .entry-ccl img,
+html.dark.cdn-icon.no-svg.backgroundsize :before,
+html.dark.cdn-icon.no-svg.backgroundsize :after,
+html.dark.cdn-icon.svg.backgroundsize.linux.safari .bg,
+html.dark.cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+html.dark.cdn-icon.svg.backgroundsize.linux.safari :before,
+html.dark.cdn-icon.svg.backgroundsize.linux.safari :after,
+html.dark.cdn-icon.svg.backgroundsize.win .bg,
+html.dark.cdn-icon.svg.backgroundsize.win .entry-ccl img,
+html.dark.cdn-icon.svg.backgroundsize.win :before,
+html.dark.cdn-icon.svg.backgroundsize.win :after {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_d_desktop_2x.png)
+}
+
+html.dark.no-cdn-icon.no-svg.backgroundsize .bg,
+html.dark.no-cdn-icon.no-svg.backgroundsize .entry-ccl img,
+html.dark.no-cdn-icon.no-svg.backgroundsize :before,
+html.dark.no-cdn-icon.no-svg.backgroundsize :after,
+html.dark.no-cdn-icon.svg.backgroundsize.linux.safari .bg,
+html.dark.no-cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+html.dark.no-cdn-icon.svg.backgroundsize.linux.safari :before,
+html.dark.no-cdn-icon.svg.backgroundsize.linux.safari :after,
+html.dark.no-cdn-icon.svg.backgroundsize.win .bg,
+html.dark.no-cdn-icon.svg.backgroundsize.win .entry-ccl img,
+html.dark.no-cdn-icon.svg.backgroundsize.win :before,
+html.dark.no-cdn-icon.svg.backgroundsize.win :after {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_d_desktop_2x.png)
+}
+
+html.svg .adsense-kit {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_dot_w.svg)
+}
+
+html.no-svg.backgroundsize .adsense-kit,
+html.svg.backgroundsize.linux.safari .adsense-kit,
+html.svg.backgroundsize.win .adsense-kit {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_dot_w_2x.png)
+}
+
+html.dark.svg .adsense-kit {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_dot_d.svg)
+}
+
+html.dark.no-svg.backgroundsize .adsense-kit,
+html.dark.svg.backgroundsize.linux.safari .adsense-kit,
+html.dark.svg.backgroundsize.win .adsense-kit {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_dot_d_2x.png)
+}
+
+/* 호환성 안내 */
+
+html.no-webgl:before {
+	content: "이 브라우저는 지원하지 않습니다. 브라우저를 최신 버전으로 업데이트하세요";
+	background-image: none !important
+}
+
+html.no-webgl.touch:before {
+	content: "이 브라우저는 지원하지 않습니다. 브라우저를 업데이트하거나 다른 것을 사용하세요"
+}
+
+html.no-webgl.touch.iphone:before {
+	content: "이 브라우저는 지원하지 않습니다. iOS를 최신 버전으로 업데이트하세요"
+}
+
+/* 메뉴 */
+
+html.no-rgba #nav ul {
+	width: 96px !important
+}
+
+html.no-rgba #wrap {
+	width: 944px
+}
+
+html.expand.no-rgba #wrap {
+	width: 1186px
+}
+
+.t_menu_tag a:before {
+	background-position: -24px 0
+}
+
+.t_menu_guestbook a:before {
+	background-position: -41px 0
+}
+
+.t_menu_home a:before,
+.t_menu_write a:before,
+.t_menu_admin a:before {
+	background-position: -186px -180px
+}
+
+.t_menu_medialog a:before, .t_menu_location a:before {
+	background-image: none !important
+}
+
+.t_menu_category a:before {
+	background-position: -8px 0
+}
+
+#nav li[class*="link"] a:before {
+	background-position: -73px 0
+}
+
+.t_menu_category a[href*="Intro"]:before,
+.t_menu_category a[href*="Notice"]:before,
+.t_menu_category a[href*="About"]:before,
+.t_menu_category a[href*="Info"]:before,
+.t_menu_category a[href*="소개"]:before,
+.t_menu_category a[href*="공지"]:before,
+.t_menu_category a[href*="관하여"]:before,
+.t_menu_category a[href*="정보"]:before {
+	background-position: -107px 0 !important
+}
+
+#nav li[class*="link"] a[href*="github"]:before,
+#nav li[class*="link"] a[href*="computer"]:before,
+.t_menu_category a[href*="IT"]:before,
+.t_menu_category a[href*="PC"]:before,
+.t_menu_category a[href*="Computer"]:before,
+.t_menu_category a[href*="Apple"]:before,
+.t_menu_category a[href*="Google"]:before,
+.t_menu_category a[href*="Microsoft"]:before,
+.t_menu_category a[href*="Linux"]:before,
+.t_menu_category a[href*="Mobile"]:before,
+.t_menu_category a[href*="Phone"]:before,
+.t_menu_category a[href*="Win"]:before,
+.t_menu_category a[href*="Mac"]:before,
+.t_menu_category a[href*="OS"]:before,
+.t_menu_category a[href*="SNS"]:before,
+.t_menu_category a[href*="Android"]:before,
+.t_menu_category a[href*="Git"]:before,
+.t_menu_category a[href*="정보기술"]:before,
+.t_menu_category a[href*="컴퓨터"]:before,
+.t_menu_category a[href*="애플"]:before,
+.t_menu_category a[href*="구글"]:before,
+.t_menu_category a[href*="마이크로소프트"]:before,
+.t_menu_category a[href*="리눅스"]:before,
+.t_menu_category a[href*="모바일"]:before,
+.t_menu_category a[href*="윈도"]:before,
+.t_menu_category a[href*="맥"]:before,
+.t_menu_category a[href*="운영체제"]:before,
+.t_menu_category a[href*="안드로이드"]:before,
+.t_menu_category a[href*="폰"]:before,
+.t_menu_category a[href*="소셜"]:before
+.t_menu_category a[href*="조립"]:before {
+	background-position: -165px -352px !important
+}
+
+#nav li[class*="link"] a[href*="photo"]:before,
+#nav li[class*="link"] a[href*="gallery"]:before,
+#nav li[class*="link"] a[href*="camera"]:before,
+#nav li[class*="link"] a[href*="spoon"]:before,
+#nav li[class*="link"] a[href*="food"]:before,
+.t_menu_category a[href*="Photo"]:before,
+.t_menu_category a[href*="Camera"]:before,
+.t_menu_category a[href*="Gallery"]:before,
+.t_menu_category a[href*="Foto"]:before,
+.t_menu_category a[href*="Picture"]:before,
+.t_menu_category a[href*="Leisure"]:before,
+.t_menu_category a[href*="Trip"]:before,
+.t_menu_category a[href*="Tour"]:before,
+.t_menu_category a[href*="Travel"]:before,
+.t_menu_category a[href*="Art"]:before,
+.t_menu_category a[href*="Spoon"]:before,
+.t_menu_category a[href*="Food"]:before,
+.t_menu_category a[href*="Cook"]:before,
+.t_menu_category a[href*="사진"]:before,
+.t_menu_category a[href*="갤러리"]:before,
+.t_menu_category a[href*="카메라"]:before,
+.t_menu_category a[href*="그림"]:before,
+.t_menu_category a[href*="포토"]:before,
+.t_menu_category a[href*="여가"]:before,
+.t_menu_category a[href*="레저"]:before,
+.t_menu_category a[href*="여행"]:before,
+.t_menu_category a[href*="예술"]:before,
+.t_menu_category a[href*="아트"]:before,
+.t_menu_category a[href*="스푼"]:before,
+.t_menu_category a[href*="푸드"]:before,
+.t_menu_category a[href*="음식"]:before,
+.t_menu_category a[href*="먹거리"]:before,
+.t_menu_category a[href*="맛집"]:before {
+	background-position: -165px -336px !important
+}
+
+#nav li[class*="link"] a[href*="music"]:before,
+#nav li[class*="link"] a[href*="sound"]:before,
+#nav li[class*="link"] a[href*="band"]:before,
+#nav li[class*="link"] a[href*="audio"]:before,
+#nav li[class*="link"] a[href*="rhythm"]:before,
+#nav li[class*="link"] a[href*="beat"]:before,
+#nav li[class*="link"] a[href*="track"]:before,
+#nav li[class*="link"] a[href*="trax"]:before,
+.t_menu_category a[href*="Music"]:before,
+.t_menu_category a[href*="Sound"]:before,
+.t_menu_category a[href*="Song"]:before,
+.t_menu_category a[href*="Sing"]:before,
+.t_menu_category a[href*="Ear"]:before,
+.t_menu_category a[href*="Bgm"]:before,
+.t_menu_category a[href*="Pop"]:before,
+.t_menu_category a[href*="Hop"]:before,
+.t_menu_category a[href*="Podcast"]:before,
+.t_menu_category a[href*="Band"]:before,
+.t_menu_category a[href*="Audio"]:before,
+.t_menu_category a[href*="Rhythm"]:before,
+.t_menu_category a[href*="Beat"]:before,
+.t_menu_category a[href*="Track"]:before,
+.t_menu_category a[href*="Trax"]:before,
+.t_menu_category a[href*="OST"]:before,
+.t_menu_category a[href*="음악"]:before,
+.t_menu_category a[href*="뮤직"]:before,
+.t_menu_category a[href*="소리"]:before,
+.t_menu_category a[href*="사운드"]:before,
+.t_menu_category a[href*="가수"]:before,
+.t_menu_category a[href*="노래"]:before,
+.t_menu_category a[href*="이어"]:before,
+.t_menu_category a[href*="BGM"]:before,
+.t_menu_category a[href*="가요"]:before,
+.t_menu_category a[href*="팟캐스트"]:before,
+.t_menu_category a[href*="밴드"]:before,
+.t_menu_category a[href*="음향"]:before,
+.t_menu_category a[href*="리듬"]:before,
+.t_menu_category a[href*="박자"]:before,
+.t_menu_category a[href*="비트"]:before,
+.t_menu_category a[href*="트랙"]:before {
+	background-position: -165px -320px !important
+}
+
+#nav li[class*="link"] a[href*="book"]:before,
+.t_menu_category a[href*="category/Install"]:before,
+.t_menu_category a[href*="Book"]:before,
+.t_menu_category a[href*="Read"]:before,
+.t_menu_category a[href*="Guide"]:before,
+.t_menu_category a[href*="Diary"]:before,
+.t_menu_category a[href*="Jurnal"]:before,
+.t_menu_category a[href*="책"]:before,
+.t_menu_category a[href*="서적"]:before,
+.t_menu_category a[href*="읽"]:before,
+.t_menu_category a[href*="가이드"]:before,
+.t_menu_category a[href*="일기"]:before,
+.t_menu_category a[href*="일상"]:before {
+	background-position: -165px -304px !important
+}
+
+#nav li[class*="link"] a[href*="movie"]:before,
+#nav li[class*="link"] a[href*="film"]:before,
+#nav li[class*="link"] a[href*="youtube"]:before,
+#nav li[class*="link"] a[href*="vimeo"]:before,
+.t_menu_category a[href*="Movie"]:before,
+.t_menu_category a[href*="Cinema"]:before,
+.t_menu_category a[href*="TV"]:before
+.t_menu_category a[href*="Video"]:before,
+.t_menu_category a[href*="YouTube"]:before,
+.t_menu_category a[href*="Vimeo"]:before,
+.t_menu_category a[href*="Drama"]:before,
+.t_menu_category a[href*="Anime"]:before,
+.t_menu_category a[href*="Film"]:before,
+.t_menu_category a[href*="무비"]:before,
+.t_menu_category a[href*="영화"]:before,
+.t_menu_category a[href*="영상"]:before,
+.t_menu_category a[href*="시네마"]:before,
+.t_menu_category a[href*="텔레비전"]:before,
+.t_menu_category a[href*="비디오"]:before,
+.t_menu_category a[href*="유투브"]:before,
+.t_menu_category a[href*="비메오"]:before,
+.t_menu_category a[href*="드라마"]:before,
+.t_menu_category a[href*="애니"]:before,
+.t_menu_category a[href*="필름"]:before {
+	background-position: -165px -288px !important
+}
+
+#nav li[class*="link"] a[href*="twitter"]:before,
+.t_menu_category a[href*="Twitter"]:before
+.t_menu_category a[href*="트위터"]:before {
+	background-position: -139px 0 !important
+}
+
+#nav li[class*="link"] a[href*="facebook"]:before,
+.t_menu_category a[href*="Facebook"]:before
+.t_menu_category a[href*="페이스북"]:before {
+	background-position: -155px 0 !important
+}
+
+#nav li[class*="link"] a[href*="entry"]:before,
+.t_menu_category a[href*="Entry"]:before,
+.t_menu_category a[href*="Favorite"]:before,
+.t_menu_category a[href*="본문"]:before
+.t_menu_category a[href*="즐겨찾"]:before {
+	background-position: -171px 1px !important
+}
+
+#nav li[class*="link"] a[href*="download"]:before,
+.t_menu_category a[href*="Download"]:before,
+.t_menu_category a[href*="다운"]:before {
+	background-position: -187px 1px !important
+}
+
+html.no-rgba .t_menu_medialog,
+html.no-rgba .t_menu_location,
+html.no-rgba #prev.no-more-prev,
+html.no-rgba #next.no-more-next {
+	-ms-filter: Alpha(opacity=20);
+	filter: Alpha(opacity=20)
+}
+
+html.dark.no-rgba #prev.no-more-prev,
+html.dark.no-rgba #next.no-more-next,
+html.dark.no-rgba .t_menu_medialog,
+html.dark.no-rgba .t_menu_location {
+	-ms-filter: Alpha(opacity=25);
+	filter: Alpha(opacity=25)
+}
+
+/* 작동 방식 */
+
+html.search-open #wrap,
+html.about-open #wrap {
+	z-index: -1
+}
+
+html.search-open .global,
+html.about-open .global {
+	z-index: auto
+}
+
+html.search-open #search,
+html.about-open #about {
+	z-index: 100
+}
+
+html.about-open .about-toggle-list {
+	z-index: 105
+}
+
+/* 검색 필드 – 비동기 로드 */
+
+#search {
+	position: relative;
+	width: 320px;
+	height: 30px;
+	margin-top: 3px;
+	margin-left: -18px
+}
+
+#search:before {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 24px;
+	padding: 4px 8px;
+	background-position: -90px 0
+}
+
+#search input {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 4px 68px 4px 17px;
+	border: 1px solid #39f;
+	background-color: rgba(255, 255, 255, 0.94);
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	border-radius: 6px
+}
+
+html.no-rgba #search input {
+	background-color: #fff
+}
+
+html.dark #search input {
+	border: 1px solid #6cf;
+	background-color: rgba(0, 0, 0, 0.9)
+}
+
+html.dark.no-rgba #search input {
+	background-color: #222
+}
+
+#search button {
+	position: absolute;
+	top: 0;
+	padding: 15px;
+	cursor: pointer
+}
+
+button#search-submit {
+	right: 39px;
+	background-position: -32px -16px
+}
+
+html.no-touch #search-submit:hover, html.touch #search-submit.hover {
+	background-position: -32px -46px
+}
+
+button#search-close {
+	right: 0;
+	padding-right: 24px;
+	background-position: 0 -16px
+}
+
+html.no-touch #search-close:hover, html.touch #search-close.hover {
+	background-position: 0 -46px
+}
+
+/* 블로그에 관하여 – 비동기 로드 */
+
+#about {
+	overflow: hidden;
+	position: absolute;
+	top: 40px;
+	right: 22px;
+	width: 480px;
+	padding-bottom: 19px;
+	border: 1px solid #39f;
+	background-color: rgba(255, 255, 255, 0.96);
+	border-radius: 6px
+}
+
+html.no-rgba #about {
+	background-color: #fff
+}
+
+html.dark #about {
+	border-color: #6cf;
+	background-color: rgba(0, 0, 0, 0.9)
+}
+
+html.dark.no-rgba #about {
+	background-color: #000
+}
+
+html.about-open #about-toggle {
+	color: #39f !important;
+	cursor: default
+}
+
+html.dark.about-open #about-toggle {
+	color: #6cf !important
+}
+
+html.about-open .about-toggle-list:after {
+	opacity: 1
+}
+
+html.no-rgba.about-open .about-toggle-list:after {
+	display: block
+}
+
+html.no-touch #about-toggle:hover:before,
+html.touch #about-toggle.hover:before,
+html.about-open #about-toggle:before {
+	background-position: -107px 0 !important
+}
+
+#write-btn,
+#about-close {
+	position: absolute;
+	z-index: 101;
+	top: 5px;
+	padding: 15px;
+	cursor: pointer
+}
+
+#write-btn {
+	right: 39px;
+	background-position: -179px -198px
+}
+
+html.no-touch #write-btn:hover,
+html.touch #write-btn.hover {
+	background-position: -179px -228px
+}
+
+#about-close {
+	right: 9px;
+	background-position: 0 -16px
+}
+
+html.no-touch #about-close:hover,
+html.touch #about-close.hover {
+	background-position: 0 -46px
+}
+
+/* 정보 */
+
+#info {
+	overflow: hidden;
+	padding: 39px 39px 36px
+}
+
+#info .avatar,
+#info .avatar img {
+	width: 96px;
+	height: 96px;
+	border-radius: 48px
+}
+
+#info .avatar {
+	margin: auto;
+	background-color: #efefef
+}
+
+html.dark #info .avatar {
+	margin: auto;
+	background-color: #333
+}
+
+#info .avatar img {
+	display: block
+}
+
+#info h4,
+#info p {
+	text-align: center;
+	cursor: default
+}
+
+#info h4 {
+	overflow: hidden;
+	padding: 14px 0 6px;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 400;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+#info p {
+	padding: 0 30px;
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 300;
+}
+
+/* 링크 */
+
+#link {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 340px
+}
+
+html.touch #link {
+	-webkit-overflow-scrolling: touch
+}
+
+#link ul {
+	overflow: hidden;
+	padding-bottom: 10px
+}
+
+html.webgl.about-open #link.inertia ul {
+	-webkit-animation: inertia .6s;
+	-moz-animation: inertia .6s;
+	animation: inertia .6s
+}
+
+html.webgl.linux.safari.about-open #link.inertia ul {
+	-webkit-animation: none;
+	animation: none
+}
+
+#link li {
+	float: left;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	width: 50%;
+	height: 110px;
+	padding: 0 40px
+}
+
+#link li a {
+	overflow: hidden;
+	display: block;
+	position: relative;
+	height: 30px;
+	padding-top: 80px;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+html.webgl.no-touch #link li a {
+	color: #666 !important
+}
+
+html.dark.webgl.no-touch #link li a {
+	color: #aaa !important
+}
+
+html.webgl.no-touch #link li a:hover:before {
+	-webkit-transition: box-shadow 0.4s;
+	-moz-transition: box-shadow 0.4s;
+	transition: box-shadow 0.4s
+}
+
+#link li a:before,
+#link li a img {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin-left: -30px;
+	border-radius: 30px
+}
+
+#link li a:before {
+	content: "";
+	background-color: #39f;
+	background-position: 0 -396px
+}
+
+html.webgl.no-touch #link li a:before {
+	box-shadow: 0 0 0 14px rgba(51, 153, 255, 0)
+}
+
+html.webgl.no-touch #link li a:hover:before {
+	box-shadow: 0 0 0 0 rgba(51, 153, 255, 1)
+}
+
+html.dark #link li a:before {
+	background-color: #6cf
+}
+
+html.dark.webgl.no-touch #link li a:before {
+	box-shadow: 0 0 0 14px rgba(102, 204, 255, 0)
+}
+
+html.dark.webgl.no-touch #link li a:hover:before {
+	box-shadow: 0 0 0 0 rgba(102, 204, 255, 1)
+}
+
+
+#link li a img {
+	background-color: #efefef
+}
+
+html.dark #link li a img {
+	background-color: #444
+}
+
+#link .add-btn:before {
+	background-color: #e7491d !important;
+	background-position: -50px -396px
+}
+
+html.webgl.no-touch #link .add-btn:before {
+	box-shadow: 0 0 0 14px rgba(231, 73, 29, 0) !important
+}
+
+html.webgl.no-touch #link .add-btn:hover:before {
+	box-shadow: 0 0 0 0 rgba(231, 73, 29, 1) !important
+}
+
+#link .rss-btn:before {
+	background-color: #f94 !important;
+	background-position: -100px -396px
+}
+
+html.webgl.no-touch #link .rss-btn:before {
+	box-shadow: 0 0 0 14px rgba(255, 153, 68, 0) !important
+}
+
+html.webgl.no-touch #link .rss-btn:hover:before {
+	box-shadow: 0 0 0 0 rgba(255, 153, 68, 1) !important
+}
+
+#link li a[href*="blog.naver.com/connect/Pop"]:before {
+	background-color: #2DB400 !important;
+	background-position: -50px -396px !important
+}
+
+html.webgl.no-touch #link li a[href*="blog.naver.com/connect/Pop"]:before {
+	box-shadow: 0 0 0 14px rgba(45, 180, 0, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="blog.naver.com/connect/Pop"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(45, 180, 0, 1) !important
+}
+
+#link li a[href*="story.kakao.com/ch"]:before {
+	background-color: #fab900 !important;
+	background-position: -150px -400px !important
+}
+
+html.webgl.no-touch #link li a[href*="story.kakao.com/ch"]:before {
+	box-shadow: 0 0 0 14px rgba(250, 185, 0, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="story.kakao.com/ch"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(250, 185, 0, 1) !important
+}
+
+#link li a[href*="twitter.com"]:before {
+	background-color: #5fa9dd !important;
+	background-position: 0 -446px !important
+}
+
+html.webgl.no-touch #link li a[href*="twitter.com"]:before {
+	box-shadow: 0 0 0 14px rgba(95, 169, 221, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="twitter.com"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(95, 169, 221, 1) !important
+}
+
+#link li a[href*="facebook.com"]:before {
+	background-color: #3B5998 !important;
+	background-position: -50px -446px !important
+}
+
+html.webgl.no-touch #link li a[href*="facebook.com"]:before {
+	box-shadow: 0 0 0 14px rgba(59, 89, 152, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="facebook.com"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(59, 89, 152, 1) !important
+}
+
+#link li a[href*="opencast.naver.com"]:before {
+	background-color: #3cc !important;
+	background-position: -100px -446px !important
+}
+
+html.webgl.no-touch #link li a[href*="opencast.naver.com"]:before {
+	box-shadow: 0 0 0 14px rgba(51, 204, 204, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="opencast.naver.com"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(51, 204, 204, 1) !important
+}
+
+#link li a[href*="donate"]:before,
+#link li a[href*="paypal.com"]:before,
+#link li a[href*="goo.gl/J85Nah"]:before {
+	background-color: #f90 !important;
+	background-position: -150px -446px !important
+}
+
+html.webgl.no-touch #link li a[href*="donate"]:before,
+html.webgl.no-touch #link li a[href*="paypal.com"]:before,
+html.webgl.no-touch #link li a[href*="goo.gl/J85Nah"]:before {
+	box-shadow: 0 0 0 14px rgba(255, 153, 0, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="donate"]:hover:before,
+html.webgl.no-touch #link li a[href*="paypal.com"]:hover:before,
+html.webgl.no-touch #link li a[href*="goo.gl/J85Nah"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(255, 153, 0, 1) !important
+}
+
+#link li a[href*="youtube.com"]:before {
+	background-color: #e62d27 !important;
+	background-position: -104px -492px !important
+}
+
+html.webgl.no-touch #link li a[href*="youtube.com"]:before {
+	box-shadow: 0 0 0 14px rgba(230, 45, 39, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="youtube.com"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(230, 45, 39, 1) !important
+}
+
+#link li a[href*="soundcloud.com"]:before {
+	background-color: #f50 !important;
+	background-position: -52px -492px !important
+}
+
+html.webgl.no-touch #link li a[href*="soundcloud.com"]:before {
+	box-shadow: 0 0 0 14px rgba(255, 85, 0, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="soundcloud.com"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(255, 85, 0, 1) !important
+}
+
+#link li a[href*="instagram.com"]:before {
+	background-color: #1c5380 !important;
+	background-position: 0 -492px !important
+}
+
+html.webgl.no-touch #link li a[href*="instagram.com"]:before {
+	box-shadow: 0 0 0 14px rgba(28, 83, 128, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="instagram.com"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(28, 83, 128, 1) !important
+}
+
+#link li a[href*="vingle.net"]:before {
+	background-color: #bc2025 !important;
+	background-position: 0 -536px !important
+}
+
+html.webgl.no-touch #link li a[href*="vingle.net"]:before {
+	box-shadow: 0 0 0 14px rgba(188, 32, 37, 0) !important
+}
+
+html.webgl.no-touch #link li a[href*="vingle.net"]:hover:before {
+	box-shadow: 0 0 0 0 rgba(188, 32, 37, 1) !important
+}
+
+/* 하위 호환성 */
+
+html.no-rgba .cpr {
+	background-image: none !important
+}
+
+html.no-rgba .cpr:before {
+	background: none !important
+}
+
+html.dark.no-rgba .cpr:before {
+	border-color: #444
+}
+
+@media all and (min-width: 760px) and (max-height: 669px) {
+	#link {
+		max-height: 230px
+	}
+}
+
+@media all and (min-width: 760px) and (max-height: 559px) {
+	#link {
+		max-height: 120px
+	}
+}
+
+@media all and (min-width: 760px) and (max-height: 449px) {
+	#link {
+		display: none
+	}
+}
+
+@media all and (max-width: 759px) {
+	
+	/* 호환성 안내 */
+
+	html.no-webgl:before {
+		content: "브라우저를 최신 버전으로 업데이트하세요"
+	}
+
+	html.no-webgl.touch:before {
+		content: "브라우저를 업데이트하거나 다른 것을 사용하세요"
+	}
+	
+	html.no-webgl.touch.iphone:before {
+		content: "iOS를 최신 버전으로 업데이트하세요"
+	}
+
+	html.cdn-icon.svg .bg,
+	html.cdn-icon.svg .entry-ccl img,
+	html.cdn-icon.svg :before,
+	html.cdn-icon.svg :after {
+		background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_w_mobile.svg)
+	}
+	
+	html.no-cdn-icon.svg .bg,
+	html.no-cdn-icon.svg .entry-ccl img,
+	html.no-cdn-icon.svg :before,
+	html.no-cdn-icon.svg :after {
+		background-image: url(bg_w_mobile.svg)
+	}
+	
+	html.dark.cdn-icon.svg .bg,
+	html.dark.cdn-icon.svg .entry-ccl img,
+	html.dark.cdn-icon.svg :before,
+	html.dark.cdn-icon.svg :after {
+		background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_d_mobile.svg)
+	}
+	
+	html.dark.no-cdn-icon.svg .bg,
+	html.dark.no-cdn-icon.svg .entry-ccl img,
+	html.dark.no-cdn-icon.svg :before,
+	html.dark.no-cdn-icon.svg :after {
+		background-image: url(bg_d_mobile.svg)
+	}
+
+	html.cdn-icon.no-svg.backgroundsize .bg,
+	html.cdn-icon.no-svg.backgroundsize .entry-ccl img,
+	html.cdn-icon.no-svg.backgroundsize :before,
+	html.cdn-icon.no-svg.backgroundsize :after,
+	html.cdn-icon.svg.backgroundsize.linux.safari .bg,
+	html.cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+	html.cdn-icon.svg.backgroundsize.linux.safari :before,
+	html.cdn-icon.svg.backgroundsize.linux.safari :after,
+	html.cdn-icon.svg.backgroundsize.win .bg,
+	html.cdn-icon.svg.backgroundsize.win .entry-ccl img,
+	html.cdn-icon.svg.backgroundsize.win :before,
+	html.cdn-icon.svg.backgroundsize.win :after {
+		background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_w_mobile_2x.png)
+	}
+	
+	html.no-cdn-icon.no-svg.backgroundsize .bg,
+	html.no-cdn-icon.no-svg.backgroundsize .entry-ccl img,
+	html.no-cdn-icon.no-svg.backgroundsize :before,
+	html.no-cdn-icon.no-svg.backgroundsize :after,
+	html.no-cdn-icon.svg.backgroundsize.linux.safari .bg,
+	html.no-cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+	html.no-cdn-icon.svg.backgroundsize.linux.safari :before,
+	html.no-cdn-icon.svg.backgroundsize.linux.safari :after,
+	html.no-cdn-icon.svg.backgroundsize.win .bg,
+	html.no-cdn-icon.svg.backgroundsize.win .entry-ccl img,
+	html.no-cdn-icon.svg.backgroundsize.win :before,
+	html.no-cdn-icon.svg.backgroundsize.win :after {
+		background-image: url(bg_w_mobile_2x.png)
+	}
+	
+	html.cdn-icon.dark.no-svg.backgroundsize .bg,
+	html.cdn-icon.dark.no-svg.backgroundsize .entry-ccl img,
+	html.cdn-icon.dark.no-svg.backgroundsize :before,
+	html.cdn-icon.dark.no-svg.backgroundsize :after,
+	html.dark.cdn-icon.svg.backgroundsize.linux.safari .bg,
+	html.dark.cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+	html.dark.cdn-icon.svg.backgroundsize.linux.safari :before,
+	html.dark.cdn-icon.svg.backgroundsize.linux.safari :after,
+	html.dark.cdn-icon.svg.backgroundsize.win .bg,
+	html.dark.cdn-icon.svg.backgroundsize.win .entry-ccl img,
+	html.dark.cdn-icon.svg.backgroundsize.win :before,
+	html.dark.cdn-icon.svg.backgroundsize.win :after {
+		background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_d_mobile_2x.png)
+	}
+	
+	html.no-cdn-icon.dark.no-svg.backgroundsize .bg,
+	html.no-cdn-icon.dark.no-svg.backgroundsize .entry-ccl img,
+	html.no-cdn-icon.dark.no-svg.backgroundsize :before,
+	html.no-cdn-icon.dark.no-svg.backgroundsize :after,
+	html.dark.no-cdn-icon.svg.backgroundsize.linux.safari .bg,
+	html.dark.no-cdn-icon.svg.backgroundsize.linux.safari .entry-ccl img,
+	html.dark.no-cdn-icon.svg.backgroundsize.linux.safari :before,
+	html.dark.no-cdn-icon.svg.backgroundsize.linux.safari :after,
+	html.dark.no-cdn-icon.svg.backgroundsize.win .bg,
+	html.dark.no-cdn-icon.svg.backgroundsize.win .entry-ccl img,
+	html.dark.no-cdn-icon.svg.backgroundsize.win :before,
+	html.dark.no-cdn-icon.svg.backgroundsize.win :after {
+		background-image: url(bg_d_mobile_2x.png)
+	}
+	
+	/* 메뉴 아이콘 위치 */
+
+	.t_menu_tag a:before {
+		background-position: -60px -80px
+	}
+
+	.t_menu_guestbook a:before {
+		background-position: -121px -80px
+	}
+
+	.t_menu_home a:before,
+	.t_menu_write a:before,
+	.t_menu_admin a:before {
+		background-position: 0 -321px
+	}
+
+	.t_menu_category a:before {
+		background-position: 0 -80px
+	}
+
+	#nav li[class*="link"] a:before {
+		background-position: -181px -80px
+	}
+
+	.t_menu_category a[href*="Intro"]:before,
+	.t_menu_category a[href*="Notice"]:before,
+	.t_menu_category a[href*="About"]:before,
+	.t_menu_category a[href*="Info"]:before,
+	.t_menu_category a[href*="소개"]:before,
+	.t_menu_category a[href*="공지"]:before,
+	.t_menu_category a[href*="관하여"]:before,
+	.t_menu_category a[href*="정보"]:before {
+		background-position: 0 -368px !important
+	}
+
+	#nav li[class*="link"] a[href*="github"]:before,
+	#nav li[class*="link"] a[href*="computer"]:before,
+	.t_menu_category a[href*="IT"]:before,
+	.t_menu_category a[href*="PC"]:before,
+	.t_menu_category a[href*="Computer"]:before,
+	.t_menu_category a[href*="Apple"]:before,
+	.t_menu_category a[href*="Google"]:before,
+	.t_menu_category a[href*="Microsoft"]:before,
+	.t_menu_category a[href*="Linux"]:before,
+	.t_menu_category a[href*="Mobile"]:before,
+	.t_menu_category a[href*="Phone"]:before,
+	.t_menu_category a[href*="Win"]:before,
+	.t_menu_category a[href*="Mac"]:before,
+	.t_menu_category a[href*="OS"]:before,
+	.t_menu_category a[href*="SNS"]:before,
+	.t_menu_category a[href*="Android"]:before,
+	.t_menu_category a[href*="Git"]:before,
+	.t_menu_category a[href*="정보기술"]:before,
+	.t_menu_category a[href*="컴퓨터"]:before,
+	.t_menu_category a[href*="애플"]:before,
+	.t_menu_category a[href*="구글"]:before,
+	.t_menu_category a[href*="마이크로소프트"]:before,
+	.t_menu_category a[href*="리눅스"]:before,
+	.t_menu_category a[href*="모바일"]:before,
+	.t_menu_category a[href*="윈도"]:before,
+	.t_menu_category a[href*="맥"]:before,
+	.t_menu_category a[href*="운영체제"]:before,
+	.t_menu_category a[href*="안드로이드"]:before,
+	.t_menu_category a[href*="폰"]:before,
+	.t_menu_category a[href*="소셜"]:before
+	.t_menu_category a[href*="조립"]:before {
+		background-position: -94px -414px !important
+	}
+
+	#nav li[class*="link"] a[href*="photo"]:before,
+	#nav li[class*="link"] a[href*="gallery"]:before,
+	#nav li[class*="link"] a[href*="camera"]:before,
+	#nav li[class*="link"] a[href*="spoon"]:before,
+	#nav li[class*="link"] a[href*="food"]:before,
+	.t_menu_category a[href*="Photo"]:before,
+	.t_menu_category a[href*="Camera"]:before,
+	.t_menu_category a[href*="Gallery"]:before,
+	.t_menu_category a[href*="Foto"]:before,
+	.t_menu_category a[href*="Picture"]:before,
+	.t_menu_category a[href*="Leisure"]:before,
+	.t_menu_category a[href*="Trip"]:before,
+	.t_menu_category a[href*="Tour"]:before,
+	.t_menu_category a[href*="Travel"]:before,
+	.t_menu_category a[href*="Art"]:before,
+	.t_menu_category a[href*="Spoon"]:before,
+	.t_menu_category a[href*="Food"]:before,
+	.t_menu_category a[href*="Cook"]:before,
+	.t_menu_category a[href*="사진"]:before,
+	.t_menu_category a[href*="갤러리"]:before,
+	.t_menu_category a[href*="카메라"]:before,
+	.t_menu_category a[href*="그림"]:before,
+	.t_menu_category a[href*="포토"]:before,
+	.t_menu_category a[href*="여가"]:before,
+	.t_menu_category a[href*="레저"]:before,
+	.t_menu_category a[href*="여행"]:before,
+	.t_menu_category a[href*="예술"]:before,
+	.t_menu_category a[href*="아트"]:before,
+	.t_menu_category a[href*="스푼"]:before,
+	.t_menu_category a[href*="푸드"]:before,
+	.t_menu_category a[href*="음식"]:before,
+	.t_menu_category a[href*="먹거리"]:before,
+	.t_menu_category a[href*="맛집"]:before {
+		background-position: 0 -414px !important
+	}
+
+	#nav li[class*="link"] a[href*="music"]:before,
+	#nav li[class*="link"] a[href*="sound"]:before,
+	#nav li[class*="link"] a[href*="band"]:before,
+	#nav li[class*="link"] a[href*="audio"]:before,
+	#nav li[class*="link"] a[href*="rhythm"]:before,
+	#nav li[class*="link"] a[href*="beat"]:before,
+	#nav li[class*="link"] a[href*="track"]:before,
+	#nav li[class*="link"] a[href*="trax"]:before,
+	.t_menu_category a[href*="Music"]:before,
+	.t_menu_category a[href*="Sound"]:before,
+	.t_menu_category a[href*="Song"]:before,
+	.t_menu_category a[href*="Sing"]:before,
+	.t_menu_category a[href*="Ear"]:before,
+	.t_menu_category a[href*="Bgm"]:before,
+	.t_menu_category a[href*="Pop"]:before,
+	.t_menu_category a[href*="Hop"]:before,
+	.t_menu_category a[href*="Podcast"]:before,
+	.t_menu_category a[href*="Band"]:before,
+	.t_menu_category a[href*="Audio"]:before,
+	.t_menu_category a[href*="Rhythm"]:before,
+	.t_menu_category a[href*="Beat"]:before,
+	.t_menu_category a[href*="Track"]:before,
+	.t_menu_category a[href*="Trax"]:before,
+	.t_menu_category a[href*="OST"]:before,
+	.t_menu_category a[href*="음악"]:before,
+	.t_menu_category a[href*="뮤직"]:before,
+	.t_menu_category a[href*="소리"]:before,
+	.t_menu_category a[href*="사운드"]:before,
+	.t_menu_category a[href*="가수"]:before,
+	.t_menu_category a[href*="노래"]:before,
+	.t_menu_category a[href*="이어"]:before,
+	.t_menu_category a[href*="BGM"]:before,
+	.t_menu_category a[href*="가요"]:before,
+	.t_menu_category a[href*="팟캐스트"]:before,
+	.t_menu_category a[href*="밴드"]:before,
+	.t_menu_category a[href*="음향"]:before,
+	.t_menu_category a[href*="리듬"]:before,
+	.t_menu_category a[href*="박자"]:before,
+	.t_menu_category a[href*="비트"]:before,
+	.t_menu_category a[href*="트랙"]:before {
+		background-position: -185px -368px !important
+	}
+
+	#nav li[class*="link"] a[href*="book"]:before,
+	.t_menu_category a[href*="category/Install"]:before,
+	.t_menu_category a[href*="Book"]:before,
+	.t_menu_category a[href*="Read"]:before,
+	.t_menu_category a[href*="Guide"]:before,
+	.t_menu_category a[href*="Diary"]:before,
+	.t_menu_category a[href*="Jurnal"]:before,
+	.t_menu_category a[href*="책"]:before,
+	.t_menu_category a[href*="서적"]:before,
+	.t_menu_category a[href*="읽"]:before,
+	.t_menu_category a[href*="가이드"]:before,
+	.t_menu_category a[href*="일기"]:before,
+	.t_menu_category a[href*="일상"]:before {
+		background-position: -47px -414px !important
+	}
+
+	#nav li[class*="link"] a[href*="movie"]:before,
+	#nav li[class*="link"] a[href*="film"]:before,
+	#nav li[class*="link"] a[href*="youtube"]:before,
+	#nav li[class*="link"] a[href*="vimeo"]:before,
+	.t_menu_category a[href*="Movie"]:before,
+	.t_menu_category a[href*="Cinema"]:before,
+	.t_menu_category a[href*="TV"]:before
+	.t_menu_category a[href*="Video"]:before,
+	.t_menu_category a[href*="YouTube"]:before,
+	.t_menu_category a[href*="Vimeo"]:before,
+	.t_menu_category a[href*="Drama"]:before,
+	.t_menu_category a[href*="Anime"]:before,
+	.t_menu_category a[href*="Film"]:before,
+	.t_menu_category a[href*="무비"]:before,
+	.t_menu_category a[href*="영화"]:before,
+	.t_menu_category a[href*="영상"]:before,
+	.t_menu_category a[href*="시네마"]:before,
+	.t_menu_category a[href*="텔레비전"]:before,
+	.t_menu_category a[href*="비디오"]:before,
+	.t_menu_category a[href*="유투브"]:before,
+	.t_menu_category a[href*="비메오"]:before,
+	.t_menu_category a[href*="드라마"]:before,
+	.t_menu_category a[href*="애니"]:before,
+	.t_menu_category a[href*="필름"]:before {
+		background-position: -140px -368px !important
+	}
+
+	#nav li[class*="link"] a[href*="twitter"]:before,
+	.t_menu_category a[href*="Twitter"]:before
+	.t_menu_category a[href*="트위터"]:before {
+		background-position: -60px -321px !important
+	}
+
+	#nav li[class*="link"] a[href*="facebook"]:before,
+	.t_menu_category a[href*="Facebook"]:before
+	.t_menu_category a[href*="페이스북"]:before {
+		background-position: -120px -321px !important
+	}
+
+	#nav li[class*="link"] a[href*="entry"]:before,
+	.t_menu_category a[href*="Entry"]:before,
+	.t_menu_category a[href*="Favorite"]:before,
+	.t_menu_category a[href*="본문"]:before
+	.t_menu_category a[href*="즐겨찾"]:before {
+		background-position: -47px -368px !important
+	}
+
+	#nav li[class*="link"] a[href*="download"]:before,
+	.t_menu_category a[href*="Download"]:before,
+	.t_menu_category a[href*="다운"]:before {
+		background-position: -94px -368px !important
+	}
+	
+	/* 속성 */
+	
+	html.search-open .global,
+	html.about-open .global {
+		z-index: 100
+	}
+
+	html.search-open #search,
+	html.about-open #about {
+		z-index: auto
+	}
+	
+	/* 검색 – 비동기 로드 */
+	
+	#search {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		margin: 0
+	}
+
+	#search:before {
+		content: none;
+		display: none
+	}
+
+	#search input {
+		padding: 10px 82px 10px 18px;
+		border: none !important;
+		font-size: 18px;
+		background-color: #efefef;
+		border-radius: 0
+	}
+
+	html.dark #search input {
+		background-color: #444
+	}
+
+	#search button {
+		padding: 20px
+	}
+
+	button#search-close {
+		right: 4px;
+		padding-right: 24px;
+		background-position: -80px 0
+	}
+
+	html.no-touch button#search-close:hover, html.touch button#search-close.hover {
+		background-position: -80px -40px
+	}
+
+	button#search-submit {
+		right: 48px;
+		background-position: 0 0
+	}
+
+	html.no-touch button#search-submit:hover, html.touch button#search-submit.hover {
+		background-position: 0 -40px
+	}
+}
+
+@-webkit-keyframes inertia {
+	0% {
+		-webkit-transform: translate(0, -40px)
+	}
+	
+	40% {
+		-webkit-transform: translate(0, -40px)
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0)
+	}
+}
+
+@-moz-keyframes inertia {
+	0% {
+		-moz-transform: translate(0, -40px)
+	}
+	
+	40% {
+		-moz-transform: translate(0, -40px)
+	}
+
+	100% {
+		-moz-transform: translate(0, 0)
+	}
+}
+
+@keyframes inertia {
+	0% {
+		-webkit-transform: translate(0, -40px);
+		-moz-transform: translate(0, -40px);
+		transform: translate(0, -40px)
+	}
+	
+	40% {
+		-webkit-transform: translate(0, -40px);
+		-moz-transform: translate(0, -40px);
+		transform: translate(0, -40px)
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		transform: translate(0, 0)
+	}
+}
+
+@-webkit-keyframes inertia-mobile {
+	0% {
+		-webkit-transform: translate(-45px, 0)
+	}	
+
+	50% {
+		-webkit-transform: translate(-45px, 0)
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0)
+	}
+}
+
+@-moz-keyframes inertia-mobile {
+	0% {
+		-moz-transform: translate(-45px, 0)
+	}
+	
+	50% {
+		-moz-transform: translate(-45px, 0)
+	}
+
+	100% {
+		-moz-transform: translate(0, 0)
+	}
+}
+
+@keyframes inertia-mobile {
+	0% {
+		-webkit-transform: translate(-45px, 0);
+		-moz-transform: translate(-45px, 0);
+		transform: translate(-45px, 0)
+	}
+	
+	50% {
+		-webkit-transform: translate(-45px, 0);
+		-moz-transform: translate(-45px, 0);
+		transform: translate(-45px, 0)
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		transform: translate(0, 0)
+	}
+}

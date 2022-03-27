@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+#loading {
+	display: none !important
+}
+
+.content {
+	visibility: visible !important
+}
+
+html.webgl .content {
+	opacity: 1
+}
+
+/* 방명록 */
+
+#guestbook-entry {
+	position: relative;
+	padding-bottom: 6px
+}
+
+#guestbook-entry .date {
+	visibility: hidden
+}
+
+#cmt-entry {
+	display: block !important;
+	padding-top: 0 !important
+}
+
+#cmt-entry #write {
+	margin-bottom: 14px
+}
+
+#cmt-entry #write h4 {
+	display: none
+}
+
+#cmt-entry ol {
+	margin-top: -6px !important;
+	margin-bottom: -40px
+}
+
+#cmt-entry form:last-child #write {
+	margin-bottom: -46px
+}
+
+#disqus {
+	min-height: 0 !important;
+	margin-bottom: 0 !important
+}
+
+#wrap.open-disqus #disqus {
+	margin-top: 0 !important;
+	margin-bottom: -40px !important
+}
+
+/* DISQUS 선택 */
+
+#guestbook-entry nav {
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	bottom: 30px
+}
+
+#guestbook-entry a {
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	height: 40px;
+	padding-left: 21px;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 300
+}
+
+#guestbook-entry a:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	padding: 10px;
+	margin-top: -10px
+}
+
+#show-disqus:before {
+	background-position: -182px -288px
+}
+
+html.no-touch #show-disqus:hover:before,
+html.touch #show-disqus.hover:before {
+	background-position: -182px -308px
+}
+
+#show-cmt:before {
+	background-position: -182px -328px
+}
+
+html.no-touch #show-cmt:hover:before,
+html.touch #show-cmt.hover:before {
+	background-position: -182px -348px
+}
+
+#show-cmt,
+#wrap.open-cmt #show-cmt,
+#wrap.open-disqus #show-disqus,
+#wrap.open-disqus #cmt-entry,
+#wrap.open-disqus #paging {
+	display: none !important
+}
+
+#wrap.open-disqus #show-cmt {
+	display: block !important
+}
+
+#wrap.open-disqus #disqus {
+	margin-top: 0
+}
+
+@media all and (max-width: 759px) {
+	
+	/* 방명록 */
+	
+	#cmt-entry,
+	#disqus {
+		min-height: 0 !important
+	}
+	
+	#cmt-entry form:last-child #write {
+		margin-bottom: 0
+	}
+	
+	#cmt-entry ol {
+		padding-top: 42px;
+		margin-top: 0 !important;
+		margin-bottom: -50px
+	}
+	
+	#disqus {
+		margin-bottom: 0 !important
+	}
+	
+	/* DISQUS 선택 */
+	
+	#guestbook-entry {
+		padding-bottom: 5px
+	}
+	
+	#guestbook-entry nav {
+		position: static;
+		border-bottom: 1px solid #ccc;
+		padding-top: 3px;
+		text-align: center;
+		cursor: default
+	}
+	
+	#guestbook-entry nav a {
+		padding-left: 0;
+		border-bottom: 0 solid #ccc;
+		margin: 0 11px;
+		cursor: pointer
+	}
+	
+	html.dark #guestbook-entry nav,
+	html.dark #guestbook-entry nav a {
+		border-bottom-color: #444
+	}
+	
+	#show-cmt,
+	#show-disqus,
+	#wrap.open-cmt #show-cmt,
+	#wrap.open-cmt #show-disqus,
+	#wrap.open-disqus #show-cmt,
+	#wrap.open-disqus #show-disqus {
+		display: inline-block !important
+	}
+	
+	#wrap.open-disqus #paging {
+		display: block !important
+	}
+	
+	#wrap.open-disqus #prev,
+	#wrap.open-disqus #next {
+		display: none !important
+	}
+	
+	html.webgl #guestbook-entry nav a {
+		-webkit-transition: border-bottom-width 0.2s;
+		-moz-transition: border-bottom-width 0.2s;
+		transition: border-bottom-width 0.2s
+	}
+	
+	#wrap.open-cmt #show-cmt,
+	#wrap.open-disqus #show-disqus {
+		border-bottom-width: 3px;
+		color: #000 !important;
+		font-weight: 400;
+		cursor: default
+	}
+	
+	html.dark #wrap.open-cmt #show-cmt,
+	html.dark #wrap.open-disqus #show-disqus {
+		color: #fff !important
+	}
+	
+	#guestbook-entry a:before {
+		content: none;
+		display: none
+	}
+
+}

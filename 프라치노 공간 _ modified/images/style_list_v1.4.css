@@ -1,0 +1,611 @@
+@charset "utf-8";
+
+#loading {
+	display: none !important
+}
+
+#wrap {
+	overflow: hidden
+}
+
+.content {
+	visibility: visible !important
+}
+
+html.webgl .content {
+	opacity: 1
+}
+
+#list-entry {
+	overflow: hidden;
+	margin-bottom: -6px
+}
+
+#list-entry ol {
+	padding-top: 6px;
+	margin-left: -3px;
+	margin-right: -3px
+}
+
+#list-entry li,
+#list-entry a,
+#list-entry a:before,
+#list-entry li span,
+#list-entry p {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box
+}
+
+#list-entry li {
+	float: left;
+	position: relative;
+	width: 50%;
+	padding: 0 3px 6px
+}
+
+#list-entry a {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	border-radius: 6px
+}
+
+html.dark #list-entry a {
+	background-color: #444
+}
+
+#list-entry a:before,
+#list-entry .thumb,
+#list-entry li span,
+#list-entry p {
+	position: absolute;
+	left: 0;
+	width: 100%
+}
+
+#list-entry a:before,
+#list-entry li .thumb {
+	top: 0;
+	height: 100%;
+	border-radius: 6px
+}
+
+#list-entry a:before {
+	content: "";
+	z-index: 1;
+	border: 3px solid rgba(51, 153, 255, 0);
+	background: rgba(0, 0, 0, 0.3)
+}
+
+html.dark #list-entry a:before {
+	border: 3px solid rgba(102, 204, 255, 0)
+}
+
+html.no-rgba #list-entry a:before {
+	border: none;
+	background: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_opacity_30.png) repeat;
+	background-size: auto
+}
+
+html.webgl #list-entry a:before {
+	box-shadow: inset 0 0 0 17px rgba(51, 153, 255, 0);
+	-webkit-transition: border-color 0.3s, background-color 0.3s;
+	-moz-transition: border-color 0.3s, background-color 0.3s;
+	transition: border-color 0.3s,  background-color 0.3s
+}
+
+html.dark.webgl #list-entry a:before {
+	box-shadow: inset 0 0 0 17px rgba(102, 204, 255, 0)
+}
+
+html.no-touch #list-entry a:hover:before,
+html.touch #list-entry a.hover:before {
+	border-color: rgba(51, 153,255, 1);
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 0 0 0 #39f
+}
+
+html.dark.no-touch #list-entry a:hover:before,
+html.dark.touch #list-entry a.hover:before {
+	border-color: rgba(102, 204, 255, 1);
+	box-shadow: inset 0 0 0 0 #6cf
+}
+
+html.no-touch.no-rgba #list-entry a:hover:before,
+html.touch.no-rgba #list-entry a.hover:before {
+	border: 3px solid #39f;
+	background: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_opacity_60.png) repeat;
+	background-size: auto
+}
+
+html.dark.no-touch.no-rgba #list-entry a:hover:before,
+html.dark.touch.no-rgba #list-entry a.hover:before {
+	border-color: #6cf
+}
+
+html.no-touch.webgl #list-entry a:hover:before,
+html.touch.webgl #list-entry a.hover:before {
+	-webkit-transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	-moz-transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	transition: border-color 0.3s,  background-color 0.3s, box-shadow 0.3s
+}
+
+a.no-img:before {
+	background-color: #666 !important;
+	background-size: 100% !important;
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important
+}
+
+html.cdn-icon a.no-img:before {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_preview.png) !important
+}
+
+html.no-cdn-icon a.no-img:before {
+	background-image: url(bg_preview.png) !important
+}
+
+html.cdn-icon.svg a.no-img:before {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_preview.svg) !important
+}
+
+html.no-cdn-icon.svg a.no-img:before {
+	background-image: url(bg_preview.svg) !important
+}
+
+html.dark a.no-img:before {
+	background-color: #444 !important
+}
+
+html.webgl #list-entry li .thumb {
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	transition: opacity 0.4s
+}
+
+html.no-touch.webgl #list-entry li .thumb {
+	-webkit-filter: grayscale(90%)
+}
+
+html.no-touch.webgl #list-entry li:first-child .thumb {
+	-webkit-filter: none
+}
+
+html.no-touch.webgl #list-entry li:nth-child(2) .thumb {
+	-webkit-filter: grayscale(10%)
+}
+
+html.no-touch.webgl #list-entry li:nth-child(3) .thumb {
+	-webkit-filter: grayscale(20%)
+}
+
+html.no-touch.webgl #list-entry li:nth-child(4) .thumb,
+html.no-touch.webgl #list-entry li:nth-child(5) .thumb,
+html.no-touch.webgl #list-entry li:nth-child(6) .thumb {
+	-webkit-filter: grayscale(35%)
+}
+
+html.no-touch.webgl #list-entry li:nth-child(7) .thumb,
+html.no-touch.webgl #list-entry li:nth-child(8) .thumb,
+html.no-touch.webgl #list-entry li:nth-child(9) .thumb {
+	-webkit-filter: grayscale(60%)
+}
+
+.no-display {
+	visibility: hidden
+}
+
+html.webgl .no-display {
+	opacity: 0
+}
+
+#list-entry li span,
+#list-entry p {
+	overflow: hidden;
+	z-index: 2;
+	left: 0;
+	line-height: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+#list-entry li span {
+	bottom: 40px;
+	height: 13px;
+	padding: 0 14px;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 13px;
+	cursor: pointer
+}
+
+html.no-rgba #list-entry li span {
+	color: #ccc
+}
+
+#list-entry p {
+	bottom: 10px;
+	height: 28px;
+	padding: 4px 32px 4px 14px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	vertical-align: middle
+}
+
+html.no-touch #list-entry a:hover p,
+html.touch #list-entry a.hover p {
+	color: #6cf
+}
+
+html.no-touch #list-entry a:hover p:before,
+html.touch #list-entry a.hover p:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 13px;
+	padding: 8px;
+	margin-top: -8px;
+	background-position: -161px -77px
+}
+
+#list-entry + #article-entry {
+	display: none
+}
+
+@media all and (min-width: 1186px) {
+	html.expand #list-entry ol {
+		padding-top: 363px !important
+	}
+	
+	html.expand #list-entry ol.twelve {
+		padding-top: 1113px !important
+	}
+
+	html.expand #list-entry li a {
+		padding-top: 180px !important
+	}
+	
+	html.expand #list-entry li:first-child a,
+	html.expand #list-entry ol.twelve li:nth-child(12) a {
+		padding-top: 363px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(3) {
+		top: 186px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(4),
+	html.expand #list-entry ol.twelve li:nth-child(5),
+	html.expand #list-entry ol.twelve li:nth-child(6) {
+		top: 372px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(7),
+	html.expand #list-entry ol.twelve li:nth-child(8),
+	html.expand #list-entry ol.twelve li:nth-child(9) {
+		bottom: 372px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(10) {
+		bottom: 186px !important
+	}
+}
+
+@media all and (min-width: 1080px) {
+	
+	html.expand #list-entry .title {
+		margin-bottom: 31px
+	}
+	
+	html.expand #list-entry ol {
+		position: relative;
+		padding-top: 37.4%;
+		padding-bottom: 3px;
+		margin-bottom: 6px;
+	}
+	
+	html.expand #list-entry ol.twelve {
+		padding-top: 114.66%;
+		margin-bottom: 0
+	}
+
+	html.expand #list-entry li {
+		width: 33.33%
+	}
+	
+	html.expand #list-entry li:first-child,
+	html.expand #list-entry ol.twelve li:nth-child(12) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 66.66%;
+	}
+	
+	html.expand #list-entry li:first-child a,
+	html.expand #list-entry ol.twelve li:nth-child(12) a {
+		padding-bottom: 3px
+	}
+	
+	html.expand #list-entry li:first-child p,
+	html.expand #list-entry ol.twelve li:nth-child(12) p {
+		height: 36px;
+		font-size: 28px;
+		line-height: 28px
+	}
+	
+	html.expand #list-entry li:first-child .date,
+	html.expand #list-entry ol.twelve li:nth-child(12) .date {
+		bottom: 48px;
+		padding-left: 15px
+	}
+	
+	html.expand #list-entry li:nth-child(2),
+	html.expand #list-entry li:nth-child(3) {
+		position: absolute;
+		right: 0
+	}
+	
+	html.expand #list-entry li:nth-child(2) {
+		top: 0
+	}
+	
+	html.expand #list-entry li:nth-child(3) {
+		bottom: 0;
+		padding-bottom: 0
+	}
+	
+	html.expand ol.twelve li:nth-child(3) {
+		top: 16.7%;
+		bottom: auto
+	}
+
+	html.expand #list-entry li:nth-child(4),
+	html.expand #list-entry li:nth-child(5),
+	html.expand #list-entry li:nth-child(6) {
+		padding-top: 9px
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(4),
+	html.expand #list-entry ol.twelve li:nth-child(5),
+	html.expand #list-entry ol.twelve li:nth-child(6) {
+		position: absolute;
+		top: 33.4%;
+		padding-top: 0
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(4),
+	html.expand #list-entry ol.twelve li:nth-child(7) {
+		left: 0
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(5),
+	html.expand #list-entry ol.twelve li:nth-child(8),
+	html.expand #list-entry ol.twelve li:nth-child(12) {
+		left: 33.33%
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(6),
+	html.expand #list-entry ol.twelve li:nth-child(9) {
+		left: 66.66%
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(7),
+	html.expand #list-entry ol.twelve li:nth-child(8),
+	html.expand #list-entry ol.twelve li:nth-child(9) {
+		position: absolute;
+		bottom: 33.3%;
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(10),
+	html.expand #list-entry ol.twelve li:nth-child(11),
+	html.expand #list-entry ol.twelve li:nth-child(12) {
+		position: absolute;
+		top: auto;
+		bottom: 0
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(10) {
+		bottom: 16.6%
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(13),
+	html.expand #list-entry ol.twelve li:nth-child(14),
+	html.expand #list-entry ol.twelve li:nth-child(15) {
+		margin-top: 3px
+	}
+}
+
+@media all and (width: 1080px) {
+	html.expand #list-entry ol {
+		padding-top: 323px !important
+	}
+	
+	html.expand #list-entry ol.twelve {
+		padding-top: 993px !important
+	}
+
+	html.expand #list-entry li a {
+		padding-top: 160px !important
+	}
+	
+	html.expand #list-entry li:first-child a,
+	html.expand #list-entry ol.twelve li:nth-child(12) a {
+		padding-top: 323px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(3) {
+		top: 166px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(4),
+	html.expand #list-entry ol.twelve li:nth-child(5),
+	html.expand #list-entry ol.twelve li:nth-child(6) {
+		top: 332px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(7),
+	html.expand #list-entry ol.twelve li:nth-child(8),
+	html.expand #list-entry ol.twelve li:nth-child(9) {
+		bottom: 332px !important
+	}
+	
+	html.expand #list-entry ol.twelve li:nth-child(10) {
+		bottom: 166px !important
+	}
+}
+
+@media all and (width: 1079px) {
+	html.expand #list-entry li a {
+		padding-top: 241px !important
+	}
+}
+
+@media all and (width: 1024px) {
+	html.expand #list-entry li a {
+		padding-top: 225px !important
+	}
+}
+
+@media all and (min-width: 944px) {
+	#list-entry li a {
+		padding-top: 204px
+	}
+	
+	html.expand #list-entry li a {
+		padding-top: 56.25%
+	}
+}
+
+@media all and (width: 768px) {
+	#list-entry li a {
+		padding-top: 154px !important
+	}
+}
+
+@media all and (max-width: 759px) {
+	
+	#list-entry {
+		overflow: visible;
+		padding-left: inherit;
+		margin-bottom: -2px
+	}
+	
+	#list-entry .title {
+		margin-left: inherit
+	}
+	
+	#list-entry ol {
+		overflow: hidden;
+		padding: 6px 1px 0 1px;
+		margin: -1px 0 !important
+	}
+	
+	#list-entry li {
+		padding: 0 1px 2px
+	}
+	
+	#list-entry p {
+		padding-right: 14px
+	}
+
+	html.touch #list-entry a.hover p {
+		color: #fff
+	}
+	
+	html.touch.linux #list-entry a.hover:before,
+	html.touch.unknown #list-entry a.hover:before,
+	html.touch.win #list-entry a.hover:before {
+		border-color: rgba(51, 153, 255, 0) !important;
+		background-color: rgba(0, 0, 0, 0.3);
+		box-shadow: none !important
+	}
+
+	html.no-touch #list-entry a:hover p:before,
+	html.touch #list-entry a.hover p:before {
+		content: none;
+		display: none
+	}
+
+}
+
+@media all and (width: 760px) {
+	#list-entry li a {
+		padding-top: 152px !important
+	}
+}
+
+@media all and (width: 759px) {
+	#list-entry li a {
+		padding-top: 206px !important
+	}
+}
+
+@media all and (width: 736px) {
+	#list-entry li a {
+		padding-top: 186px !important
+	}
+}
+
+@media all and (width: 667px) {
+	#list-entry li a {
+		padding-top: 186px !important
+	}
+}
+
+@media all and (width: 568px) {
+	#list-entry li a {
+		padding-top: 158px !important
+	}
+}
+
+@media all and (width: 480px) {
+	#list-entry li a {
+		padding-top: 133px !important
+	}
+}
+
+@media all and (max-width: 479px) {
+	
+	#list-entry li {
+		width: 100%
+	}
+	
+	#list-entry li span,
+	#list-entry p {
+		text-align: center
+	}
+	
+	#list-entry li span {
+		bottom: 50px
+	}
+	
+	#list-entry p {
+		bottom: 20px
+	}
+	
+}
+
+@media all and (width: 414px) {
+	#list-entry li a {
+		padding-top: 231px !important
+	}
+}
+
+@media all and (width: 375px) {
+	#list-entry li a {
+		padding-top: 208px !important
+	}
+}
+
+@media all and (width: 375px) {
+	#list-entry li a {
+		padding-top: 208px !important
+	}
+}
+
+@media all and (width: 320px) {
+	#list-entry li a {
+		padding-top: 178px !important
+	}
+}

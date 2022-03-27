@@ -1,0 +1,974 @@
+@charset "utf-8";
+
+/* 댓글 */
+
+#cmt-entry {
+	display: none;
+	padding-top: 5px
+}
+
+#wrap.open-cmt #cmt-entry {
+	display: block !important
+}
+
+#cmt-entry ol {
+	padding-bottom: 4px;
+	margin-top: 20px
+}
+
+#cmt-entry .main {
+	position: relative;
+	margin-bottom: 50px
+}
+
+#cmt-entry ul {
+	padding-top: 20px;
+	padding-left: 78px
+}
+
+#cmt-entry ul .main {
+	margin-bottom: 20px
+}
+
+#cmt-entry ul .main:last-child {
+	margin-bottom: 20px
+}
+
+#cmt-entry .tt_more_preview_comments_wrap {
+	margin-bottom: 20px;
+	text-align: center !important;
+	cursor: default !important
+}
+
+#cmt-entry .tt_more_preview_comments_text {
+	color: #666;
+	font-size: 18px;
+	font-weight: 300;
+	cursor: pointer
+}
+
+html.dark #cmt-entry .tt_more_preview_comments_text {
+	color: #aaa
+}
+
+html.no-touch #cmt-entry .tt_more_preview_comments_text:hover,
+html.touch #cmt-entry .tt_more_preview_comments_text.hover {
+	color: #39f
+}
+
+html.dark.no-touch #cmt-entry .tt_more_preview_comments_text:hover,
+html.dark.touch #cmt-entry .tt_more_preview_comments_text.hover {
+	color: #6cf
+}
+
+#cmt-entry header {
+	position: relative;
+	height: 45px
+}
+
+#cmt-entry header:before,
+#cmt-entry header:after {
+	content: "";
+	position: absolute
+}
+
+#cmt-entry header:before {
+	top: 5px;
+	left: -105px;
+	padding: 33px;
+	background-color: #000;
+	background-position: -151px -491px
+}
+
+html.dark #cmt-entry header:before {
+	background-color: #ccc
+}
+
+#cmt-entry ul header:before {
+	left: -79px
+}
+
+#cmt-entry header:after {
+	z-index: 2;
+	top: 4px;
+	left: -106px;
+	padding: 34px;
+	background-position: -97px -259px
+}
+
+#cmt-entry ul header:after {
+	left: -80px;
+	background-position: -97px -327px
+}
+
+#cmt-entry header span {
+	display: block;
+	font-weight: 300;
+	white-space: nowrap;
+	cursor: default
+}
+
+#cmt-entry span.username {
+	display: block;
+	position: relative;
+	height: 26px;
+	font-size: 18px;
+	line-height: 26px
+}
+
+.main.rp_secret > header span.username,
+.main.guest_secret > header span.username {
+	padding-left: 49px
+}
+
+.main.rp_admin > header span.username,
+.main.guest_admin > header span.username {
+	display: inline-block !important;
+	padding-right: 48px
+}
+
+.main.rp_secret > header span.username:before,
+.main.guest_secret > header span.username:before,
+.main.rp_admin > header span.username:after,
+.main.guest_admin > header span.username:after {
+	position: absolute;
+	top: 50%;
+	height: 16px;
+	padding: 0 5px;
+	line-height: 16px;
+	font-weight: 300;
+	border-radius: 3px
+}
+
+.main.rp_secret > header span.username:before,
+.main.guest_secret > header span.username:before {
+	content: "비밀글";
+	left: 0;
+	border: 1px solid #000;
+	margin-top: -9px;
+	font-size: 13px;
+	background: none !important
+}
+
+html.dark .main.rp_secret > header span.username:before,
+html.dark .main.guest_secret > header span.username:before {
+	border-color: #fff
+}
+
+.main.rp_admin > header span.username:after,
+.main.guest_admin > header span.username:after {
+	content: "관리자";
+	right: 0;
+	margin-top: -8px;
+	color: #fff;
+	font-size: 13px;
+	background: #666 !important
+}
+
+html.no-webgl .main.rp_admin > header span.username:after,
+html.no-webgl .main.guest_admin > header span.username:after {
+	content: none;
+	display: none
+}
+
+html.dark .main.rp_admin > header span.username:after,
+html.dark .main.guest_admin > header span.username:after {
+	color: #222;
+	background: #aaa !important
+}
+
+#cmt-entry span.username img {
+	position: absolute;
+	z-index: 1;
+	top: 6px;
+	left: -104px;
+	width: 64px;
+	height: 64px;
+	background-color: #fff
+}
+
+#cmt-entry ul span.username img {
+	left: -78px
+}
+
+#cmt-entry .tistoryProfileLayerTrigger {
+	display: none !important
+}
+
+#cmt-entry .date {
+	font-size: 13px;
+	line-height: 16px;
+	text-indent: 1px
+}
+
+#cmt-entry nav {
+	position: absolute;
+	top: 14px;
+	left: -141px;
+	width: 21px;
+	height: 48px
+}
+
+#cmt-entry ul nav {
+	left: -134px
+}
+
+#cmt-entry nav a {
+	position: absolute;
+	left: 0;
+	padding: 21px 21px 0 0
+}
+
+#cmt-entry nav .reply {
+	top: 0;
+	background-position: -181px -92px
+}
+
+html.no-touch #cmt-entry nav .reply:hover,
+html.touch #cmt-entry nav .reply.hover {
+	background-position: -181px -114px
+}
+
+#cmt-entry nav .mod {
+	bottom: 0;
+	background-position: -181px -136px
+}
+
+#cmt-entry ul nav .mod {
+	top: 50%;
+	margin-top: -10.5px
+}
+
+html.no-touch #cmt-entry nav .mod:hover,
+html.touch #cmt-entry nav .mod.hover {
+	background-position: -181px -158px
+}
+
+#cmt-entry p {
+	padding-top: 4px;
+	text-align: justify;
+	overflow-wrap: break-word;
+	word-break: keep-all
+}
+
+#cmt-entry ul p:last-child {
+	padding-bottom: 0
+}
+
+/* 댓글 쓰기 */
+
+#write {
+	position: relative;
+	padding: 2px 0 46px;
+	margin: -2px 0 -26px
+}
+
+#write h4,
+#write h4:after {
+	position: absolute;
+	top: 0;
+	padding: 48px
+}
+
+#write h4 {
+	left: -136px;
+	background-position: 0 -249px
+}
+
+#write aside,
+#write aside div,
+#write aside input,
+#write textarea {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box
+}
+
+#write aside {
+	max-width: 600px;
+	width: 100%;
+	height: 36px
+}
+
+#write aside div {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 30%;
+	height: 36px;
+	padding-right: 6px
+}
+
+#write aside input,
+#write textarea {
+	border: 1px solid rgba(51, 153, 255, 0);
+	background-color: #efefef;
+	border-radius: 6px
+}
+
+html.dark #write aside input,
+html.dark #write textarea {
+	border-color: rgba(102, 204, 255, 0);
+	background-color: #444
+}
+
+html.no-rgba #write aside input,
+html.no-rgba #write textarea {
+	border-color: #efefef
+}
+
+html.dark.no-rgba #write aside input,
+html.dark.no-rgba #write textarea {
+	border-color: #444
+}
+
+html.webgl #write aside input,
+html.webgl #write textarea {
+	-webkit-transition: border-color 0.3s, background-color 0.3s;
+	-moz-transition: border-color 0.3s, background-color 0.3s;
+	transition: border-color 0.3s, background-color 0.3s
+}
+
+html.webgl #write aside div input:focus,
+html.webgl #write textarea:focus {
+	-webkit-transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	-moz-transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s
+}
+
+html.webgl #write aside input {
+	box-shadow: inset 0 0 0 5px rgba(51, 153, 255, 0)
+}
+
+html.dark.webgl #write aside input {
+	box-shadow: inset 0 0 0 5px rgba(102, 204, 255, 0)
+}
+
+html.webgl #write textarea {
+	box-shadow: inset 0 0 0 13px rgba(51, 153, 255, 0)
+}
+
+html.dark.webgl #write textarea {
+	box-shadow: inset 0 0 0 13px rgba(102, 204, 255, 0)
+}
+
+#write aside input {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 30px;
+	padding: 5px 5px 5px 39px;
+	font-size: 16px;
+	line-height: 18px
+}
+
+#write aside label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 30px;
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: center;
+	cursor: text
+}
+
+html.dark #write aside label {
+	color: rgba(255, 255, 255, 0.6)
+}
+
+html.no-rgba #write aside label {
+	color: #666
+}
+
+html.dark.no-rgba #write aside label {
+	color: #aaa
+}
+
+#write .url {
+	width: 40%;
+	padding-right: 0
+}
+
+#write textarea {
+	display: block;
+	overflow: auto;
+	width: 100%;
+	min-height: 130px;
+	height: 130px;
+	padding: 9px 15px;
+	resize: none
+}
+
+#write h4 + textarea {
+	min-height: 140px;
+	height: 140px
+}
+
+html.touch #write textarea {
+	-webkit-overflow-scrolling: touch
+}
+
+#write aside input:focus,
+#write textarea:focus {
+	border-color: rgba(51, 153, 255, 1);
+	background-color: #fff
+}
+
+html.no-rgba #write aside input:focus,
+html.no-rgba #write textarea:focus {
+	border: 1px solid #39f
+}
+
+html.dark #write aside input:focus,
+html.dark #write textarea:focus {
+	border-color: rgba(102, 204, 255, 1);
+	background-color: #000
+}
+
+html.dark.no-rgba #write aside input:focus,
+html.dark.no-rgba #write textarea:focus {
+	border: 1px solid #6cf
+}
+
+html.webgl #write aside input:focus,
+html.webgl #write textarea:focus {
+	box-shadow: inset 0 0 0 0 rgba(51, 153, 255, 1)
+}
+
+html.dark.webgl #write aside input:focus,
+html.dark.webgl #write textarea:focus {
+	box-shadow: inset 0 0 0 0 rgba(102, 204, 255, 1)
+}
+
+html.no-webgl #write aside input:focus,
+html.no-webgl #write textarea:focus {
+	border-color: #39f
+}
+
+#write textarea:focus {
+	resize: vertical
+}
+
+#write .mute,
+#write #submit {
+	position: absolute;
+	bottom: 10px
+}
+
+#write .mute {
+	overflow: hidden;
+	right: 92px;
+	padding: 15px
+}
+
+html.no-rgba #write .mute {
+	display: none
+}
+
+#write .mute input,
+#write .mute label {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+#write .mute input {
+	visibility: hidden
+}
+
+#write .mute label {
+	padding: 15px;
+	background-position: -120px -228px;
+	cursor: pointer
+}
+
+html.no-touch #write .mute label:hover,
+html.touch #write .mute label.hover {
+	background-position: -150px -228px
+}
+
+#write .mute input:checked + label {
+	background-position: -150px -168px
+}
+
+html.no-touch #write .mute input:checked + label:hover,
+html.touch #write .mute input:checked + label.hover {
+	background-position: -150px -198px
+}
+
+#write #submit {
+	right: 0;
+	width: 92px;
+	height: 30px;
+	cursor: pointer
+}
+
+#write #submit span {
+	display: block;
+	float: right;
+	overflow: hidden;
+	position: relative;
+	height: 30px;
+	padding-left: 30px;
+	color: #666;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 300;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+html.dark #write #submit span {
+	color: #aaa
+}
+
+#write #submit span:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px;
+	background-position: -120px -198px
+}
+
+#cmt-entry.insert #write h4 {
+	display: none
+}
+
+#cmt-entry.insert ol {
+	padding-left: 78px
+}
+
+#cmt-entry.insert header:before {
+	left: -79px
+}
+
+#cmt-entry.insert header:after {
+	left: -80px
+}
+
+#cmt-entry.insert span.username img {
+	left: -78px
+}
+
+#cmt-entry.insert nav {
+	left: -107px
+}
+
+html.no-touch #write #submit:hover span,
+html.touch #write #submit.hover span {
+	color: #39f
+}
+
+html.dark.no-touch #write #submit:hover span,
+html.dark.touch #write #submit.hover span {
+	color: #6cf
+}
+
+html.no-touch #write #submit:hover span:before,
+html.touch #write #submit.hover span:before {
+	background-position: -120px -168px
+}
+
+@media all and (max-width: 759px) {
+
+	/* 댓글 */
+	
+	#cmt-entry {
+		padding: 2px 2px 0
+	}
+	
+	#cmt-entry ol {
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: 24px
+	}
+	
+	#cmt-entry ul {
+		padding-left: 48px
+	}
+	
+	#cmt-entry header,
+	#cmt-entry ul header {
+		padding-left: 48px
+	}
+	
+	#cmt-entry header:before {
+		top: 0;
+		left: 0 !important;
+		padding: 20px;
+		background-position: -242px -418px
+	}
+	
+	#cmt-entry header:after {
+		top: -1px;
+		left: -1px !important;
+		padding: 21px;
+		background-position: -181px -141px
+	}
+	
+	#cmt-entry ul header:after {
+		background-position: -181px -183px
+	}
+	
+	#cmt-entry span.username {
+		height: 24px;
+		line-height: 24px
+	}
+	
+	#cmt-entry span.username img {
+		z-index: 2;
+		top: 0;
+		left: -48px !important;
+		width: 40px;
+		height: 40px;
+		border-radius: 0
+	}
+
+	#cmt-entry .date {
+		height: 18px;
+		line-height: 18px
+	}
+	
+	#cmt-entry nav {
+		top: 0;
+		left: auto !important;
+		right: -10px;
+		height: 40px
+	}
+	
+	#cmt-entry nav a {
+		top: 0 !important;
+		left: auto;
+		bottom: auto;
+		padding: 20px;
+		margin: 0 !important
+	}
+	
+	#cmt-entry nav a.mod {
+		right: 0;
+		background-position: -80px 0
+	}
+	
+	html.no-touch #cmt-entry nav a.mod:hover,
+	html.touch #cmt-entry nav a.mod.hover {
+		background-position: -80px -40px
+	}
+
+	#cmt-entry nav a.reply {
+		right: 40px;
+		background-position: -242px -272px
+	}
+
+	html.no-touch #cmt-entry nav a.reply:hover,
+	html.touch #cmt-entry nav a.reply.hover {
+		background-position: -242px -312px
+	}
+	
+	#cmt-entry p,
+	#cmt-entry ul p {
+		padding-top: 4px;
+		padding-left: 0
+	}
+	
+	#cmt-entry.insert ol {
+		padding-left: 16px
+	}
+
+	#cmt-entry.insert nav {
+		left: inherit
+	}
+	
+	#cmt-entry.insert p {
+		padding-left: inherit
+	}
+	
+	/* 댓글 쓰기 */
+	
+	#write {
+		padding-left: inherit;
+		padding-bottom: 40px;
+		margin-bottom: 0
+	}
+
+	#wrap.ad-btm #write {
+		margin-bottom: 30px
+	}
+	
+	#write h4 {
+		display: none
+	}
+	
+	#write aside {
+		max-width: 100%;
+		height: 42px;
+		border-radius: 6px
+	}
+	
+	#write aside div {
+		height: 40px;
+		padding: 0;
+		background-color: #efefef
+	}
+	
+	html.dark #write aside div {
+		background-color: #444
+	}
+	
+	#write aside input {
+		height: 40px;
+		padding: 9px 15px 9px 52px
+	}
+	
+	#write .username {
+		border-radius: 6px 0 0 6px
+	}
+	
+	#write .url {
+		border-radius: 0 6px 6px 0
+	}
+	
+	#write aside label {
+		width: 48px;
+		height: 40px;
+		line-height: 40px;
+		text-align: left;
+		text-indent: 16px
+	}
+
+	#write textarea {
+		min-height: 118px;
+		height: 118px;
+		padding: 10px 15px;
+		border-bottom-width: 0;
+		border-radius: 6px 6px 0 0
+	}
+	
+	#write h4 + textarea {
+		min-height: 128px;
+		height: 128px
+	}
+	
+	#write .mute,
+	#write #submit {
+		bottom: 0
+	}
+	
+	#write .mute {
+		z-index: 1;
+		left: 0;
+		right: auto;
+		padding: 20px 26px
+	}
+	
+	#write .mute label {
+		padding: 20px 26px;
+		background: none !important
+	}
+	
+	#write .mute label:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 16px;
+		padding: 13px;
+		margin-top: -13px;
+		background-position: -252px -228px
+	}
+	
+	html.no-touch #write .mute label:hover:before,
+	html.touch #write .mute label.hover:before {
+		background-position: -252px -202px
+	}
+	
+	#write .mute input:checked + label:before {
+		background-position: -225px -176px
+	}
+	
+	html.no-touch #write .mute input:checked + label:hover:before,
+	html.touch #write .mute input:checked + label.hover:before {
+		background-position: -225px -202px
+	}
+	
+	#write #submit {
+		width: 100%;
+		height: 40px;
+		border-radius: 0 0 6px 6px
+	}
+	
+	#write #submit span {
+		display: inline-block;
+		float: none;
+		height: 40px;
+		padding-left: 23px;
+		line-height: 40px;
+		text-align: center
+	}
+	
+	html.no-touch #write #submit {
+		background: #efefef
+	}
+	
+	html.dark.no-touch #write #submit {
+		background: #444
+	}
+	
+	html.touch #write #submit {
+		background: #e3e3e3
+	}
+	
+	html.dark.touch #write #submit {
+		background: #555
+	}
+	
+	html.webgl #write #submit {
+		-webkit-transition: background-color 0.3s;
+		-moz-transition: background-color 0.3s;
+		transition: background-color 0.3s
+	}
+	
+	#write #submit span:before {
+		top: 50%;
+		padding: 13px;
+		margin-top: -13px;
+		background-position: -227px -150px
+	}
+	
+	html.no-touch #write #submit:hover span:before,
+	html.touch #write #submit.hover span:before {
+		background-position: -254px -150px
+	}
+
+	html.no-touch #write #submit:hover {
+		background-color: #e3e3e3
+	}
+	
+	html.dark.no-touch #write #submit:hover {
+		background-color: #555
+	}
+	
+	#write textarea:focus + #submit {
+		z-index: 2;
+		background-color: #39f !important
+	}
+	
+	html.dark #write textarea:focus + #submit {
+		background-color: #6cf !important
+	}
+	
+	#write textarea:focus + #submit span {
+		color: #fff !important
+	}
+	
+	html.dark #write textarea:focus + #submit span {
+		color: #000 !important
+	}
+
+	#write textarea:focus + #submit span:before {
+		background-position: -254px -176px !important
+	}
+	
+	#write aside {
+		margin: auto;
+	}
+	
+}
+
+@media all and (max-width: 479px) {
+
+	.main.rp_admin > header span.username,
+	.main.guest_admin > header span.username {
+		display: block !important;
+		padding-right: 0
+	}
+
+	.main.rp_admin > header span.username:after,
+	.main.guest_admin > header span.username:after {
+		content: none
+	}
+	
+	/* 댓글 쓰기 */
+	
+	#write aside {
+		height: 62px
+	}
+	
+	#write aside div,
+	#write aside div input,
+	#write aside div label {
+		height: 30px
+	}
+	
+	#write aside div {
+		width: 50%
+	}
+	
+	#write .url {
+		width: 100%;
+		border-radius: 0 0 6px 6px
+	}
+	
+	#write .username {
+		border-radius: 6px 0 0 0
+	}
+	
+	#write .pin {
+		border-radius: 0 6px 0 0
+	}
+	
+	#write aside input {
+		padding: 5px 15px 5px 51px;
+		line-height: 18px
+	}
+	
+	#write aside label {
+		font-size: 13px;
+		line-height: 30px
+	}
+	
+	#write textarea {
+		min-height: 130px;
+		height: 130px
+	}
+
+	#write h4 + textarea {
+		min-height: 150px;
+		height: 150px
+	}
+
+}
+
+@media all and (max-width: 359px) {
+	#cmt-entry ol {
+		padding-left: 12px;
+		padding-right: 12px
+	}
+	
+	#cmt-entry.insert ol {
+		padding-left: 12px
+	}
+	
+	#write aside input {
+		height: 40px;
+		padding: 5px 11px 5px 43px
+	}
+	
+	#write aside label {
+		text-indent: 12px
+	}
+
+	#write .mute,
+	#write .mute label {
+		padding: 20px 22px
+	}
+
+	#write .mute label:before {
+		left: 12px
+	}
+	
+	#write textarea {
+		padding: 10px 11px
+	}
+}

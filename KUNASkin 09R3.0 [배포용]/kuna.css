@@ -1,0 +1,82 @@
+/* part of CUSTOM :: KUNA */
+
+#title {
+	background:url("./images/k_title.png") top left no-repeat;
+	display:block;
+	text-indent: -9999px;
+	
+	width:361px;
+	height:167px;
+	position:absolute;
+	top: -80px;
+	left: -20px;
+}
+#bg_side {
+	background:url("./images/bg_side1.png") top left no-repeat;
+	width:190px;
+	height:977px;
+	position:fixed;
+	top: 100px;
+	left: 880px;
+	z-index: -10;
+}
+
+.containerTop {
+	background:url("./images/k_cont_t.png") top left no-repeat;
+	height:41px;
+}
+.containerInner {
+	background:url("./images/k_cont_m.png") top left repeat-y;
+}
+.bodyTop {
+	background:url("./images/k_body_t.png") top left no-repeat;
+	height:40px;
+}
+.bodyMid {
+	/* orgina Mid size : 840px */
+	/* resize Mid size : 670px */
+	background:url("./images/k_body_m.jpg") top left repeat-y;
+	
+	/* for Proper content size&pos */
+	padding-left: 150px;
+	padding-right: 20px;
+}
+.bodyBtm {
+	background:url("./images/k_body_b.png") top left no-repeat;
+	height:40px;
+}
+
+/* from Firejune CSS */
+.subject {
+	font-family: "HY견고딕", "돋움";
+	width:100%;
+	text-align: left;
+	font-size:25px;
+	font-weight:bold;
+	text-indent: 0px;
+	letter-spacing: -1px;
+	color:#fdfdfd;
+}
+
+.blackout {
+	font-family: "HY견고딕", "돋움";
+	font-size:25px;
+	font-weight:bold;
+	color:#ffffff;
+	line-height:35px;
+	background-color:#cccccc;
+	letter-spacing: -1px;
+}
+
+.blackout a:link,
+.blackout a:visited,
+.blackout a:active  { color:#fdfdfd;}
+.blackout a:hover   { color:#651900;}
+
+
+/* adsense */
+.adsense {
+	margin: 0 auto;
+	width:468px;
+	height:60px;
+}

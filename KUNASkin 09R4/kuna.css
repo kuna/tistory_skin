@@ -1,0 +1,81 @@
+/* part of CUSTOM :: KUNA */
+
+/* 메뉴부분 */
+/*
+.menu a {
+	display:block;
+	width:120px;
+	height:94px;
+	text-indent:-9999px;
+	float:left;
+}
+.menu .m_entry { background: transparent url(./images/k_menu.gif) no-repeat 0px 0px; }
+.menu .m_profile { background: transparent url(./images/k_menu.gif) no-repeat -120px 0px; }
+.menu .m_guestbook { background: transparent url(./images/k_menu.gif) no-repeat -240px 0px; }
+.menu .m_tag { background: transparent url(./images/k_menu.gif) no-repeat -360px 0px; }
+.menu .m_entry:hover { background: transparent url(./images/k_menu.gif) no-repeat 0px -94px; }
+.menu .m_profile:hover { background: transparent url(./images/k_menu.gif) no-repeat -120px -94px; }
+.menu .m_guestbook:hover { background: transparent url(./images/k_menu.gif) no-repeat -240px -94px; }
+.menu .m_tag:hover { background: transparent url(./images/k_menu.gif) no-repeat -360px -94px; }*/
+
+.menu { text-align:center;} 
+.menu a { color:#999; }
+.menu a:hover { color:#ccc; }
+
+/* 제목부분 */
+#bg_side {
+	background:url("./images/bg_side1.png") top left no-repeat;
+	width:190px;
+	height:977px;
+	position:fixed;
+	top: 100px;
+	left: 880px;
+	z-index: -10;
+}
+.bodyMid {
+	background-color: #fff;
+	padding: 0 20px;
+	-moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px;
+}
+
+/* from Firejune CSS */
+.subject {
+	font-family: "맑은 고딕", "Malgun Gothic", "HY견고딕", "돋움";
+	width:100%;
+	text-align: left;
+	font-size:25px;
+	font-weight:bold;
+	text-indent: 0px;
+	letter-spacing: -1px;
+	color:#fdfdfd;
+}
+
+.blackout {
+	font-family: "맑은 고딕", "Malgun Gothic", "HY견고딕", "돋움";
+	font-size:25px;
+	font-weight:bold;
+	color:#ffffff;
+	line-height:35px;
+	background-color:#cccccc;
+	letter-spacing: -1px;
+}
+
+.blackout a:link,
+.blackout a:visited,
+.blackout a:active  { color:#fdfdfd;}
+.blackout a:hover   { color:#88b;}
+
+
+/* adsense */
+.adsense {
+	margin: 0 auto;
+	width:468px;
+	height:60px;
+}
+
+/* ReplyContainer 부분 */
+.replyContainer {
+	background-color:#f0f0f0;
+	padding:0 20px;
+}

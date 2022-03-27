@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko-kr" class="white no-expand no-cdn-icon">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" href="./images/a_icon_cover.png" />
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+	<title>[##_page_title_##] :: [##_title_##]</title>
+	<script>
+		/* 기본 설정: 설치하기 전 '프라치노 공간'에서 '설치하기'를 꼭 확인하세요 */
+		/* 자신의 블로그 URL을 입력하세요 */
+		var myAddress = "http://blog.insane.pe.kr";
+		
+		/* DISQUS 댓글을 생성할 때 사용한 단축 이름을 입력하세요. / (shortname).disqus.com */
+		var disqus_shortname = "lazykuna";
+		
+		/* 스크립트 핵심 영역 / 경고! - 이 부분은 건들지 마세요 */
+		var rootURI = "./images/";
+		var blogTitle = "[##_title_##]";
+		var head = document.getElementsByTagName("head")[0];
+	</script>
+	<script async src="./images/script_modernizr.js"></script>
+	<!--[if lt IE 9]><script async src="./images/script_html5shiv.js"></script><script defer src="//s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.1.min.js"></script><![endif]-->
+	<!--[if gte IE 9]><!--><script defer src="//s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-2.1.1.min.js"></script><!--<![endif]-->
+	<script defer src="./images/script_fonts.js"></script>
+	<script defer src="./images/script_core_v1.6.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
+</head>
+<body>
+<!--[if lt IE 10]><p class="old-ie"><span class="desktop">이 브라우저는 지원하지 않습니다. </span>브라우저를 최신 버전으로 업데이트하세요</p><![endif]-->
+<noscript>
+	<p class="noscript"><span class="desktop">JavaScript를 비활성화했나요? </span>브라우저 설정에서 JavaScript를 활성화하세요</p>
+</noscript>
+<s_t3>
+	<span id="loading">Loading</span>
+	<div class="global">
+		<!-- 티스토리 내비게이션 -->
+		<nav id="ts-nav" class="desktop">
+			<ul>
+				<li class="about-toggle-list"><a id="about-toggle" href="#">블로그에 관하여</a></li>
+				<li><a class="ts-admin" href="[##_owner_url_##]">관리</a></li>
+				<li><a id="login" href="#">로그…</a></li>
+			</ul>
+		</nav>
+		<header id="header">
+			<a id="jacket" href="[##_blog_link_##]">
+				<div class="cover no-one-line no-font-size">
+					<h1>[##_title_##]</h1>
+				</div>
+			</a>
+			<nav id="nav">
+				[##_blog_menu_##]
+				<!-- category - modified by kuna -->
+				<a href="#" onclick="$('#category').toggle(); return false;">카테고리</a>
+				<style>#category { position: absolute; width: 160px; top: 0px; margin-left: 120px; padding:5px 10px 10px 20px; border-radius: 0 0 6px 6px; border: 1px solid #39F; border-top: 15px solid #39F;
+background-color: rgba(255, 255, 255, 0.94); } </style>
+				<aside id="category" style="display:none;">
+				[##_category_list_##]
+				</aside>
+			</nav>
+			<button id="nav-toggle" class="mobile no-text" type="button">메뉴 보기</button>
+			<button id="nav-close" class="mobile no-text" type="button">메뉴 닫기</button>
+			<a id="search-toggle" href="#">검색</a>
+			
+			<!-- dialogues -->
+			<aside id="search" style="display:none">
+				<s_search>
+				<input id="search-field" type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" />
+				<button id="search-submit" class="bg no-text" type="button" onclick="[##_search_onclick_submit_##]">검색하기</button>
+				</s_search>
+				<button id="search-close" class="bg no-text" type="button">취소</button>
+			</aside>
+			<aside id="about" style="display:none">
+				<section id="info">
+					<div class="avatar">[##_blog_image_##]</div>
+					<h4>[##_title_##]</h4>
+					<p>[##_desc_##] - [##_blogger_##]</p>
+					<p><a href="https://kuna.github.io">need more?</a></p>
+				</section>
+				<div id="link">
+					<ul>
+						<li><a class="add-btn" href="#" onclick="window.open('/toolbar/popup/link','TISTORY에 추가하기','width=520, height=560, scrollbars=no, status=no;');return false">TISTORY에 링크 추가</a></li>
+						<li><a class="rss-btn" href="[##_rss_url_##]" target="_blank">RSS Feed 구독하기</a></li>
+						<s_link_rep>
+						<li>
+							<a class="custom-link-btn" href="[##_link_url_##]" target="_blank"><img src="[##_link_url_##]/index.gif" onerror="this.parentNode.removeChild(this)" width="30" height="30" alt="[##_link_site_##]" />[##_link_site_##]</a>
+						</li>
+						</s_link_rep>
+					</ul>
+				</div>
+				<a id="write-btn" class="bg no-text" href="[##_owner_url_##]/entry/post" title="새로운 글 작성하기">새로운 글 작성하기</a>
+				<button id="about-close" class="bg no-text" type="button">닫기</button>
+			</aside>
+		</header>
+	</div>
+
+	<!-- 포장 영역:
+	open-cmt - 일반 댓글 열기
+	open-disqus - DISQUS 댓글 열기 -->
+	<div id="wrap" class="open-cmt">
+
+		<s_list>
+		<!-- 글목록 영역 -->
+		<script>
+			/* 글목록 스크립트 핵심 영역 */
+			var resultTitle = "[##_list_conform_##]";	
+		</script>
+		<script defer src="./images/script_list_v1.6.js"></script>
+		<section id="list-entry" class="content">
+			<header class="title">
+				<span class="date">[##_list_count_##]개 발견</span>
+				<h2 id="headline">[##_list_conform_##] 검색 결과</h2>
+			</header>
+			<ol>
+				<s_list_rep>
+				<li>
+					<a class="thumb-no-display" href="[##_list_rep_link_##]">
+						<!-- <img class="thumb no-display" src="./images/bg_opacity_0.png" width="358" height="201" alt="미리보기" /> -->
+						<s_list_rep_thumbnail>
+							<img class="thumb" src="[##_list_rep_thumbnail_##]" width="358" height="201" alt="미리보기" />
+						</s_list_rep_thumbnail>
+						<span class="date">[##_list_rep_regdate_##]</span>
+						<p>[##_list_rep_title_##]</p>
+					</a>
+				</li>
+				</s_list_rep>
+			</ol>
+		</section>
+		</s_list>
+
+		<s_tag>
+		<!-- 태그 영역 -->
+		<script>
+			/* 태그 스타일시트를 불러옵니다 */
+			var tagStyle = document.createElement("link");
+			tagStyle.rel = "stylesheet";
+			tagStyle.type = "text/css";
+			tagStyle.href = rootURI + "style_tag_v1.3.css";
+			head.appendChild(tagStyle);
+			
+			var changeTagTitle = "태그 클라우드 - " + blogTitle;
+			document.title = changeTagTitle;
+		</script>
+		<section id="tag-entry" class="content">
+			<header class="title">
+				<span class="date"></span>
+				<h2 id="headline">태그 클라우드</h2>
+			</header>
+			<ul>
+				<s_tag_rep>
+				<li><a class="[##_tag_class_##]" href="[##_tag_link_##]">[##_tag_name_##]</a></li>
+				</s_tag_rep>
+			</ul>
+		</section>
+		</s_tag>
+
+		<s_article_protected>
+		<!-- 보호 모드 영역 -->
+		<script>
+			/* 보호 모드 스크립트 핵심 영역 */
+			var protectTitle = "[##_article_rep_title_##]";
+		</script>
+		<script defer src="./images/script_protect_v1.1.js"></script>
+		<section id="protect-entry" class="content">
+			<header class="title">
+				<span class="date">[##_article_rep_date_##] - [##_article_rep_author_##]</span>
+				<h2><a id="headline" href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+			</header>
+			<!-- 이미지 커버:
+				default - 기본 테마
+			-->
+			<div id="protect-wrap" class="default">
+				<div class="field">
+					<label for="[##_article_password_##]"></label>
+					<div class="alert">
+						<h3>보호 모드<span> 접근</span></h3>
+						<p><span>콘텐츠를 보려면 </span>올바른 암호를 입력하세요</p>
+					</div>
+					<div class="form">
+						<input id="[##_article_password_##]" type="password" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" />
+						<button class="no-text" type="button" value="submit" onclick="[##_article_dissolve_##]" title="잠금 해제">잠금 해제</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		</s_article_protected>
+
+		<s_article_rep>
+		<!-- 본문 영역 -->
+		<script>
+			/* 본문 스크립트 핵심 영역 */
+			var articleID = "/[##_article_rep_id_##]";
+			var articleTitle = "[##_article_rep_title_##]";
+		</script>
+		<script defer src="./images/script_article_v1.6.js"></script>
+		
+		<!-- AdSense Kit: 핵심 영역
+		이것을 사용하려면 이를 감싼 주석을 꼭 지워야합니다 -->
+		<!--
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		-->
+		
+		<section id="article-entry" class="content">
+			<header class="title">
+				<s_ad_div>
+				<nav id="admin-nav">
+					<a class="bg no-text tb" href="#" onclick="[##_s_ad_t_onclick_##]" title="트랙백…">트랙백…</a>
+					<a class="bg no-text mod" href="[##_s_ad_m_link_##]" title="수정…">수정</a>
+					<a class="bg no-text del" href="#" onclick="[##_s_ad_d_onclick_##]" title="삭제…">삭제…</a>
+				</nav>
+				</s_ad_div>
+				<span class="date">[##_article_rep_date_##] - [##_article_rep_author_##]</span>
+				<h2><a id="headline" href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+			</header>
+			
+			<!-- AdSense Kit: 상단
+			이것을 사용하려면 요소를 감싼 주석을 지우세요.
+			반응형 광고를 생성한 뒤 data-ad-client와 data-ad-slot을 입력하면 광고가 활성화됩니다.
+			상단의 핵심 영역이 활성화되었는지 확인해주세요 -->
+			<!--
+			<aside class="adsense-kit top">
+				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="0000000000" data-ad-format="horizontal"></ins>
+				<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			</aside>
+			-->
+			
+			<div id="article" class="no-auto-font">
+				[##_article_rep_desc_##]
+
+				<!-- AdSense Kit: 하단
+				이것을 사용하려면 요소를 감싼 주석을 지우세요.
+				반응형 광고를 생성한 뒤 data-ad-client와 data-ad-slot을 입력하면 광고가 활성화됩니다.
+				상단의 핵심 영역이 활성화되었는지 확인해주세요 -->
+				<!--
+				<aside id="adsense-kit-btm" class="adsense-kit btm">
+					<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="0000000000" data-ad-format="rectangle, horizontal"></ins>
+					<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+				</aside>
+				-->
+
+			</div>
+		</section>
+
+		<!-- 활동하기 -->
+		<aside id="act">
+			<!-- 댓글 보기 -->
+			<a id="show-cmt" href="#cmt-entry">댓글 <s_rp_count>[##_article_rep_rp_cnt_##]건</s_rp_count></a>
+			<!-- DISQUS 보기 -->
+			<a id="show-disqus" class="act-disqus" href="/[##_article_rep_id_##]#disqus_thread">DISQUS</a>
+			<!-- 트랙백 보기 -->
+			<a id="show-tb" href="#tb-entry">트랙백 <s_tb_count>[##_article_rep_tb_cnt_##]건</s_tb_count></a>
+			<!-- 공유하기 보기 -->
+			<a id="show-share" href="#share-entry">공유하기</a>
+		</aside>
+			
+		<!-- 공유하기 -->
+		<div id="share-entry">
+			<ul id="share">
+				<li><a id="tweet" class="no-text" href="#">트위터</a></li>
+				<li><a id="facebook" class="no-text" href="#">Facebook</a></li>
+				<li class="mobile touch-share"><a id="kakaotalk" class="no-text" href="#">카카오톡</a></li>
+				<li class="mobile touch-share"><a id="kakaostory" class="no-text" href="#" target="_blank">카카오스토리</a></li>
+				<li class="no-touch-share"><a id="kakaostory-web" class="no-text" href="#">카카오스토리</a></li>
+				<li class="mobile touch-share"><a id="nhnline" class="mobile no-text" href="#" target="_blank">LINE</a></li>
+				<li><a id="evernote" class="no-text" href="#">Evernote</a></li>
+				<li><a id="plusone" class="no-text" href="#">Google+</a></li>
+			</ul>
+		</div>
+
+		<!-- 트랙백 -->
+		<s_tb>
+		<div id="tb-entry" class="content">
+			<div class="tb-url-entry">
+				<h4 id="tb-url">트랙백을 클릭하면 볼 수 있습니다</h4>
+			</div>
+			<s_tb_container>
+			<ol id="tb-list">
+				<s_tb_rep>
+				<li id="[##_tb_rep_id_##]">
+					<h4><a href="[##_tb_rep_url_##]" target="_blank" rel="external nofollow">[##_tb_rep_title_##]</a></h4>
+					<span class="date">[##_tb_rep_date_##] - [##_tb_rep_site_##]</span>
+					<p>[##_tb_rep_desc_##]</p>
+					<a class="del bg no-text" href="#" onclick="[##_tb_rep_onclick_delete_##]; return false">삭제…</a>
+				</li>
+				</s_tb_rep>
+			</ol>
+			</s_tb_container>
+		</div>
+		</s_tb>
+
+		<!-- DISQUS Kit: 댓글
+		이것을 사용하려면 요소를 감싼 주석을 지우세요 -->
+		<div id="disqus">
+			<script>
+				/* DISQUS 스크립트 핵심 영역 */
+				var disqus_url = myAddress + articleID;
+				var disqus_title = articleTitle;
+			</script>
+			<script async src="./images/script_disqus_v1.3.js"></script>
+			<div id="disqus_thread"></div>
+		</div>
+
+		<!-- 기본 댓글 -->
+		<s_rp>
+		<div id="cmt-entry" class="content">
+			<s_rp_container>
+			<ol>
+				<s_rp_rep>
+				<li id="[##_rp_rep_id_##]" class="main [##_rp_rep_class_##]">
+					<header>
+						<span class="username">[##_rp_rep_name_##]</span>
+						<span class="date">[##_rp_rep_date_##]</span>
+						<nav>
+							<a class="mod bg no-text" href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제…</a>
+							<a class="reply bg no-text" href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글에 댓글…</a>
+						</nav>
+					</header>
+					<p>[##_rp_rep_desc_##]</p>
+					<s_rp2_container> 
+					<ul>
+						<s_rp2_rep>
+						<li id="[##_rp_rep_id_##]" class="main [##_rp_rep_class_##]">
+							<header>
+								<span class="username">[##_rp_rep_name_##]</span>
+								<span class="date">[##_rp_rep_date_##]</span>
+								<nav>
+									<a class="mod bg no-text" href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제…</a>
+								</nav>
+							</header>
+							<p>[##_rp_rep_desc_##]</p>
+						</li>
+						</s_rp2_rep>
+					</ul>
+					</s_rp2_container>
+				</li>
+				</s_rp_rep>
+			</ol>
+			</s_rp_container>
+			<s_rp_input_form>
+			<div id="write">
+				<h4 class="bg no-text">댓글을 입력하세요</h4>
+				<s_rp_member>
+				<s_rp_guest>
+				<aside>
+					<div class="username">
+						<label for="username">이름</label>
+						<input id="username" type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" />
+					</div>
+					<div class="pin">
+						<label for="pin">암호</label>
+						<input id="pin" type="password" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" />
+					</div>
+					<div class="url">
+						<label for="url">URL</label>
+						<input id="url" type="url" class="homepage" name="[##_rp_input_homepage_##]" />
+					</div>
+				</aside>
+				</s_rp_guest>
+				<div class="mute">
+					<input id="mute" type="checkbox" name="[##_rp_input_is_secret_##]" />
+					<label class="bg no-text" for="mute">조용히</label>
+				</div>
+				</s_rp_member>
+				<textarea name="[##_rp_input_comment_##]" placeholder="댓글을 입력하세요" rows="10" cols="50"></textarea>
+				<button id="submit" type="button" onclick="[##_rp_onclick_submit_##]"><span>보내기</span></button>
+			</div>
+			</s_rp_input_form>
+		</div>
+		</s_rp>
+		</s_article_rep>
+		
+		<s_guest>
+		<!-- 방명록 영역 -->
+		<script defer src="./images/script_guestbook_v1.5.js"></script>
+		<section id="guestbook-entry" class="content">
+			<header class="title">
+				<span class="date"></span>
+				<h2 id="headline">방명록</h2>
+			</header>
+			
+			<!-- 방명록 스위치 -->
+			<nav class="act-disqus">
+				<a id="show-cmt" href="#">간단하게 작성하기</a>
+				<a id="show-disqus" href="#">DISQUS로 작성하기</a>
+			</nav>
+		</section>
+		
+		<!-- DISQUS Kit: 방명록
+		이것을 사용하려면 요소를 감싼 주석을 지우세요 -->
+		<div id="disqus">
+			<script>
+				/* DISQUS 스크립트 핵심 영역 */
+				var disqus_url = myAddress + "/guestbook";
+				var disqus_title = "방명록";
+			</script>
+			<script async src="./images/script_disqus_v1.3.js"></script>
+			<div id="disqus_thread"></div>
+		</div>
+		
+		<!-- 기본 방명록 -->
+		<div id="cmt-entry" class="guestbook content insert">
+			<s_guest_input_form>
+			<div id="write">
+				<h4 class="bg no-text">내용을 입력하세요</h4>
+				<s_guest_member>
+				<s_guest_form>
+				<aside>
+					<div class="username">
+						<label for="username">이름</label>
+						<input id="username" type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" />
+					</div>
+					<div class="pin">
+						<label for="pin">PIN</label>
+						<input id="pin" type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" />
+					</div>
+					<div class="url">
+						<label for="url">URL</label>
+						<input id="url" type="url" class="homepage" name="[##_guest_input_homepage_##]" />
+					</div>
+				</aside>
+				</s_guest_form>
+				<div class="mute">
+					<input id="mute" type="checkbox" name="[##_guest_input_is_secret_##]" />
+					<label class="bg no-text" for="mute">조용히</label>
+				</div>
+				</s_guest_member>
+				<textarea name="[##_guest_textarea_body_##]" placeholder="내용을 입력하세요" rows="10" cols="50"></textarea>
+				<button id="submit" type="button" onclick="[##_guest_onclick_submit_##]"><span>보내기</span></button>
+			</div>
+			</s_guest_input_form>
+			<s_guest_container>
+			<ol>
+				<s_guest_rep>
+				<li id="[##_guest_rep_id_##]" class="main [##_guest_rep_class_##]">
+					<header>
+						<span class="username">[##_guest_rep_name_##]</span>
+						<span class="date">[##_guest_rep_date_##]</span>
+						<nav>
+							<a class="mod bg no-text" href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제…</a>
+							<a class="reply  bg no-text" href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글에 댓글…</a>
+						</nav>
+					</header>
+					<p>[##_guest_rep_desc_##]</p>
+					<s_guest_reply_container> 
+					<ul>
+						<s_guest_reply_rep>
+						<li id="[##_guest_rep_id_##]" class="main [##_guest_rep_class_##]">
+							<header>
+								<span class="username">[##_guest_rep_name_##]</span>
+								<span class="date">[##_guest_rep_date_##]</span>
+								<nav>
+									<a class="mod bg no-text" href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제…</a>
+								</nav>
+							</header>
+							<p>[##_guest_rep_desc_##]</p>
+						</li>
+						</s_guest_reply_rep>
+					</ul>
+					</s_guest_reply_container>
+				</li>
+				</s_guest_rep>
+			</ol>
+			</s_guest_container>
+		</div>
+		</s_guest>
+		<nav id="paging">
+			<a id="go-to-top" class="no-text mobile" href="#">올라가기</a>
+			<s_paging>
+			<a id="prev" class="[##_no_more_prev_##] bg no-text" [##_prev_page_##]>최신</a>
+			<a id="next" class="[##_no_more_next_##] bg no-text" [##_next_page_##]>다음</a>
+			<div class="num-box">
+				<s_paging_rep>
+					<a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+				</s_paging_rep>
+			</div>
+			</s_paging>
+		</nav>
+		<footer>
+			<div class="cpr">
+				<div id="skin-barcode" class="desktop bg" title="Fraccino"></div>
+				<a class="blogger" href="[##_blog_link_##]">[##_blogger_##]</a>
+				<a class="designed-by" href="http://kaniwarispace.tistory.com" target="_blank">Fraccino Kaniwari, Maintenance by @lazykuna</a>
+				<nav>
+					<a id="tistory-btn" class="tistory-btn bg no-text" href="http://tistory.com" target="_blank" title="TISTORY…">TISTORY…</a>
+					<a id="footer-admin-btn" class="bg no-text mobile" href="[##_owner_url_##]" title="관리">관리</a>
+					<a id="guestbook-btn" class="bg no-text" href="[##_guestbook_link_##]" title="방명록">방명록</a>
+					<a id="tag-btn" class="bg no-text" href="[##_taglog_link_##]" title="태그">태그</a>
+					<a id="go-to-top-btn" class="bg no-text desktop" href="#" title="올라가기">올라가기</a>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	<a id="close" href="#"></a>
+</s_t3>
+</body>
+</html>

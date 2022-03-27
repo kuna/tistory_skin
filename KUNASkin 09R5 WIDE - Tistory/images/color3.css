@@ -1,0 +1,22 @@
+/* color1 */
+
+::selection {
+	color:#fff;
+    background: #9b6; /* Safari */
+}
+
+::-moz-selection {
+	color:#fff;
+    background: #9b6; /* Firefox */
+}
+
+a:link		{ color:#9b6; text-decoration:none; cursor:default;}
+a:visited	{ color:#9b6; text-decoration:none; cursor:default;}
+a:hover		{ color:#9b6; text-decoration:none; cursor:default;}
+a:active	{ color:#9b6; text-decoration:none; cursor:default;}
+.rp_admin			{ color:#9b6;}
+.rp_secret			{ color:#9b6;}
+.guest_admin			{ color:#9b6;}
+.guest_secret			{ color:#9b6;}
+body { background-color:#000 ; }
+#container { background:url(./bg_nature.jpg) transparent top left no-repeat; }

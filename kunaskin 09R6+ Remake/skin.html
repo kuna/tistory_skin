@@ -1,0 +1,788 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<!--
+
+*************************************************************
+	절대 허락없이 퍼가지 마세요!!!	
+	만든 이의 수고을 생각해서라도..	
+*************************************************************	
+
+	블로그(lain1207.tistory.com) 방명록이나
+	아래 E-mail 주소를 통해 문의주시기 바랍니다.
+	
+	스킨명: 레인의 특제스킨 ver 5.0
+	작성자: ｌａｉｎ
+	연락처: lain1207@gmail.com
+
+-->
+
+<!-- kunaSkin ver 09R6.6
+원본은 lain님. Table와 기타 Area 등 전체적인 레이아웃을 table 기반으로 안정적으로 대폭 수정. (IE6 지원)
+그래도 원본 idea와 이미지는 lain님이 제작하셨습니다 (__) -->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>KUNA's Blogskin 09R6</title>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+<!--[if IE 6]>
+<script src="http://cfs.tistory.com/custom/blog/4/45579/skin/images/setPng24.js">DD_belatedPNG.fix('.png24')</script>
+<script>DD_belatedPNG.fix('.png24')</script>
+<![endif]-->
+
+<!-- loading bar -->
+<div id="loading" style="position:fixed; top:50%; left:50%; margin-top:-10px; margin-left:-110px;">
+<img src="./images/loader.gif" />
+</div>
+
+<!-- floating menu -->
+<div id="menu">
+<a class="m_sidebar" href="javascript:toggleSidebar();"></a>
+<a class="m_top" href="#"></a>
+<a class="m_entry" href="[##_blog_link_##]category"></a>
+<a class="m_profile" href="[##_blog_link_##]profile"></a>
+<a class="m_notice" href="[##_blog_link_##]notice"></a>
+<a class="m_guestbook" href="[##_blog_link_##]guestbook"></a>
+</div>
+ 
+<table id="container" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td></td>
+<td></td>
+<td class="top"><center>
+  <a href="[##_blog_link_##]"><img src="./images/title.png" class="png24" border="0" /></a>
+  <div class="clear">
+
+</div>
+</center></td>
+<td></td>
+<td></td>
+</tr>
+
+  <!-- top Area -->
+  <tr>
+    <td width="8" height="9" class="cn_lt png24" style="background-position: 0 0;"></td>
+    <td width="9" height="9" class="cn_lt png24" style="background-position:-8px 0;"></td>
+    <td class="sh_top png24"></td>
+    <td width="9" height="9" class="cn_rt png24" style="background-position: 0 0;"></td>
+    <td width="8" height="9" class="cn_rt png24" style="background-position:-8px 0;"></td>
+  </tr>
+  <tr>
+    <td width="8" height="8" class="cn_lt png24" style="background-position: 0 -8px;"></td>
+    <td width="9" height="8" align="right" class="cn_lt png24" style="background-position: -8px -8px;"><div class="cn lt1"></div><div class="cn lt2"></div><div class="cn lt3"></div><div class="cn lt4"></div><div class="cn lt5"></div><div class="cn lt6"></div><div class="cn lt6"></div><div class="cn lt7"></div><div class="cn lt7"></div></td>
+    <td class="cn"></td>
+    <td width="9" height="8" class="cn_rt png24" style="background-position:0 -8px;"><div class="cn rt1"></div><div class="cn rt2"></div><div class="cn rt3"></div><div class="cn rt4"></div><div class="cn rt5"></div><div class="cn rt6"></div><div class="cn rt6"></div><div class="cn rt7"></div><div class="cn rt7"></div></td>
+    <td width="8" height="8" class="cn_rt png24" style="background-position:-8px -8px;"></td>
+  </tr>
+  <!-- top Area End -->
+  <tr>
+    <td class="sh_left png24"></td>
+    <td class="cn" width="9"></td>
+    <td class="cn" id="content" valign="top" width="600px">
+    <!-- content Area -->
+	<s_list>
+		<div class="searchResult group">
+		<div class="titleWrap"><h2>'[##_list_conform_##]'의 검색결과로 [##_list_count_##]개의 포스트가 검색되었습니다~</h2></div>
+        <div class="content">
+		<ol>
+	  <s_list_rep>
+		<li>
+		<span class="cnt cnt[##_list_rep_rp_cnt_##]">[##_list_rep_rp_cnt_##]</span>
+		<span class="date">[##_list_rep_regdate_##]</span>
+		<span class="title"><a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a></span>
+		</li>
+	  </s_list_rep>
+		</ol>
+        </div>
+		</div>
+	</s_list>
+
+	<s_article_rep>
+		<div class="entryPost entry group">
+		<div class="titleWrap">
+			<a href="[##_article_rep_link_##]"><h2>[##_article_rep_title_##]</h2></a>
+            Posted on [##_article_rep_date_##] AT <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+		</div>
+        
+	    <div class="content">
+		<div class="article hE">
+        	<aside>
+            <h5>Author : [##_article_rep_author_##]</h5>
+            <h5>Post Date : <a href="[##_article_rep_link_##]">[##_article_rep_date_##]</a></h5>
+            <h5>Category : <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></h5>
+            <h5>Tag : <s_tag_label>[##_tag_label_rep_##]</s_tag_label></h5>
+            <h5>[##_tb_address_##]</h5>
+            </aside>
+            
+			[##_article_rep_desc_##]
+		</div>
+        
+		<a class="pMenu" id="ReplyLocation" href="[##_article_rep_rp_link_##]" onClick="[##_article_rep_rp_link_onclick_##]"><s_rp_count><b>[##_article_rep_rp_cnt_##]</b> Replies ... Make a Reply!</s_rp_count></a>
+
+    </div>
+    
+	<s_rp>
+	<div class="communication">
+	<div class="communicationSend">
+		<div class="commentWrite">
+		<div class="tt-input-div">
+		  <blockquote>
+		    <p>
+		      <s_rp_input_form />
+		      </p>
+		    </blockquote>
+		</div>
+		</div>
+	</div>
+	<div class="communicationList">
+	<s_rp_container>
+	<ol>
+	<s_rp_rep>
+	<li id="[##_rp_rep_id_##]" class="commentList">
+	<div class="[##_rp_rep_class_##]">
+	<div class="image">
+	  <blockquote>
+	    <p>[##_rp_rep_image_##]	</p>
+	    </blockquote>
+	</div>
+	<div class="box">
+	  <blockquote>
+	    <p><span class="control">
+	      [##_rp_rep_action_##]
+	      </span>
+	      <span class="date"><a href="[##_rp_rep_link_##]" class="address"> [##_rp_rep_date_##]</a></span>
+	      <span class="name">[##_rp_rep_name_##]</span>
+	      </p>
+	    <p><span class="bbcode">[##_rp_rep_desc_##]</span></p>
+	    </blockquote>
+	</div>
+	<div class="clear"></div>
+	</div>
+	<s_rp2_container>
+	<ul>
+	<s_rp2_rep>
+	<li id="[##_rp2_rep_id_##]">
+	<div class="[##_rp2_rep_class_##]">
+	<div class="image">
+	  <blockquote>
+	    <p>[##_rp2_rep_image_##]	</p>
+	    </blockquote>
+	</div>
+	<div class="box">
+	  <blockquote>
+	    <p><span class="control">
+	      [##_rp2_rep_action_##]
+	      </span>
+	      <span class="date"><a href="[##_rp2_rep_link_##]" class="address"> [##_rp2_rep_date_##]</a></span>
+	      <span class="name">[##_rp2_rep_name_##]</span>
+	      </p>
+	    <p><span class="bbcode">[##_rp2_rep_desc_##]</span></p>
+	    </blockquote>
+	</div>
+	<div class="clear"></div>
+	</div>
+</li>
+	</s_rp2_rep>
+	</ul>
+	</s_rp2_container>
+</li>
+	</s_rp_rep>
+	<s_tbp_rep>
+	<li id="[##_tbp_rep_id_##]" class="trackbackList">
+	<div class="image">
+	  <blockquote>
+	    <p>[##_tbp_rep_image_##]	</p>
+	    </blockquote>
+	</div>
+	<div class="box">
+	  <blockquote>
+	    <p><span class="date"><a href="[##_tbp_rep_link_##]" class="address">[##_tbp_rep_date_##]</a></span>
+	      </p>
+	    <h4><a href="[##_tbp_rep_url_##]" onClick="window.open(this.href); return false">[##_tbp_rep_title_##]</a></h4>
+	    <p><span class="from">Tracked from <span class="name">[##_tbp_rep_site_##]</span></span>
+	      <span class="control">
+	        [##_tbp_rep_action_##]
+	        </span>
+	      </p>
+	    <p>[##_tbp_rep_desc_##]</p>
+	    </blockquote>
+	</div>
+	<div class="clear"></div>
+</li>
+	</s_tbp_rep>
+	</ol>
+	</s_rp_container>
+	</div><!-- /communicationList -->
+	
+	<!-- /communication -->
+	</div><!-- /entry -->
+	</s_rp>
+    </div>
+	</s_article_rep>
+	
+	<s_notice_rep>
+	<div class="entryNotice entry group">
+		<div class="titleWrap">
+		  <blockquote><a href="[##_notice_rep_link_##]"><h2>[##_notice_rep_title_##]</h2></a>
+		    <p><span class="date">Posted on [##_notice_rep_date_##]</span>
+		      </p>
+		    </blockquote>
+		</div>
+		
+        <div class="content">
+		<div class="article hE">
+        	<aside>
+            <h5>Post Date : [##_notice_rep_date_##]</h5>
+            <h5>Category : <a href="[##_blog_link_##]notice">공지</a></h5>
+            <h5>[##_tb_address_##]</h5>
+            </aside>
+            
+		  <blockquote>
+		    <p>
+		      [##_notice_rep_desc_##]
+		      </p>
+		    </blockquote>
+		</div>
+        </div>
+	</div>
+	</s_notice_rep>
+	
+	<s_profile>
+	<div class="profilePage noEntry group">
+	<div class="titleWrap">
+	  <blockquote>
+	    <h2>Profile</h2>
+	    </blockquote>
+	</div>
+    <div class="content">
+	<div class="blogInformation">
+	  <blockquote>
+	    <h4> 블로그 정보 </h4>
+	    </blockquote>
+	  <h4>
+	    <s_owner><a href="[##_profile_edit_link_##]" class="gotoModify btn"> <span>개인정보수정</span> </a></s_owner>
+	    </h4>
+	<div class="box">
+	<div class="image">
+	  <blockquote>
+	    <p><img src="[##_profile_image_##]" alt="프로필 이미지" /></p>
+	    </blockquote>
+	</div>
+	<div class="info">
+	<div class="name">
+	  <blockquote>
+	    <p>[##_blogger_##]</p>
+	    </blockquote>
+	</div>
+	<div class="sec01">
+	<dl>
+	  <dl>
+	    <dt>개설일</dt>
+	    </dl>
+	</dl>
+	<dl>
+	  <dl>
+	    <dd> : [##_profile_created_##]</dd>
+	    </dl>
+	  <dl>
+	    <dt>총 글 수</dt>
+	    </dl>
+	</dl>
+	<dl>
+	  <dl>
+	    <dd> : [##_profile_posts_##]개</dd>
+	    </dl>
+	  <dl>
+	    <dt>총 의견 수</dt>
+	    </dl>
+	</dl>
+	<dl>
+	  <dl>
+	    <dd> : [##_profile_replys_##]개</dd>
+	    </dl>
+	  <dl>
+	    <dt>총 방명록 수</dt>
+	    </dl>
+	  <dl>
+	    <dd> : [##_profile_guests_##]개</dd>
+	    </dl>
+	</dl>
+	<div class="clear"></div>
+	</div>
+	
+	<s_profile_blog>
+	<div class="sec02">
+	<s_profile_blog_own>
+	<dl>
+	  <dl>
+	    <dt>운영중인 다른 블로그</dt>
+	    </dl>
+	  <dl>
+	    <dd>[##_profile_own_blog_##]</dd>
+	    </dl>
+	</dl>
+	</s_profile_blog_own>
+	<s_profile_blog_team>
+	<dl>
+	  <dl>
+	    <dt>참여중인 다른 블로그</dt>
+	    </dl>
+	  <dl>
+	    <dd>[##_profile_team_blog_##]</dd>
+	    </dl>
+	</dl>
+	</s_profile_blog_team>
+	</div>
+	</s_profile_blog>
+	
+	<s_profile_team>
+	<dl class="sec03">
+	  <dl>
+	    <dt>팀원 목록</dt>
+	    </dl>
+	  <dl>
+	    <dd>[##_profile_team_member_##]</dd>
+	    </dl>
+	</dl>
+	</s_profile_team>
+	</div>
+	</div>
+	</div>
+	
+	<s_profile_matching>
+	<div class="matchingBoard">
+	<blockquote>
+	  <h4>매칭 전광판</h4>
+	  </blockquote>
+	<div class="matchInfo">
+	  <blockquote>
+	    <p>[##_blogger_##]님([##_title_##])과 [##_user_##]님([##_user_title_##])의 매칭 정보입니다.</p>
+	    </blockquote>
+	  </div>
+	<ul>
+	<s_profile_matching_rep>
+	  <ul>
+	    <li>[##_profile_matching_item_##]</li>
+	    </ul>
+	</s_profile_matching_rep>
+	</ul>
+	</div>
+	</s_profile_matching>
+	
+	
+	<div class="bestPost">
+	<blockquote>
+	  <h4>베스트 포스트</h4>
+	  </blockquote>
+	<ul>
+	  <s_profile_bests>
+	    
+	    <ul>
+	      <li><span class="date">[##_profile_best_date_##]</span>
+	        <a href="[##_profile_best_url_##]">[##_profile_best_title_##]</a>
+	        </li>
+	      </ul>
+	    </s_profile_bests>
+	  </ul>
+	</div>
+	
+	<div class="favBlog">
+	  <blockquote>
+	    <h4>[##_blogger_##]님의 관심블로그 </h4>
+	    </blockquote>
+	  <h4>
+	    <s_owner><a href="[##_blogroll_edit_link_##]" class="gotoManager btn"><span>관리하기</span></a></s_owner>
+	    </h4>
+	<s_profile_neighbor>
+	<div class="list">
+	<div class="image">
+	  <blockquote>
+	    <p><a href="[##_profile_neighbor_url_##]/profile" onClick="window.open(this.href); return false;"><img src="[##_profile_neighbor_image_##]" alt="프로필 이미지" style="width:32px;height:32px" /></a></p>
+	    </blockquote>
+	</div>
+	<div class="name">
+	  <blockquote>
+	    <p><a href="[##_profile_neighbor_url_##]" onClick="window.open(this.href); return false;">[##_profile_neighbor_name_##]</a></p>
+	    </blockquote>
+	</div>
+	<div class="title">
+	  <blockquote>
+	    <p><a href="[##_profile_neighbor_url_##]" onClick="window.open(this.href); return false;">[##_profile_neighbor_title_##]</a></p>
+	    </blockquote>
+	</div>
+	</div>
+	</s_profile_neighbor>
+	<div class="clear"></div>
+	</div>
+	</div>
+    </div>
+	</s_profile>
+
+
+	
+	<s_guest>
+	<div class="guestbook noEntry group">
+    <div class="titleWrap">
+      <blockquote>
+        <h2>방명록인데.. 주인장이 게을러서 (.. 쿨럭)</h2>
+      </blockquote>
+    </div>
+    
+	<div class="guestbookWrite">
+	  <blockquote>
+	    <p>
+	      <s_guest_input_form />
+	      </p>
+	    </blockquote>
+	</div>
+	
+	<s_guest_container>
+	<div class="communicationList">
+	<ol>
+	<s_guest_rep>
+	<li id="[##_guest_rep_id_##]" class="commentList">
+	<div class="[##_guest_rep_class_##]">
+	<div class="image">
+	  <blockquote>
+	    <p>[##_guest_rep_image_##]	</p>
+	    </blockquote>
+	</div>
+	<div class="box">
+	  <blockquote>
+	    <p><span class="control">
+	      [##_guest_rep_action_##]
+	      </span>
+	      <span class="date"> <a href="[##_guest_rep_link_##]" class="address">[##_guest_rep_date_##]</a></span>
+	      <span class="name">[##_guest_rep_name_##]</span>
+	      </p>
+	    <p><span class="bbcode">[##_guest_rep_desc_##]</span></p>
+	    </blockquote>
+	</div>
+	<div class="clear"></div>
+	</div>
+	<s_guest2_container>
+	<ul>
+	<s_guest2_rep>
+	<li id="[##_guest2_rep_id_##]">
+	<div class="[##_guest2_rep_class_##]">
+	<div class="image">
+	  <blockquote>
+	    <p>[##_guest2_rep_image_##]	</p>
+	    </blockquote>
+	</div>
+	<div class="box">
+	  <blockquote>
+	    <p><span class="control">
+	      [##_guest2_rep_action_##]
+	      </span>
+	      <span class="date"> <a href="[##_guest2_rep_link_##]" class="address">[##_guest2_rep_date_##]</a></span>
+	      <span class="name">[##_guest2_rep_name_##]</span>
+	      </p>
+	    <p><span class="bbcode">[##_guest2_rep_desc_##]</span></p>
+	    </blockquote>
+	</div>
+	<div class="clear"></div>
+	</div>
+</li>
+	</s_guest2_rep>
+	</ul>
+	</s_guest2_container>
+</li>
+	</s_guest_rep>
+	</ol>
+	</div><!-- guestList close -->
+	</s_guest_container>
+	
+	</div><!-- guestbook close -->
+	</s_guest>
+	
+	<s_tag>
+	<div class="taglog noEntry group">
+	<div class="titleWrap">
+	  <blockquote>
+	    <h2>Tag</h2>
+	    </blockquote>
+	</div>
+	<ul>
+	<s_tag_rep>
+	
+	  <ul>
+	    <li><a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a> · 
+	      </li>
+	    </ul>
+	</s_tag_rep>
+	</ul>
+	</div>
+	</s_tag>
+	
+	<s_local>
+	<div class="localog noEntry group">
+	<div class="titleWrap">
+	  <blockquote>
+	    <h2>Local Log</h2>
+	    </blockquote>
+	</div>
+	<div>
+	<s_local_spot_rep>
+	<div class="spot" style="margin-left:0ex;">
+	  <blockquote>
+	    <p>
+	      [##_local_spot_##]
+	      </p>
+	    </blockquote>
+	</div>
+	</s_local_spot_rep>
+	<s_local_info_rep>
+	<div class="info" style="margin-left:0ex;">
+	  <blockquote>
+	    <p><a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
+	      </p>
+	    </blockquote>
+	</div>
+	</s_local_info_rep>
+	</div>
+	</div>
+	</s_local>
+	
+	<s_page_error>
+	<div id="page-error" class="pageError noEntry group">
+	  <blockquote>
+	    <h5>페이지를 찾을 수 없습니다.</h5>
+	    <p>        검색 중인 페이지가 제거되었거나 이름이 변경되었거나 일시적으로 사용할 수 없습니다. <br>
+	      
+	      </p>
+	    <h5>The page cannot be found.</h5>
+	    <p>        The page you are looking for might have been removed,<br>
+	      had its name changed, or is temporarily unavailable. <br>
+	      </p>
+	    </blockquote>
+	</div>
+
+	<div class="errorBack">
+	  <blockquote>
+	    <p><a href="javascript:history.back(+1)">이전(Prev) 페이지로 이동하기</a>
+	      </p>
+	    </blockquote>
+	</div>
+	<div class="errorHome">
+	  <blockquote>
+	    <p><a href="[##_blog_link_##]">메인(Main) 페이지로 이동하기</a>
+	      </p>
+	    </blockquote>
+	</div>
+	</s_page_error>
+    
+	<s_paging>
+	<div class="paging">
+	  <blockquote>
+	    <p><a [##_prev_page_##] class="[##_no_more_prev_##] prevPage">&#171;</a>
+	      </p>
+	    </blockquote>
+	  <span class="numbox">
+	<s_paging_rep>
+	  <blockquote>
+	    <p><a [##_paging_rep_link_##] class="num"><span class="[##_paging_rep_current_##]">[##_paging_rep_link_num_##]</span></a>
+	      </p>
+	    </blockquote>
+	  </s_paging_rep>
+	<s_paging_interword>
+	  <blockquote>
+	    <p><span class="interword">:</span>
+	      </p>
+	    </blockquote>
+	  </s_paging_interword>
+	<s_paging_interword2>
+	  <blockquote>
+	    <p><span class="interword">:</span>
+	      </p>
+	    </blockquote>
+	  </s_paging_interword2>
+	  </span>
+	  <blockquote>
+	    <p><a [##_next_page_##] class="[##_no_more_next_##] nextPage">&#187;</a>
+	      </p>
+	    </blockquote>
+	</div>
+	</s_paging>
+	<!-- entry 끝 -->
+     
+    <!-- content Area end -->
+    </td>
+    <td class="cn" width="9"></td>
+    <td class="sh_right png24" valign="top" width="8"></td>
+  </tr>
+  
+  <!-- foot Area -->
+  <tr>
+    <td width="8" height="8" class="cn_lb png24" style="background-position: no-repeat 0 0;"></td>
+    <td width="9" height="8" align="right" class="cn_lb png24" style="background-position: -8px 0;"><div class="cn lb1"></div><div class="cn lb1"></div><div class="cn lb2"></div><div class="cn lb2"></div><div class="cn lb3"></div><div class="cn lb4"></div><div class="cn lb5"></div><div class="cn lb6"></div><div class="cn lb7"></div></td>
+    <td class="cn"></td>
+    <td width="9" height="8" class="cn_rb png24" style="background-position: 0 0;"><div class="cn rb1"></div><div class="cn rb1"></div><div class="cn rb2"></div><div class="cn rb2"></div><div class="cn rb3"></div><div class="cn rb4"></div><div class="cn rb5"></div><div class="cn rb6"></div><div class="cn rb7"></div></div></td>
+    <td width="8" height="8" class="cn_rb png24" style="background-position: -8px 0;"></td>
+  </tr>
+  <tr>
+    <td width="8" height="9" class="cn_lb png24" style="background-position: 0 -8px;"></td>
+    <td width="9" height="9" class="cn_lb png24" style="background-position: -8px -8px;"></td>
+    <td class="sh_bottom png24"></td>
+    <td width="9" height="9" class="cn_rb png24" style="background-position: 0 -8px;"></td>
+    <td width="8" height="9" class="cn_rb png24" style="background-position:-8px -8px;"></td>
+  </tr>
+</table>
+<!-- END Content  -->
+
+
+<!-- copyright -->
+<br /><br /><br /><br /><br /><center>
+<span style="letter-spacing:2px; font-size:11px; color:#666;">KUNASkin 09R6.5 SE Released by <a href="http://lain1207.tistory.com/"><span style="background-color:#900; color:#fff; font-weight:bold;">L a i n</span></a>, <a href="http://kuna.wo.tc"><span style="background-color:#099; color:#fff; font-weight:bold;">KUNA</span></a>, Contents by <a href="http://kuna.wo.tc"><span style="background-color:#099; color:#fff; font-weight:bold;">KUNA</span></a>. All rights Reserved.</span>
+</center><br /><br /><br />
+<!-- END copyright -->
+
+<!-- sidebar -->
+<!-- 원래 사이드바 -->
+<div id="floatCover" style="display:none;">
+<div class="sidebar">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 공지사항 위젯 -->
+<div class="widget" id="w_notice">
+<h5>Notice*</h5>
+<ul class="box">
+<s_rct_notice_rep>
+<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+</s_rct_notice_rep>
+</ul>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 카테고리 위젯 -->
+<div class="widget" id="w_category">
+<h5>Category*</h5>
+<div class="box">[##_category_##]</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 글 위젯 -->
+<div class="widget" id="w_rp">
+<h5>Update*</h5>
+<div class="box">
+<ul>
+<s_rctps_rep>
+<li>
+<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]</a>
+<span class="cnt cnt[##_rctps_rep_rp_cnt_##]">([##_rctps_rep_rp_cnt_##])</span>
+</li>
+</s_rctps_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 최근 의견 위젯 -->
+<div class="widget" id="w_rc">
+<h5>Recent Reply*</h5>
+<div class="box">
+<ul>
+<s_rctrp_rep>
+<li>
+<div class="info"><span class="date">[##_rctrp_rep_time_##]</span><span class="name"> [##_rctrp_rep_name_##]</span></div>
+<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+</li>
+</s_rctrp_rep>
+<s_rcttb_rep>
+<li>
+<div class="info"><span class="date">[##_rcttb_rep_time_##]</span><span class="name"> _ [##_rcttb_rep_name_##]</span>		</div>
+<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]</a>
+</li>
+</s_rcttb_rep>
+</ul>
+</div>
+</div> 
+</s_sidebar_element>
+</s_sidebar>
+</div>
+
+<!-- footer -->
+<span class="footer">KUNASkin 09R3+ Remake (LIMITED EDITION) By <a href="http://kuna.wo.tc"><span class="ip">KUNA</span></a> &amp; <a href="http://lain1207.tistory.com/"><span class="ip">L a i n</span></a>. All Contents and Skins and other Creations are Freely Usable with Statementing Author. <span class="ip">No Editing and Redistribution Allowed without Author's Permission.</span><br />XHTML, JQuery And CSS1/2/3. Most Optimized in <a href="http://www.google.com/chrome"><span class="ip">Google Chrome</span></a> Browser. Also Recommends : <a href="http://www.mozilla.com/firefox"><span class="ip">Mozila Firefox</span></a> or <a href="http://www.opera.com/download/"><span class="ip">Opera</span></a> Browser.<br />This Blog is Optimized for resolution over <span class="ip">1368x768 or 800x600</span>. //</span>
+</div>
+
+<!-- 프로필/관심블로그 전용 사이드바 -->
+<div class="sidebar">
+<s_sidebar>
+<s_sidebar_element>
+<!-- 글보관함 위젯 -->
+<div class="widget" id="w_archive">
+<h5>Recent Posts*</h5>
+<div class="box">
+<ul>
+<s_archive_rep>
+<li>
+<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a>
+<span class="cnt">([##_archive_rep_count_##])</span>
+</li>
+</s_archive_rep>
+</ul>
+</div>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 링크 위젯 -->
+<div class="widget" id="w_link">
+<s_link_rep><a href="[##_link_url_##]">[##_link_site_##]</a> … </s_link_rep>
+</div>
+</s_sidebar_element>
+<s_sidebar_element>
+<!-- 스킨 전용 카운터 위젯 -->
+<div class="widget" id="w_counter">
+T<span class="value">[##_count_total_##]</span> - T<span class="value">[##_count_today_##]</span> - Y<span class="value">[##_count_yesterday_##]</span>
+</div>
+</s_sidebar_element>
+<s_sidebar_element><!-- 검색 위젯 (하단) -->
+<s_search>
+<div class="widget" id="w_search">
+<input class="input_text" type="text" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##]}" value="[##_search_text_##]" name="[##_search_name_##]">
+</div>
+</s_search>
+</s_sidebar_element>
+</s_sidebar>
+</div>
+</div>
+<!-- sidebar End -->
+
+<script language="javascript">
+document.getElementById('loading').style.display = "none";
+
+function toggleSidebar() {
+	var obj = document.getElementById('floatCover');
+	if (obj.style.display == "none") {
+		// resize Size
+		var viewportwidth;
+		var viewportheight;
+		if (typeof window.innerWidth != 'undefined')
+		{
+		viewportwidth = window.innerWidth,
+		viewportheight = window.innerHeight
+		} else if (typeof document.documentElement != 'undefined'
+		&& typeof document.documentElement.clientWidth !=
+		'undefined' && document.documentElement.clientWidth != 0)
+		{
+		viewportwidth = document.documentElement.clientWidth,
+		viewportheight = document.documentElement.clientHeight
+		} else {
+		viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+		viewportheight = document.getElementsByTagName('body')[0].clientHeight
+		}
+		
+		// display
+		//obj.style.width = viewportwidth + "px";
+		//obj.style.height = viewportheight + "px";
+		obj.style.display = "block";
+	} else {
+		obj.style.display = "none";
+	}
+}
+</script>
+</body></html>

@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* 보호글 */
+
+.content {
+	visibility: visible !important
+}
+
+html.webgl .content {
+	opacity: 1
+}
+
+#protect-entry .title {
+	position: relative
+}
+
+#protect-entry .title:after {
+	content: "";
+	position: absolute;
+	right: -11px;
+	bottom: 0;
+	padding: 20px;
+	background-position: -173px -368px
+}
+
+#protect-entry .title h2 {
+	padding-right: 30px
+}
+
+#protect-wrap {
+	overflow: hidden;
+	position: relative;
+	padding-top: 6px
+}
+
+#protect-wrap label {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: text
+}
+
+.field {
+	overflow: hidden;
+	position: relative;
+	height: 0;
+	padding-top: 56.25%;
+	background-color: #efefef;
+	border-radius: 6px
+}
+
+html.dark .field {
+	background-color: #444
+}
+
+.alert {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 50px
+}
+
+.alert h3,
+.alert p {
+	overflow: hidden;
+	color: #666;
+	font-weight: 300 !important;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+html.dark .alert h3,
+html.dark .alert p {
+	color: #fff
+}
+
+.alert h3 {
+	padding-bottom: 8px;
+	font-size: 26px;
+	line-height: 30px
+}
+
+.alert p {
+	font-size: 16px;
+	line-height: 20px
+}
+
+.form {
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	margin-left: -50%
+}
+
+.form input {
+	position: absolute;
+	z-index: 3;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	height: 34px;
+	padding: 3px 9px;
+	border: 1px solid #fff;
+	color: #ccc;
+	font: 18px/26px Helvetica, Arial, sans-serif !important;
+	background: #fff;
+	border-radius: 6px
+}
+
+html.dark .form input {
+	border-color: #333;
+	color: #666;
+	background-color: #333
+}
+
+html.no-touch .field:hover .form input {
+	border-color: #ccc;
+}
+
+html.dark.no-touch .field:hover .form input {
+	border-color: #666;
+}
+
+html.webgl .form input {
+	box-shadow: 0 0 0 14px rgba(51, 153, 255, 0);
+	-webkit-transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+	-moz-transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+	transition: border-color 0.3s, color 0.3s, background-color 0.3s
+}
+
+html.dark.webgl .form input {
+	box-shadow: 0 0 0 14px rgba(102, 204, 255, 0)
+}
+
+.form input:focus {
+	border-color: #39f !important;
+	color: #666
+}
+
+html.dark .form input:focus {
+	border-color: #6cf !important;
+	color: #fff;
+	background-color: #000
+}
+
+html.webgl .form input:focus {
+	box-shadow: 0 0 0 0 rgba(51, 153, 255, 1);
+	-webkit-transition: border-color 0.3s, color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	-moz-transition: border-color 0.3s, color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	transition: border-color 0.3s, color 0.3s, background-color 0.3s, box-shadow 0.3s
+}
+
+html.dark.webgl .form input:focus {
+	box-shadow: 0 0 0 0 rgba(102, 204, 255, 1)
+}
+
+.form button {
+	position: absolute;
+	z-index: 2;
+	padding: 20px;
+	border: none;
+	background: none;
+	cursor: pointer
+}
+
+/* 디자인: 기본값 */
+
+.default .alert {
+	top: 33.33%;
+	margin-top: -25px
+}
+
+.default .form {
+	top: 13%;
+	background: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_protect_w_default.png) 50% 50% no-repeat;
+	background-size: cover
+}
+
+html.dark .default .form {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_protect_d_default.png)
+}
+
+html.expand .default .form {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_protect_w_default_expand.png)
+}
+
+html.dark.expand .default .form {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_protect_d_default_expand.png)
+}
+
+html.svg .default .form {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_protect_w_default.svg) !important
+}
+
+html.dark.svg .default .form {
+	background-image: url(//cdn.rawgit.com/kaniwari/fraccino_space/master/ver/b6.1/images/bg_protect_d_default.svg) !important
+}
+
+.default .form input {
+	top: 50%;
+	left: 50%;
+	width: 24.6%;
+	margin-top: -17px;
+	margin-left: -12.3%;
+	text-align: center;
+	letter-spacing: 2px
+}
+
+.default .form button {
+	top: 50%;
+	left: 72.7%;
+	margin: -20px
+}
+
+@media all and (min-width: 1080px) {
+	html.expand .default .form input {
+		width: 22.6%;
+		height: 40px;
+		padding: 5px 9px;
+		margin-top: -20px;
+		margin-left: -11.3%;
+		font-size: 20px !important;
+		line-height: 28px !important
+	}
+}
+
+@media all and (max-width: 944px) {
+	.default .form {
+		width: 120%;
+		margin-left: -60%
+	}
+	
+	.default .form input {
+		font-size: 16px !important
+	}
+}
+
+@media all and (min-width: 760px) and (max-width: 859px) {
+
+	.default .form input {
+		width: 26.6%;
+		margin-left: -13.3%
+	}
+}
+
+
+@media all and (max-width: 759px) {
+	
+	#protect-entry .title:after {
+		content: none;
+		display: none
+	}
+
+	#protect-entry .title h2 {
+		padding-right: 28px
+	}
+
+	#protect-wrap {
+		padding-left: 2px;
+		padding-right: 2px
+	}
+}
+
+@media all and (max-width: 679px) {
+	.default .form input {
+		width: 26.6%;
+		margin-left: -13.3%
+	}
+}
+
+@media all and (max-width: 666px) {
+	
+	.alert {
+		height: 48px;
+		margin-top: -24px
+	}
+	
+	.alert h3 {
+		padding-bottom: 6px;
+	}
+	
+	.alert span {
+		display: none
+	}
+}
+	
+@media all and (max-width: 569px) {
+
+	.default .form input {
+		width: 28.6%;
+		margin-left: -14.3%
+	}
+}
+	
+@media all and (max-width: 499px) {
+	
+	.alert {
+		height: 42px;
+		margin-top: -21px
+	}
+	
+	.alert h3 {
+		padding-bottom: 0;
+		font-size: 20px;
+		font-weight: 400 !important
+	}
+	
+	.alert p {
+		font-size: 14px
+	}
+
+	.default .form input {
+		width: 30.6%;
+		margin-left: -15.3%;
+		font-size: 14px !important
+	}
+}
+
+@media all and (max-width: 419px) {
+
+	.default .form input {
+		width: 32.6%;
+		margin-left: -16.3%
+	}
+}
+
+@media all and (max-width: 389px) {
+
+	.default .form input {
+		width: 34.6%;
+		margin-left: -17.3%
+	}
+}
+
+@media all and (max-width: 339px) {
+
+	.default .form input {
+		width: 38.6%;
+		margin-left: -19.3%
+	}
+}

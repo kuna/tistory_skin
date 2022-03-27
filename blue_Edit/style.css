@@ -1,0 +1,488 @@
+﻿@charset "utf-8";
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+  스킨 기본 스타일
+    +++++++++++++++++++++++++++++++++++++++++++++++++ */
+body			{ font-family: "맑은 고딕", "Malgun Gothic", dotum, AppleGothic, Arial, Tahoma, Verdana, sans-serif; font-size:75%; line-height:1.5; color:#999; background:url(./images/background.jpg) 0 0 repeat;  padding-top:40px;}
+
+/*
+.entry,
+.searchResult { background:url(./images/r1.jpg) bottom center no-repeat fixed; }
+.noEntry { background:url(./images/r2.jpg) bottom center no-repeat fixed; }
+.guestbook,
+.communicationTrail { background:url(./images/r3.jpg) bottom center no-repeat fixed; }
+*/
+
+#container .top { width:720px; height:20px; background:url(./images/top.png) 0 0 no-repeat; }
+#container .bottom { width:720px; height:20px; background:url(./images/bottom.png) 0 0 no-repeat; }
+
+/*** menu ***/
+#menu { position:fixed; top:210px; left:0px; width:30px; }
+#menu a { clear:both; display:block; width:30px; }
+
+#menu .m_sidebar { background:url(././images/menu.png) no-repeat 0 0; height:76px; }
+#menu .m_top { background:url(././images/menu.png) no-repeat 0 -76px; height:42px; }
+#menu .m_entry { background:url(././images/menu.png) no-repeat 0 -118px; height:54px; }
+#menu .m_profile { background:url(././images/menu.png) no-repeat 0 -172px; height:66px; }
+#menu .m_notice { background:url(././images/menu.png) no-repeat 0 -238px; height:66px; }
+#menu .m_guestbook { background:url(././images/menu.png) no-repeat 0 -304px; height:98px; }
+
+#menu .m_sidebar:hover { background-position:-31px 0; }
+#menu .m_top:hover { background-position:-31px -76px; }
+#menu .m_entry:hover { background-position:-31px -118px; }
+#menu .m_profile:hover { background-position:-31px -172px; }
+#menu .m_notice:hover { background-position:-31px -238px; }
+#menu .m_guestbook:hover { background-position:-31px -304px; }
+/*** END menu ***/
+
+
+a:link			{ color:#666; text-decoration:none;}
+a:visited		{ color:#666; text-decoration:none;}
+a:hover			{ color:#333; text-decoration:none;}
+a:active		{ color:#666; text-decoration:none;}
+
+* 				{ padding:0; margin:0; border:0;}
+select			{ border:1px solid #ddd;}
+button			{ cursor:pointer;}
+input			{ font-size:11px; letter-spacing:-1px; }
+textarea			{ font-size:14px; letter-spacing:-1px; }
+.inputText		{ padding:2px; border:1px solid #d8dcd9; background-color:#fff; height:16px; font-size:1em;}
+
+hr 				{ display:none;}
+
+h1 				{ font-size:1.8em;}
+h2 				{ font-size:1.4em;}
+h3 				{ font-size:1.4em;}
+h4 				{ font-size:1.2em;}
+h5 				{ font-size:1.1em;}
+h6 				{ font-size:1em;}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+  반드시 들어가야 하는 스타일 시작
+    +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* 스킨용 GNB 스타일 */
+#tt-GNB a,
+#tt-GNB .name				{ color:#E8E8E8;}
+#tt-GNB li 					{ border-right-color:#d6dbd3;}
+#tt-GNB .user img 			{ border-color:#ccc;}
+#tt-GNB .user .btnLogout  	{  }
+
+
+/* 페이징 - 현재 페이지 */
+    .tt-paging-current		{ font-weight:bold; color:#1b61ff;}
+    .no-more-prev,
+  .no-more-next			{ }
+
+/* 카테고리 - 이미지 버튼 */
+    .ib						{ cursor:pointer;}
+
+/* 카테고리 - 트리 셀 */
+    .branch3				{ cursor:pointer;}
+
+/* 카테고리 - 카테고리 옆 개수 스타일 */
+    .c_cnt					{ font:0.9em Tahoma, Helvetica, Arial, Gulim, sans-serif;  color:#1b61ff; padding-left:3px;}
+
+/* 달력 월 표시 */
+    .cal_month				{ font:0.9em Verdana, Helvetica, Arial, Gulim, sans-serif;  height:18px; font-weight:bold;}
+
+/* 달력 요일 표시(th 영역) */
+    .cal_week1				{ font:0.9em Dotum, Arial, sans-serif;  height:18px;  font-weight:normal;}
+
+/* 달력 일요일 표시(th 영역) */
+    .cal_week2				{ font:0.9em Dotum, Arial, sans-serif;  color:#ff3052; }
+
+/* 달력 Week(tr 영역)  */
+    .cal_week				{ }
+    .cal_current_week		{ background-color:#f2f4f3;}
+
+/* 달력 Day(td 영역) */
+    .cal_day				{ font:0.9em Verdana, Helvetica, Arial, Gulim, sans-serif; text-align:center;}
+
+/* 달력 Day, 일요일 (td 영역)  */
+    .cal_day_sunday			{ color:#ff3052 !important;}
+    .cal_day_sunday a		{ color:#ff3052 !important;}
+
+/* 달력 지난 달 날짜 표시(td)   */
+    .cal_day1				{ }
+
+/* 달력 다음 달 날짜 표시(td)   */
+    .cal_day2				{ }
+
+/* 달력 이번 달 날짜 표시(td) */
+    .cal_day3				{ }
+
+/* 달력 오늘 날짜 표시(td) */
+    .cal_day4				{ text-decoration:underline;}
+
+/* 달력 글쓴 날 링크 스타일 */
+    a.cal_click:link		{ font-weight:bold;}
+    a.cal_click:visited		{ font-weight:bold;}
+    a.cal_click:hover		{ font-weight:bold;}
+
+/* 종류별 코멘트 [##_rp_rep_class_##] */
+    .rp_general				{ }
+    .rp_admin				{ }
+    .rp_secret				{ }
+
+/* 종류별 코멘트 [##_guest_rep_class_##] */
+    .guest_general			{ }
+    .guest_admin			{ }
+  .guest_secret			{ }
+
+/* 비밀 댓글 (로그아웃시 비밀글 표현)    */
+    .hiddenComment .box 	{ background:url(./images/iconSecret.gif) 0 3px no-repeat;  padding-left:20px; font-weight:bold;  width:470px!important;}
+
+/* 이미지 아래 캡션 스타일 */
+    .cap1					{ text-align:center;  margin-top:8px;}
+
+/* 그림 */
+    .imageblock				{ margin:10px 0; color:#999;}
+
+/* 이미지 갤러리 */
+  .tt-gallery-box			{ margin:10px 0; color:#999;}
+
+/* 플래쉬 갤러리 */
+  .tt-iMazing-box			{ margin:10px 0; color:#999;}
+
+/* 왼쪽 */
+    .left					{ }
+
+/* 가운데 */
+    .center					{ }
+
+/* 오른쪽 */
+    .right					{ }
+
+/* 그림 2개 배치 */
+    .dual					{ background-color:#fff; margin-bottom:5px;}
+
+/* 그림 3개 배치 */
+    .triple					{ background-color:#fff; margin-bottom:5px;}
+
+/* 본문 - more / less */
+    .moreless_fold			{ background:url(./images/iconMore.gif) top left no-repeat;  padding-left:20px; color:#000;}
+    .moreless_top			{ background:url(./images/iconLess.gif) top left no-repeat;  padding-left:20px; color:#000;}
+    .moreless_body			{ }
+    .moreless_bottom		{ background:url(./images/iconLess.gif) top right no-repeat;  padding-right:20px; color:#999; text-align:right;}
+
+/* 키워드 */
+    .key1					{ cursor: pointer; border-bottom: 1px dotted #ccc; }
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+  스킨 스타일 요소
+    +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.clear	{ clear:both;}
+.date 	{ font:0.8em Tahoma;}
+.name 	{ font-size:1em;}
+.cnt 	{ font:0.9em Tahoma; color:#1b61ff;}
+
+
+/* ***** Layout **************************************** */
+#container 				{
+	width:720px;
+	margin:0 auto;
+}
+#container .containerInner {  }
+    #header 		{ padding:20px 0 40px; text-align:center; }
+    #body			{ padding:40px; background:url(./images/body.png) repeat-y; }
+    #content 	{ float:left; width:640px; background-color:#fff;}
+	
+    #footer			{ clear:both; padding-top:40px; background-color:#fff;}
+
+
+/* ***** Header **************************************** */
+#header h1		{ text-align:center; font-family:Georgia, "Times New Roman", Times, serif;}
+#header h1 a	{ color:#444d46;}
+
+
+/* ***** Menu **************************************** */
+#menu .blogMenu				{ padding:10px 5px; text-align:left; font-weight:bold; }
+#menu .blogMenu li 			{ display:inline; padding:0 20px; border-right:0px solid #003399;}
+#menu .blogMenu a 			{ color:#003399;}
+#menu .blogMenu .menuMore a { font-weight:normal; background:url(./images/bull_menu_more.gif) right 3px no-repeat; padding-right:13px;}
+#menu .blogMenu .menuMore 	{ border:0;}
+
+#menu .moreMenuBox			{ position:absolute; left:270px; top:-110px; background-color:#fff; padding:10px 20px; border:2px solid #003399; border-top:2;}
+#menu .moreMenuBox li		{ list-style:none; padding:3px 0;}
+#menu .moreMenuBox a		{ color:#003399;}
+
+/* ***** Footer **************************************** */
+#footer .inner 		{ color:#666; padding-top:40px; border-top:1px solid #dde0da; text-align:center;}
+#footer .copyright	{ font:0.8em Verdana;}
+
+
+/* ***** Content Part **************************************** */
+#content .group 	{ margin-bottom:30px;}
+#content .group h3 	{ color:#666; padding-bottom:5px; border-bottom:3px solid #d8dcd9; margin-bottom:10px;}
+
+#content .searchResult h3 strong	{ color:#333;}
+#content .searchResult h3 .cnt 		{ font-weight:bold;}
+#content .searchResult ol 			{ list-style:none; padding-left:5px;}
+#content .searchResult li 			{ padding:3px 0;}
+#content .searchResult .date		{ margin-right:10px;}
+#content .searchResult .name		{ margin-right:10px;}
+
+#content .noEntry ol,
+#content .noEntry ul,
+#content .noEntry li	{ list-style:none;}
+
+#content .entry		{}
+
+
+/* entry */
+.titleWrap 				{ color:#eee; margin-left:-80px; border-left:46px solid #545454; padding-left:34px; }
+.titleWrap h2 a			{ color:#666;}
+.titleWrap .category a,
+.titleWrap .date,
+.titleWrap .name 		{ color:#c5c5c5;}
+
+.tagTrail 		{ clear:both; background:url(./images/ico_tag.gif) 0 4px no-repeat;  padding-left:18px;}
+.tagTrail a 	{ color:#999;}
+
+.localTrail 	{ clear:both;  background:url(./images/ico_localtag.gif) 0 3px no-repeat;  padding-left:18px;}
+.localTrail a 	{ color:#999;}
+
+.authorProfile 				{ clear:both; overflow:hidden; padding:10px; margin-top:10px; background-color:#f2f4f3;}
+.authorProfile .image 		{ float:left; margin-right:10px; border:3px solid #fff;  background:url(./images/noImage.gif) no-repeat; }
+.authorProfile .image img 	{ border:1px solid #fff; width:48px; height:48px;}
+.authorProfile .box			{ margin-left:65px; }
+.authorProfile p 			{ font-size:0.9em;}
+.authorProfile .title 		{ font-weight:bold;}
+.authorProfile .gotolist 	{ font-size:0.9em; margin-top:5px; text-align:right;}
+
+.communicationTrail			{ clear:both; text-align:right; margin-top:10px;}
+.communicationTrail a 		{ background:url(./images/ico_communication.gif) 0 0 no-repeat; padding-left:15px;}
+.communicationTrail	.cnt	{ font-weight:bold;}
+
+.communication 						{ margin-top:10px;}
+.communicationList ol 				{ list-style:none; padding:10px; margin-left:-80px; padding-left:80px;}
+.communicationList li 				{ list-style:none; border-bottom:1px dashed #d8dcd9;}
+.communicationList li ul li 		{ padding:15px 0 0; margin:0; border:none;}
+.communicationList .box  			{ float:left; width:490px;}
+.communicationList li ul li .box	{ background:url(./images/ico_reply.gif) 0 4px no-repeat; padding-left:30px; width:460px;}
+.communicationList .image 			{ float:left; margin-right:10px; border:3px solid #f5f5f5; padding:1px; background-color:#fff;}
+.communicationList .name 			{ font-weight:bold; margin-right:5px; }
+.communicationList .name a			{ }
+.communicationList .date a			{ color:#c5c5c5;}
+.communicationList .control a 		{ color:#c5c5c5; padding:0 5px; font:0.9em dotum; border-left:1px solid #eee;}
+.communicationList p				{ padding-top:3px;}
+.communicationList .trackbackList	{ }
+.communicationList .trackbackList h4 { font-size:1em;}
+.communicationSend					{ padding:10px; background-color:#f2f4f3;}
+
+.communicationList li .image img { width:40px !important; height:40px !important; -webkit-transition:width,height 0.2s,0.2s; }
+.communicationList li:hover .image img { width:48px !important; height:48px !important; }
+.communicationList li .image { position:absolute; padding:4px; background-color:rgba(255, 255, 255, 0.2); -webkit-border-radius:4px; -moz-border-radius:4px; border:1px solid rgba(0, 0, 0, 0.2); -webkit-transition:left,top 0.2s,0.2s; top:8px; left:-64px; }
+.communicationList li:hover .image { left:-68px; top:4px; }
+.communicationList li ul li .image { left:-74px; top:8px; }
+.communicationList li:hover ul li .image { left:-78px; top:4px; }
+
+.communicationList li { padding:15px 10px; margin-bottom:0px; min-height:40px; position:relative; }
+.communicationList li:hover { padding:14px 9px; margin-bottom:1px; border:1px solid #bbb; background-color:rgba(255, 255, 255, 0.2); -webkit-border-radius:4px; -moz-border-radius:4px; }
+.communicationList li:hover ul li { padding:15px 0 0; margin-bottom:0px; border:none; background-color:none; }
+
+
+/*************** 덧글 다는 부분 *****************/
+.tt-input-div { clear:both; position:relative; padding:0 10px; }
+.tt-input-div dl		{ padding:0 0px; }
+.tt-input-div dt		{ display:block; }
+
+/* pos */
+.tt-input-div .tt-input-name { position:absolute; right:-240px; top:0px; width:200px; }
+.tt-input-div .tt-input-password { position:absolute; right:-240px; top:30px; width:200px; }
+.tt-input-div .tt-input-website { position:absolute; right:-240px; top:60px; width:200px; }
+.tt-input-div .tt-input-option { position:absolute; right:-240px; top:100px; width:200px; }
+.tt-input-div .tt-input-btn-comment { position:absolute; right:-200px; bottom:0px; width:160px; height:36px; }
+
+/* label hide - name, pass, website, content */
+.tt-input-div .tt-input-name dt,
+.tt-input-div .tt-input-password dt,
+.tt-input-div .tt-input-website dt,
+.tt-input-div .tt-input-content dt		{ display:none; }
+
+/* 배경/테두리 부분 */
+.tt-input-div input,
+.tt-input-div .tt-input-btn-comment,
+.tt-input-div textarea { border:1px solid #999; }
+.tt-input-div input:focus, .tt-input-div input:hover,
+.tt-input-div .tt-input-btn-comment:focus, .tt-input-div .tt-input-btn-comment:hover,
+.tt-input-div textarea:focus, .tt-input-div textarea:hover { border:1px solid #ccc; }
+.tt-input-div .tt-input-name input { background-image:url(./images/txt_name.gif); background-position:4px 6px; background-repeat:no-repeat; }
+.tt-input-div .tt-input-password input { background-image:url(./images/txt_password.gif); background-position:4px 6px; background-repeat:no-repeat; }
+.tt-input-div .tt-input-website input { background-image:url(./images/txt_homepage.gif); background-position:4px 6px; background-repeat:no-repeat; }
+.tt-input-div input { padding-left: 50px; height:18px; width:16px; }
+.tt-input-div .tt-input-option label { float:left; background:url(./images/txt_secret.gif) 0 5px no-repeat; text-indent:-9999px; display:block; width:35px; height:12px; }
+.tt-input-div .tt-input-option span { display:none; }
+.tt-input-div textarea		{ width:100%;/* important! decides width of Reply */ height:180px; overflow:visible; background:url(./images/reply_Bg.jpg) no-repeat top bottom #fff; }
+.tt-input-div .tt-input-option dt,
+.tt-input-div .tt-input-btn dt 		{ display:none !important; }
+
+/* Article Basic Style */
+.article     			{ padding:10px 0 20px; color:#505050;  font-size:14px; letter-spacing:-1px; line-height:2.0em;}
+.article a:link         { color:#1b61ff;  text-decoration:none;}
+.article a:visited      { color:#1b61ff;  text-decoration:none;}
+.article a:hover        { color:#1b1bff;  text-decoration:none;}
+.article a:active       { color:#1b61ff;  text-decoration:none;}
+.article blockquote     { background:url(./images/ico_blockquote.gif) top left no-repeat;  padding-left:25px;  margin:10px 20px;}
+.article ul,
+.article ol				{ padding:10px 20px; margin-left:25px;}
+.article h1             { font-size : 1.5em;}
+.article h2             { font-size : 1.4em;}
+.article h3             { font-size : 1.3em; margin:0!important; padding:0!important; border:none !important;}
+.article h4             { font-size : 1.2em;}
+.article h5             { font-size : 1.1em;}
+.article h6             { font-size : 1em;}
+.article dl 			{ padding:10px;}
+.article dt             { }
+.article dd             { margin-left:20px;  padding-bottom:10px;}
+.article table 			{ border-collapse:separate!important; margin:10px;}
+.article hr { display:block; border:1px solid; margin:10px 0;}
+
+
+/* Related Post */
+.relatedPost 			{ margin-top:20px;}
+.relatedPost h3 		{ font-size:1em; color:#999!important; margin:0!important; padding:0 0 0 15px!important; background:url(./images/ico_paper.gif) 0 5px no-repeat!important;}
+.relatedPost ol 		{ list-style:none; padding:0; margin:0;}
+.relatedPost li 		{ padding:0 5px 0 13px; margin:0 !important; background:url(./images/ico_ball.gif) 3px center no-repeat;}
+.relatedPost a  		{ color:#999 !important;}
+.relatedPost a:hover	{ color:#666 !important;}
+
+
+
+/* noEntry - profile */
+.profilePage h4 { font-size:1em; color:#666; margin:5px 0; background:url(./images/ico_infopaper.gif) 0 3px no-repeat; padding-left:15px; }
+.profilePage ul { list-style:none;}
+.profilePage li { background:url(./images/ico_ball.gif) 5px 9px no-repeat;  padding:3px 0 0 15px;}
+
+.profilePage  a.btn 						{ width:0; height:0; overflow:hidden; margin-left:5px; vertical-align:middle;}
+.profilePage .blogInformation a.gotoModify	{ background:url(./images/btn_profileModify.gif) 0 0 no-repeat; padding:18px 0 0 70px;  position:absolute; margin-top:1px; }
+.profilePage .favBlog a.gotoManager 		{ background:url(./images/btn_manager.gif) 0 0 no-repeat; padding:18px 0 0 51px; position:absolute; margin-top:1px; }
+
+.profilePage .image { float:left; margin-right:10px; border:3px solid #fff; padding:1px; background-color:#fff;}
+
+.profilePage .blogInformation 			{ padding-bottom:20px;}
+.profilePage .blogInformation dd 		{ padding-left:10px;}
+.profilePage .blogInformation .box 		{ background-color:#f2f4f3; padding:10px; overflow:hidden; }
+.profilePage .blogInformation .info 	{ margin-left:70px; }
+.profilePage .blogInformation .name 	{ color:#333; font-weight:bold; background:url(./images/ico_master.gif) 0 2px no-repeat; padding:0 5px 0 18px;}
+.profilePage .blogInformation .sec01 	{ margin-top:5px;}
+.profilePage .blogInformation .sec01 dl { float:left; width:230px; background-color:#fff; padding:5px 0 3px 10px; margin:0 5px 5px 0;}
+.profilePage .blogInformation .sec01 dt { float:left; margin-right:5px;}
+.profilePage .blogInformation .sec02 dl { padding:5px 0 10px;}
+.profilePage .blogInformation .sec02 dt { background:url(./images/ico_ball.gif) 0 6px no-repeat; padding-left:8px;}
+.profilePage .blogInformation .sec03 dt { background:url(./images/ico_ball.gif) 0 6px no-repeat; padding-left:8px;}
+
+.profilePage .matchingBoard { padding-bottom:20px; clear:both;}
+
+.profilePage .bestPost {  padding-bottom:20px;}
+.profilePage .bestPost .date { padding-right:5px;}
+
+.profilePage .favBlog .list  { float:left; width:270px; overflow:hidden; margin:5px 0 0 5px; background-color:#f2f4f3; padding:5px;}
+.profilePage .favBlog .name,
+.profilePage .favBlog .title { white-space:nowrap; overflow:hidden; width:185px;}
+
+
+/* noEntry - guestbook */
+.guestbookWrite { padding:10px; background-color:#f2f4f3; margin-bottom:20px;}
+
+/* noEntry - errorpage */
+#page-error { color:#000; text-align:center; background:url(./images/warning.gif) center top no-repeat; padding-top:50px!important; margin-top:50px;}
+
+/* noEntry - Localog */
+.localog .spot 		{ background:url(./images/ico_indent.gif) 0 3px no-repeat; padding:5px 0  5px 17px; }
+.localog .info 		{ background:url(./images/ico_list.gif) 0 3px no-repeat; padding-left:12px; }
+
+/* noEntry - Taglog */
+.taglog				{ }
+.taglog ul			{ text-align:justify;}
+.taglog li 			{ display:inline; }
+.taglog li .cloud1	{ color:#f30; font-size:1.5em;}
+.taglog li .cloud2	{ color:#f60; font-size:1.4em;}
+.taglog li .cloud3	{ color:#1b61ff; font-size:1.3em;}
+.taglog li .cloud4	{ color:#000; font-size:1.2em;}
+.taglog li .cloud5	{ font-size:1em;}
+.taglog li a:hover	{ background-color:#f2f4f3;}
+
+
+/* paging */
+.paging 				{ text-align:center; clear:both;}
+.paging .numbox 		{ border-right:1px solid #eee; margin-right:5px;}
+.paging .numbox a 		{ border-left:1px solid #eee; padding:0 5px 0 8px;}
+.paging .selected 		{ font-weight:bold;}
+.paging .prevPage		{ background:url(./images/bull_page_prev.gif) left 2px no-repeat; padding-left:10px; margin-right:5px;}
+.paging .nextPage		{ background:url(./images/bull_page_next.gif) right 2px no-repeat; padding-right:10px; margin-left:5px; }
+
+
+/* ***** Sidebar Part **************************************** */
+
+/* profile part */
+.tt-default-sidebar-profile-experTag,
+.tt-default-sidebar-profile-blogroll-addedPart { display:none; }
+#source { display:none; }
+.tt-default-sidebar-profile-blogroll-addPard button,
+.tt-default-sidebar-profile-blogroll-login a { background:url(././images/neighborBlog.png) no-repeat 0 0 transparent !important; }
+
+/* sidebar */
+.sidebar { clear:both; font-size:12px; }
+.sidebar .widget { width:100%; clear:both; padding-bottom:20px; overflow:hidden; }
+.sidebar .widget ul, .sidebar .widget li, .sidebar .widget ol { list-style:none; float:left; margin-right:20px; }
+.sidebar .widget li { padding:3px; display:block; }
+.sidebar .widget h5 { font-size:14px; color:#666; border-bottom:1px solid #666; margin-bottom:10px; }
+.sidebar .widget .info { display:inline; }
+.sidebar .widget .date { display:none; }
+.sidebar .widget .name,
+.sidebar .widget .cnt { color:#999; }
+
+.treeBase li, .treeBase .allView { border:0 !important; }
+.treeBase li { display:block; clear:both; }
+.treeBase li ul { float:right !important; clear:left !important; }
+.treeBase li ul li { background:none !important; clear:none !important; }
+
+.sidebar .widget a,
+.sidebar .widget a:visited { color:#666 !important; border-bottom:0 !important; }
+.sidebar .widget a:hover,
+.sidebar .widget a:active { border-bottom:1px dashed #ccc !important; }
+
+#w_search input { width:200px; padding-left:40px; background-image:url(././images/txt_search.gif); background-position:4px 6px; background-repeat:no-repeat; }
+#w_link img { display:block; width:24px; height:24px; border:1px solid #ccc; float:left; margin-right:4px; }
+#w_link a { display:block; height:32px; clear:both; margin-bottom:4px; }
+#w_link a:hover { border:none !important; }
+#w_link a:hover img { border:1px solid #999; }
+#w_link { width:260px; height:320px; overflow-y:scroll; }
+
+#floatCover { background-color:rgba(0, 0, 0, 0.5); position:fixed; left:0; top:0; width:100%; height:100%; }
+
+
+/* for Textcube.com Blog */
+.tt-default-widget { width:240px; float:left; margin-bottom:30px; }
+#tt-default-sidebar-profile .tt-default-sidebar-profile-blogInfo { border-bottom:1px solid #666; }
+#tt-default-sidebar-following .tt-default-sidebar-following-box li { list-style:none; clear:both; border-bottom:1px solid #666; padding:10px 0; }
+#tt-default-sidebar-following h3 { display:none; }
+.tt-default-widget { margin-right:20px; }
+
+#tt-GNB .tt-GNB-home { display:none !important; }
+
+#tt-GNB .user form,
+#tt-GNB .tt-GNB-LINK-WRITE,
+#tt-GNB .tt-GNB-LINK-BLOG,
+#tt-GNB .tt-GNB-LINK-OWNER,
+#tt-GNB li.home { display:none !important; }
+
+#tt-GNB:hover .user form,
+#tt-GNB:hover .tt-GNB-LINK-WRITE,
+#tt-GNB:hover .tt-GNB-LINK-BLOG,
+#tt-GNB:hover .tt-GNB-LINK-OWNER,
+#tt-GNB:hover li.home { display:inline !important; }
+
+.notice li,
+.recentPost li,
+.recentCommunication li,
+.archive li,
+.link li 				{ background:url(./images/ico_ball.gif) 0 9px no-repeat; padding:2px 0 2px 10px;}

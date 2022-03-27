@@ -1,0 +1,9 @@
+
+<!-- random Background -->
+<script type="text/javascript">
+var spcSrc = "http://fs.textcube.com/blog/0/1892/skin/1/";
+var backCnt = 2;
+document.write('<link rel="stylesheet" type="text/css" href="' + spcSrc + 'bg' + (Math.round((backCnt-1) * Math.random())+1) + '.css" />');
+//var charCnt = 2;
+//document.write('<link rel="stylesheet" type="text/css" href="' + spcSrc + 'char' + (Math.round((charCnt-1) * Math.random())+1) + '.css" />');
+</script>

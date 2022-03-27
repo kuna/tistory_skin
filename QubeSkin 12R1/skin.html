@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>[##_title_##] :: [##_page_title_##]</title>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<script type="application/javascript" src="./images/jquery.js"></script>
+
+<!--
+QubeSkin 10R2 By kuna
+코딩은 쿠나가, 디자인은 제노시움(즈북)님(http://xenosium.com)을 것을 스틸, 큐베의 저작권은 일본 애니메이션사에.
+http://kuna.wo.tc
+-->
+
+<script language="javascript">
+$(document).ready(function() {   
+	$(document).bind("mousemove", function(e) {
+		// studio dist : 30px ~ 15root2
+		
+		if ($(".h_left").length <= 0 || $(".h_right").length <= 0) return;
+		
+		// left proc
+		var left_x = e.pageX - ($(".left .pupil").offset().left+25);
+		var left_y = e.pageY - ($(".left .pupil").offset().top+25);
+		
+		var proport_l = 21.21 / Math.sqrt( Math.pow(left_x, 2) + Math.pow(left_y, 2) );
+		$(".h_left").css("right", 30-left_x * proport_l);
+		$(".h_left").css("top", 30+left_y * proport_l);
+		
+		// right proc
+		var right_x = e.pageX - ($(".right .pupil").offset().left+25);
+		var right_y = e.pageY - ($(".right .pupil").offset().top+25);
+		
+		var proport_r = 21.21 / Math.sqrt( Math.pow(right_x, 2) + Math.pow(right_y, 2) );
+		$(".h_right").css("right", 30-right_x * proport_r);
+		$(".h_right").css("top", 30+right_y * proport_r);
+	});
+});
+
+function addMenu(menuname, href) {
+	
+}
+</script>
+
+</head>
+<body>
+
+<div class="menu">SIDEBAR</div>
+<div class="menu">오늘 포스팅은 참으로 그윽했도다</div>
+
+<div class="qube">
+	<div class="eye left">
+		<div class="pupil"></div>
+		<div class="highlight h_left"></div>
+	</div>
+	<div class="eye right">
+		<div class="pupil"></div>
+		<div class="highlight h_right"></div>
+	</div>
+	<div class="mouth left"></div>
+	<div class="mouth right"></div>
+</div>
+
+</body>
+
+</html>
